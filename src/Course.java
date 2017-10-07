@@ -1,5 +1,8 @@
-/**
- * Created by tgit on 06/10/17.
- */
 public class Course {
+    private String prerequisite;
+    private String postconditions;
+    private String timeslot;
+    Classroom roomalloted;
+    private int intededaudience;
+
 }
