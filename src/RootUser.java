@@ -4,6 +4,7 @@ import java.util.ArrayList;
  * Created by tgit on 06/10/17.
  */
 public class RootUser {
+    private String userEmailId;
     private ArrayList<Student> StudentArrayList;
     private ArrayList<Faculty> facultyArrayList;
     private ArrayList<Classroom> classroomArrayList;
@@ -12,7 +13,10 @@ public class RootUser {
     public boolean login(String passowrdEntered){
         return false;
     }
-    private String EmailId;
+    protected String typeofuser;
+    public RootUser(String Email){
+        this.userEmailId= Email;
+    }
     public void logout(){
         //logout user
     }
@@ -28,8 +32,31 @@ public class RootUser {
     //book a room for the course
     }
 
+    public String getUserEmailId() {
+        return userEmailId;
+    }
 
+    public ArrayList<Student> getStudentArrayList() {
+        return StudentArrayList;
+    }
 
+    public ArrayList<Faculty> getFacultyArrayList() {
+        return facultyArrayList;
+    }
 
+    public ArrayList<Classroom> getClassroomArrayList() {
+        return classroomArrayList;
+    }
 
+    public ArrayList<Course> getCourseArrayList() {
+        return courseArrayList;
+    }
+
+    public ArrayList<Request> getListofRequests() {
+        return ListofRequests;
+    }
+
+    public String getTypeofuser() {
+        return typeofuser;
+    }
 }
