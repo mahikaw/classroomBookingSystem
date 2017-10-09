@@ -4,33 +4,34 @@ import java.util.ArrayList;
  * Created by tgit on 06/10/17.
  */
 public class RootUser {
-    private String userEmailId;
-    private ArrayList<Student> StudentArrayList;
-    private ArrayList<Faculty> facultyArrayList;
-    private ArrayList<Classroom> classroomArrayList;
-    private ArrayList<Course> courseArrayList;
-    public ArrayList<Request> ListofRequests;
-    public boolean login(String passowrdEntered){
-        return false;
-    }
     protected String typeofuser;
-    public RootUser(String Email){
-        this.userEmailId= Email;
-    }
-    public void logout(){
+    private String userEmailId;
+    private static ArrayList<Student> StudentArrayList;
+    private static ArrayList<Faculty> facultyArrayList;
+    private static ArrayList<Classroom> classroomArrayList;
+    private static ArrayList<Course> courseArrayList;
+
+    public void logout() {
         //logout user
     }
-    protected boolean isRoomAvailable(String roomName){
+
+    protected boolean isRoomAvailable(String roomName) {
         //check availability of room
         return false;
     }
-    protected void cancelRoomBooking(String roomName){
-    //check the availability of the room
+    protected ArrayList<Classroom> getAvailableRooms(int minCapacity){
+        ArrayList<Classroom> availableClassrooms=new ArrayList<Classroom>();
+        return availableClassrooms;
     }
 
-    protected void bookRoom(String roomName,String course){
-    //book a room for the course
+    protected void cancelRoomBooking(String roomName) {
+        //check the availability of the room
     }
+
+    protected void bookRoom(String roomName, String courseName) {
+        //book a room for the course
+    }
+
 
     public String getUserEmailId() {
         return userEmailId;
@@ -50,10 +51,6 @@ public class RootUser {
 
     public ArrayList<Course> getCourseArrayList() {
         return courseArrayList;
-    }
-
-    public ArrayList<Request> getListofRequests() {
-        return ListofRequests;
     }
 
     public String getTypeofuser() {

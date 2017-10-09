@@ -1,20 +1,29 @@
+import java.util.Date;
+
 public class Request {
     private String purpose;
-    private Classroom roomprefered;
+    private Classroom roompreferred;
     private int capacityrequired;
-    private boolean accepted =false;
+    private boolean isAccepted = false;
+    private boolean isRejected = false;
+    private Date timeOfRequest;
+
+    public Request(String purposeofrequest, int capacity) {
+        timeOfRequest = new Date();
+        this.purpose = purposeofrequest;
+        this.capacityrequired = capacity;
+        this.roompreferred = null;
+    }
+
+    public Request(String purposeofrequest, int capacity, Classroom classroomrequired) {
+        timeOfRequest = new Date();
+        this.purpose = purposeofrequest;
+        this.capacityrequired = capacity;
+        this.roompreferred = classroomrequired;
+    }
+
 
     public void setAccepted(boolean accepted) {
-        this.accepted = accepted;
-    }
-    public Request(String purposeofrequest,int capacity){
-        this.purpose=purposeofrequest;
-        this.capacityrequired=capacity;
-        this.roomprefered=null;
-    }
-    public Request(String purposeofrequest,int capacity, Classroom classroomrequired){
-        this.purpose=purposeofrequest;
-        this.capacityrequired=capacity;
-        this.roomprefered=classroomrequired;
+        this.isAccepted = accepted;
     }
 }

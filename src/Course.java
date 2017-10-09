@@ -1,19 +1,20 @@
+import java.util.Date;
+
 public class Course {
     private String prerequisite;
     private String postconditions;
-    private String timeslot;
+    private Date startTime;
+    private Date endTime;
     private Classroom roomalloted;
     private int inteded_audience;
-    public Course(String courseprerequisite, String coursepostconditions, String time,Classroom allotedroom,int capacity){
-        this.prerequisite=courseprerequisite;
-        this.postconditions=coursepostconditions;
-        this.timeslot=time;
-        this.roomalloted=allotedroom;
-        this.inteded_audience=capacity;
-    }
-    public void addcourse(String prerequisites, String postconditions, String time,Classroom allotedroom,int capacity){
-        //Course newcourse = new Course(prerequisites,postconditions,time,allotedroom,capacity);
-        //addcourse(newcourse);
+
+    public Course(String courseprerequisite, String coursepostconditions, Date stime, Date etime, Classroom allotedroom, int capacity) {
+        this.prerequisite = courseprerequisite;
+        this.postconditions = coursepostconditions;
+        this.startTime = stime;
+        this.endTime=etime;
+        this.roomalloted = allotedroom;
+        this.inteded_audience = capacity;
     }
 
     public String getPrerequisite() {
@@ -24,8 +25,11 @@ public class Course {
         return postconditions;
     }
 
-    public String getTimeslot() {
-        return timeslot;
+    public String getStartTime() {
+        return startTime.toString();
+    }
+    public String getEndTime() {
+        return endTime.toString();
     }
 
     public Classroom getRoomalloted() {

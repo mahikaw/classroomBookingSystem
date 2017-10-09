@@ -32,7 +32,7 @@ public class TimeTable {
         return Saturday_TimeTable;
     }
 
-    public TimeTable generate_TimeTable(){
+    public TimeTable generate_TimeTable() {
         return new TimeTable();
     }
 }
