@@ -3,8 +3,9 @@ import java.util.Date;
 public class Course {
     private String prerequisite;
     private String postconditions;
-    private Date startTime;
-    private Date endTime;
+    public Date[] CourseTimeSlot_Start;//on Index 0, we store the time at which the class starts on monday, tuesday on 1st....
+    public Date[] CourseTimeSlot_End;
+    //we will occupy rhe classroom alloted in that perticular time slot only
     private Classroom roomalloted;
     private int inteded_audience;
 
