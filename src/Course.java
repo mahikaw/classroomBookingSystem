@@ -12,8 +12,9 @@ public class Course {
     public Course(String courseprerequisite, String coursepostconditions, Date stime, Date etime, Classroom allotedroom, int capacity) {
         this.prerequisite = courseprerequisite;
         this.postconditions = coursepostconditions;
-        this.startTime = stime;
-        this.endTime=etime;
+        //todo correct beneath
+//        this.CourseTimeSlot_Start = stime;
+//        this.endTime=etime;
         this.roomalloted = allotedroom;
         this.inteded_audience = capacity;
     }
@@ -25,13 +26,13 @@ public class Course {
     public String getPostconditions() {
         return postconditions;
     }
-
-    public String getStartTime() {
-        return startTime.toString();
-    }
-    public String getEndTime() {
-        return endTime.toString();
-    }
+//todo implement them too
+//    public String getStartTime() {
+//        return startTime.toString();
+//    }
+//    public String getEndTime() {
+//        return endTime.toString();
+//    }
 
     public Classroom getRoomalloted() {
         return roomalloted;
