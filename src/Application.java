@@ -31,7 +31,7 @@ public class Application extends javafx.application.Application {
     public void start(Stage primaryStage) throws Exception {
         mainStage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("IIIT-D Classroom Booking System");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }
