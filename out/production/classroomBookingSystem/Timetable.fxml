@@ -26,7 +26,7 @@
             </GridPane.margin>
         </Button>
         <Button mnemonicParsing="false" text="BACK" translateX="20.0" translateY="-200.0" />
-      <TextField alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="500.0" promptText="Enter required Pre-requisites" text="Enter required Pre-requisites" translateX="100.0" translateY="-100.0">
+      <TextField alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="500.0" promptText="Enter comma separated required Pre-requisites" text="Enter comma separated required Pre-requisites" translateX="100.0" translateY="-100.0">
          <font>
             <Font size="14.0" />
          </font></TextField>
