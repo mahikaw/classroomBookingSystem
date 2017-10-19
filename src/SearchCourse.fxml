@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9">
+   <children>
+      <AnchorPane prefHeight="493.0" prefWidth="592.0">
+         <children>
+            <Text layoutX="175.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Courses">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="42.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Keyword">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField layoutX="215.0" layoutY="100.0" prefHeight="26.0" prefWidth="233.0" />
+            <ListView layoutX="14.0" layoutY="127.0" prefHeight="361.0" prefWidth="574.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
