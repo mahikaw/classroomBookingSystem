@@ -33,6 +33,7 @@ public class Application extends javafx.application.Application {
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         primaryStage.setTitle("IIIT-D Classroom Booking System");
         primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setFullScreen(true);
         primaryStage.show();
     }
 

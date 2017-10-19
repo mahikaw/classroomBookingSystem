@@ -18,7 +18,12 @@ import javafx.event.ActionEvent;
 
 public class LoginController implements Initializable{
 
+    @FXML
+    TextArea newUser=new TextArea("Are you a new user?");
 
+    public TextArea getNewUser(){
+        return newUser;
+    }
 	@FXML
     public void home(ActionEvent event) throws IOException {
 		Parent homepage = FXMLLoader.load(getClass().getResource("Home.fxml"));
@@ -26,6 +31,7 @@ public class LoginController implements Initializable{
         stage.setTitle("Home page");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
+        stage.setFullScreen(true);
 	}
 
     @FXML
@@ -35,6 +41,7 @@ public class LoginController implements Initializable{
         stage.setTitle("Sign Up");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
+        stage.setFullScreen(true);
     }
 
     @Override

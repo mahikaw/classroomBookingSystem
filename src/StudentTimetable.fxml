@@ -12,7 +12,7 @@
 <GridPane alignment="center" hgap="10" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentTimetableController">
    <children>
       <FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="701.0" />
-      <TextField alignment="TOP_CENTER" disable="true" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="44.0" prefWidth="316.0" promptText="Sign Up" text="Sign Up" translateX="200.0" translateY="-200.0">
+      <TextField alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="44.0" prefWidth="316.0" promptText="Choose courses " text="Choose courses" translateX="200.0" translateY="-200.0" >
          <FlowPane.margin>
             <Insets left="166.0" />
          </FlowPane.margin>
@@ -22,7 +22,7 @@
       </TextField>
       <Button mnemonicParsing="false" text="LOGOUT" textFill="#100728">
          <GridPane.margin>
-            <Insets bottom="400.0" left="475.0" />
+            <Insets bottom="400.0" left="600.0" />
          </GridPane.margin>
       </Button>
 
