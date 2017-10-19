@@ -43,10 +43,10 @@
             </FlowPane.margin>
          </ButtonBar>
          <Pane maxHeight="-Infinity" maxWidth="-Infinity" rotate="-21.8">
-          <Button mnemonicParsing="false" text="Sign Up" translateX="335.0" translateY="5.0" />
+          <Button mnemonicParsing="false" onAction="#signup" text="Sign Up" translateX="335.0" translateY="5.0" />
             <TextArea disable="true" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" text="Are you a new user?">
                <font>
-                  <Font name="System Bold" size="13.0" />
+                  <Font name="System Bold" size="13.0"  />
                </font>
                <padding>
                   <Insets left="70.0" top="10.0" />
