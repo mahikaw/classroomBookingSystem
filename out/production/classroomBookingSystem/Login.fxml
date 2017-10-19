@@ -36,7 +36,7 @@
           </TextFlow>
          <ButtonBar prefHeight="17.0" prefWidth="409.0">
            <buttons>
-               <Button mnemonicParsing="false" onAction="#login" text="Login" ButtonBar.buttonData="LEFT" />
+               <Button mnemonicParsing="false" onAction="#home" text="Login" ButtonBar.buttonData="LEFT" />
            </buttons>
             <FlowPane.margin>
                <Insets bottom="20.0" />
@@ -44,7 +44,7 @@
          </ButtonBar>
          <Pane maxHeight="-Infinity" maxWidth="-Infinity" rotate="-21.8">
           <Button mnemonicParsing="false" onAction="#signup" text="Sign Up" translateX="335.0" translateY="5.0" />
-            <TextArea disable="true" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" text="Are you a new user?">
+            <TextArea fx:id="newUserTextview" disable="true" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" text="Are you a new user?">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>

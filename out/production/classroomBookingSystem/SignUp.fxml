@@ -39,7 +39,7 @@
             </TextFlow>
             <ButtonBar prefHeight="17.0" prefWidth="409.0">
                 <buttons>
-                    <Button mnemonicParsing="false"  text="Sign Up" ButtonBar.buttonData="LEFT" />
+                    <Button mnemonicParsing="false" onAction="#home" text="Sign Up &amp; Login" ButtonBar.buttonData="LEFT" />
                 </buttons>
                 <FlowPane.margin>
                     <Insets bottom="20.0" left="70.0" />
@@ -51,6 +51,11 @@
                 </rotationAxis>
             </Pane>
         </FlowPane>
+      <Button mnemonicParsing="false" text="Back" translateY="-200.0">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Button>
     </children>
     <columnConstraints>
         <ColumnConstraints />

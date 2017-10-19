@@ -13,19 +13,19 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 
 public class HomeController implements Initializable {
-	@FXML
-	public Button Login;
+//	@FXML
+//	public Button Login;
 	// Event Listener on Button.onAction
-	@FXML
-	public void login(ActionEvent event) throws IOException {
-		Parent homepage = FXMLLoader.load(getClass().getResource("Home.fxml"));
-		System.out.println("asdasd");
-		Stage stage = new Stage();
-        stage.setTitle("My New Stage Title");
-        stage.setScene(new Scene(homepage, 300, 275));
-        stage.show();
-        //((Node)(event.getSource())).getScene().getWindow().hide();
-	}
+//	@FXML
+//	public void login(ActionEvent event) throws IOException {
+//		Parent homepage = FXMLLoader.load(getClass().getResource("Home.fxml"));
+//		System.out.println("asdasd");
+//		Stage stage = new Stage();
+//        stage.setTitle("My New Stage Title");
+//        stage.setScene(new Scene(homepage, 300, 275));
+//        stage.show();
+//        //((Node)(event.getSource())).getScene().getWindow().hide();
+//	}
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
