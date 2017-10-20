@@ -2,28 +2,31 @@
 
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane xmlns="http://javafx.com/javafx/9">
+<GridPane xmlns="http://javafx.com/javafx/8.0.112">
    <children>
-      <AnchorPane prefHeight="493.0" prefWidth="592.0">
+      <VBox alignment="CENTER_LEFT"  prefHeight="500" prefWidth="1270" spacing="20.0" translateY="200.0">
          <children>
-            <Text layoutX="175.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Courses">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search Courses" textAlignment="CENTER" translateX="500" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="36.0" />
                </font>
             </Text>
-            <Text layoutX="42.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Keyword">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Text>
-            <TextField layoutX="215.0" layoutY="150.0" prefHeight="26.0" prefWidth="233.0" />
-            <ListView layoutX="14.0" layoutY="200.0" prefHeight="361.0" prefWidth="574.0" />
+            <TextField promptText="Enter Keyword" editable="true"/>
+            <ListView />
          </children>
-      </AnchorPane>
+      </VBox>
    </children>
-</AnchorPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

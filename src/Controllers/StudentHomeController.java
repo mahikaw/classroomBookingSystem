@@ -14,6 +14,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class StudentHomeController implements Initializable {
@@ -24,7 +25,7 @@ public class StudentHomeController implements Initializable {
 	public Button Available_rooms;
 	// Event Listener on Button.onAction
 	@FXML
-	public AnchorPane HomeStudent;
+	public VBox HomeStudent;
 	@FXML
 	public Pane pane;
 	@FXML
@@ -54,7 +55,7 @@ public class StudentHomeController implements Initializable {
 	@FXML
 	public void AddCourse(ActionEvent event) throws IOException{
 		HomeStudent.getChildren().clear();
-		HomeStudent.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/Timetable.fxml")));
+		HomeStudent.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/Timeable.fxml")));
 	}
 	
 	@Override

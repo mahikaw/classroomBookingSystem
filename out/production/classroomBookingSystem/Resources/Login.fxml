@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.geometry.Point3D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
 <GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="478.0" prefWidth="565.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
@@ -19,30 +17,22 @@
       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
    </padding>
    <children>
-      <FlowPane prefHeight="200.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
-         <TextField disable="true" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="44.0" prefWidth="316.0" promptText="Welcome to IIITD Classroom Booking system" text="Welcome to IIITD Classroom Booking system" translateX="-40.0">
-            <FlowPane.margin>
-               <Insets left="100.0" />
-            </FlowPane.margin>
-         </TextField>
+      <AnchorPane prefHeight="255.0" prefWidth="433.0" maxWidth="-Infinity" maxHeight="-Infinity">
+         <Text text="IIITD CLASSROOM BOOKING SYSTEM" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Bold" size="22.0" />
+            </font>
+         </Text>
           <TextFlow minHeight="189.0" minWidth="100.0" prefHeight="189.0" prefWidth="192.0">
           <TextArea maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="43.0" prefWidth="194.0" promptText="Email ID" translateY="40.0">
-              
           </TextArea>
             <TextArea prefHeight="46.0" prefWidth="192.0" promptText="Password" translateY="70.0" />
-            <FlowPane.margin>
-               <Insets left="100.0" right="100.0" />
-            </FlowPane.margin>
           </TextFlow>
          <ButtonBar prefHeight="17.0" prefWidth="409.0">
            <buttons>
                <Button mnemonicParsing="false" onAction="#home" text="Login" ButtonBar.buttonData="LEFT" />
            </buttons>
-            <FlowPane.margin>
-               <Insets bottom="20.0" />
-            </FlowPane.margin>
          </ButtonBar>
-         <Pane maxHeight="-Infinity" maxWidth="-Infinity" rotate="-21.8">
           <Button mnemonicParsing="false" onAction="#signup" text="Sign Up" translateX="335.0" translateY="5.0" />
             <TextArea id="newUser" fx:id="newUserTextview" disable="true" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" text="Are you a new user?">
                <font>
@@ -50,12 +40,10 @@
                </font>
                <padding>
                   <Insets left="70.0" top="10.0" />
-               </padding></TextArea>
-            <rotationAxis>
-               <Point3D />
-            </rotationAxis>
-         </Pane>
-      </FlowPane>
+               </padding>
+            </TextArea>
+         <!--</Pane>-->
+      </AnchorPane>
    </children>
    <columnConstraints>
       <ColumnConstraints />

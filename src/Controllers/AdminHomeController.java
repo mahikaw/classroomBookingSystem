@@ -55,9 +55,4 @@ public class AdminHomeController {
 		
 	}
 
-	/**
-     * Created by tgit on 19/10/17.
-     */
-    public static class TimetableController {
-    }
 }
