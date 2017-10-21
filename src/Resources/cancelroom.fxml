@@ -17,11 +17,6 @@
             </Text>
             <ListView layoutX="20.0" layoutY="123.0" prefHeight="366.0" prefWidth="674.0" />
             <Button layoutX="556.0" layoutY="497.0" mnemonicParsing="false" onAction="#Cancelroom" prefHeight="38.0" prefWidth="131.0" text="Cancel" />
-            <Button fx:id="Cancel" layoutX="141.0" layoutY="55.0" mnemonicParsing="false" onAction="#cancelroom" prefHeight="43.0" prefWidth="140.0" text="Cancel Room Booking" />
-            <Button fx:id="Logout" layoutX="561.0" layoutY="55.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="140.0" text="Logout" />
-            <Button fx:id="Available" layoutX="421.0" layoutY="55.0" mnemonicParsing="false" onAction="#AvailableRooms" prefHeight="43.0" prefWidth="140.0" text="Available Rooms" />
-            <Button fx:id="Book" layoutX="1.0" layoutY="55.0" mnemonicParsing="false" onAction="#bookroom" prefHeight="43.0" prefWidth="140.0" text="Book Room" />
-            <Button fx:id="Request" layoutX="281.0" layoutY="55.0" mnemonicParsing="false" onAction="#viewRequests" prefHeight="43.0" prefWidth="140.0" text="View Requests" />
          </children>
       </AnchorPane>
    </children>

@@ -18,10 +18,5 @@
             <ListView layoutX="14.0" layoutY="124.0" prefHeight="361.0" prefWidth="675.0" />
             <Button id="book" layoutX="589.0" layoutY="495.0" mnemonicParsing="false" onAction="#Bookroom" prefHeight="48.0" prefWidth="98.0" text="BOOK" />
          </children></AnchorPane>
-      <Button fx:id="Cancel" layoutX="141.0" layoutY="57.0" mnemonicParsing="false" onAction="#cancelroom" prefHeight="43.0" prefWidth="140.0" text="Cancel Room Booking" />
-      <Button fx:id="Logout" layoutX="561.0" layoutY="57.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="140.0" text="Logout" />
-      <Button fx:id="Available" layoutX="421.0" layoutY="57.0" mnemonicParsing="false" onAction="#AvailableRooms" prefHeight="43.0" prefWidth="140.0" text="Available Rooms" />
-      <Button fx:id="Book" layoutX="1.0" layoutY="57.0" mnemonicParsing="false" onAction="#bookroom" prefHeight="43.0" prefWidth="140.0" text="Book Room" />
-      <Button fx:id="Request" layoutX="281.0" layoutY="57.0" mnemonicParsing="false" onAction="#viewRequests" prefHeight="43.0" prefWidth="140.0" text="View Requests" />
    </children>
 </AnchorPane>
