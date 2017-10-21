@@ -18,7 +18,7 @@
         </Text>
         <VBox alignment="CENTER" prefWidth="2270" spacing="20.0" translateY="100">
             <children>
-                <TextArea disable="false" editable="true" maxHeight="40.0" minHeight="-Infinity" prefHeight="30.0" text="Enter comma-separated desired post-conditions here">
+                <TextArea maxHeight="40.0" minHeight="-Infinity" prefHeight="30.0" text="Enter comma-separated desired post-conditions here">
                     <font>
                         <Font size="20.0" />
                     </font>

@@ -12,7 +12,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -35,6 +34,7 @@ public class StudentHomeController implements Initializable {
         stage.setTitle("Login");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
+        stage.setFullScreen(true);
 	}
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
@@ -50,7 +50,7 @@ public class StudentHomeController implements Initializable {
 	@FXML
 	public void MyTimeTable(ActionEvent event) throws IOException{
 		HomeStudent.getChildren().clear();
-		HomeStudent.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/SearchCourse.fxml")));
+		HomeStudent.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/MyTimetable.fxml")));
 	}
 	@FXML
 	public void AddCourse(ActionEvent event) throws IOException{

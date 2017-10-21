@@ -11,6 +11,8 @@
 <?import javafx.scene.layout.VBox?>
 
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <GridPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminHomeController">
 
    <VBox fx:id="HomeStudent" prefHeight="578.0" prefWidth="702.0" alignment="CENTER">
@@ -32,6 +34,10 @@
          <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="200.0" text="Logout" textAlignment="CENTER" wrapText="true" />
       </children>
    </HBox>
+   <ImageView fitHeight="70.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true" translateY="-575.0" GridPane.rowIndex="1">
+      <image>
+         <Image url="@../Images/logonew.png" />
+      </image></ImageView>
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>

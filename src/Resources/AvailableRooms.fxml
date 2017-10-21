@@ -10,7 +10,7 @@
 
 <GridPane prefHeight="420.0" prefWidth="1248.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AvailableRoomsController">
    <children>
-      <Text layoutX="219.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Rooms" translateX="500" wrappingWidth="263.109375">
+      <Text layoutX="219.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Rooms" translateX="500" translateY="100" wrappingWidth="263.109375">
          <font>
             <Font size="36.0" />
          </font>
