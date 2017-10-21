@@ -12,31 +12,35 @@
 <children>
    <VBox alignment="CENTER_LEFT" prefHeight="500" prefWidth="1270"  spacing="20.0" translateY="200.0">
       <children>
-         <Text layoutX="195.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requst Room" translateX="500">
+         <GridPane translateX="500">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Requst Room">
             <font>
-               <Font size="31.0" />
+               <Font size="36.0" />
             </font>
          </Text>
-         <Text layoutX="36.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purpose">
-            <font>
-               <Font size="20.0" />
-            </font>
-         </Text>
-         <Text layoutX="36.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Required">
+      </GridPane>
+
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Purpose">
             <font>
                <Font size="20.0" />
             </font>
          </Text>
-         <Text layoutX="30.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Capacity">
-            <font>
-               <Font size="20.0" />
-            </font>
-         </Text>
-         <Text layoutX="180.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(optional)" />
          <TextField alignment="TOP_LEFT" layoutX="144.0" layoutY="116.0" prefHeight="144.0" prefWidth="442.0" />
-         <TextField layoutX="269.0" layoutY="295.0" />
-         <TextField layoutX="269.0" layoutY="414.0" />
-         <Button layoutX="450.0" layoutY="483.0" mnemonicParsing="false" onAction="#submitrequest" prefHeight="52.0" prefWidth="138.0" text="Submit" />
+
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Room Required">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Text>
+         <TextField/>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Student Capacity">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(optional)" />
+         <TextField/>
+         <Button mnemonicParsing="false" onAction="#submitrequest" prefHeight="52.0" prefWidth="138.0" text="Submit" translateX="500" />
 
       </children>
    </VBox>
