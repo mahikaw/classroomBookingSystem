@@ -48,7 +48,7 @@ public class StudentHomeController implements Initializable {
 		HomeStudent.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/RequestRoom.fxml")));
 	}
 	@FXML
-	public void SearchCourse(ActionEvent event) throws IOException{
+	public void MyTimeTable(ActionEvent event) throws IOException{
 		HomeStudent.getChildren().clear();
 		HomeStudent.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/SearchCourse.fxml")));
 	}

@@ -29,16 +29,16 @@ public class FacultyHomeController implements Initializable {
 	public Pane pane;
 	@FXML
 	public void login(ActionEvent event) throws IOException {
-		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
-		//System.out.println("asdasd");
+
+		Parent homepage = FXMLLoader.load(getClass().getResource("Login.FXML"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("My New Stage Title");
+        stage.setTitle("Home");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
+        stage.setFullScreen(true);
 	}
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
-		//System.out.println(HomeStudent.getChildren().indexOf(pane));
 		HomeAdmin.getChildren().clear();
 		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/AvailableRooms.fxml")));
 		
@@ -53,6 +53,8 @@ public class FacultyHomeController implements Initializable {
 		HomeAdmin.getChildren().clear();
 		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/cancelroom.fxml")));
 	}
+
+
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

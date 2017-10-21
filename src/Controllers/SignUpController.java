@@ -28,6 +28,16 @@ public class SignUpController implements Initializable {
         }
     }
 
+    @FXML
+    public void back(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Resources/Login.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("IIIT-D Classroom Booking System");
+        stage.setScene(new Scene(root, 300, 275));
+        stage.setFullScreen(true);
+        stage.show();
+    }
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

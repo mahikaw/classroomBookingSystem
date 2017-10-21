@@ -51,7 +51,7 @@
                 </rotationAxis>
             </Pane>
         </FlowPane>
-      <Button mnemonicParsing="false" text="Back" translateY="-200.0">
+      <Button mnemonicParsing="false" text="Back" translateY="-200.0" onAction="#back">
          <GridPane.margin>
             <Insets left="10.0" />
          </GridPane.margin>

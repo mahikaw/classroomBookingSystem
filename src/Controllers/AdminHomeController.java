@@ -26,11 +26,11 @@ public class AdminHomeController {
 	@FXML
 	public void login(ActionEvent event) throws IOException {
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
-		//System.out.println("asdasd");
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("My New Stage Title");
+        stage.setTitle("Home");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
+		stage.setFullScreen(true);
 	}
 	@FXML
 	public void bookroom(ActionEvent event) throws IOException{

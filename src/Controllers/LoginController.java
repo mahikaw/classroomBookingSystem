@@ -6,7 +6,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,12 +17,6 @@ import javafx.event.ActionEvent;
 
 public class LoginController implements Initializable{
 
-    @FXML
-    TextArea newUser=new TextArea("Are you a new user?");
-
-    public TextArea getNewUser(){
-        return newUser;
-    }
 	@FXML
     public void home(ActionEvent event) throws IOException {
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/StudentHome.fxml"));
