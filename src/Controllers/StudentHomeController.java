@@ -55,7 +55,7 @@ public class StudentHomeController implements Initializable {
 	@FXML
 	public void AddCourse(ActionEvent event) throws IOException{
 		HomeStudent.getChildren().clear();
-		HomeStudent.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/Timeable.fxml")));
+		HomeStudent.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/Timetable.fxml")));
 	}
 	
 	@Override

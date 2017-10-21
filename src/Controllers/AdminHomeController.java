@@ -35,23 +35,23 @@ public class AdminHomeController {
 	@FXML
 	public void bookroom(ActionEvent event) throws IOException{
 		HomeAdmin.getChildren().clear();
-		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("Resources/Bookroom.fxml")));
+		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/Bookroom.fxml")));
 	}
 	@FXML
 	public void cancelroom(ActionEvent event) throws IOException{
 		HomeAdmin.getChildren().clear();
-		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("Resources/cancelroom.fxml")));
+		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/cancelroom.fxml")));
 	}
 	@FXML
 	public void viewRequests(ActionEvent event) throws IOException{
 		HomeAdmin.getChildren().clear();
-		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("Resources/Requests.fxml")));
+		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/Requests.fxml")));
 	}
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
 		//System.out.println(HomeStudent.getChildren().indexOf(pane));
 		HomeAdmin.getChildren().clear();
-		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("Resources/AvailableRooms.fxml")));
+		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/AvailableRooms.fxml")));
 		
 	}
 

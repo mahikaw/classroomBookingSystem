@@ -23,7 +23,7 @@ public class RequestsController implements Initializable {
 	}
 	@FXML
 	public void accept(ActionEvent event) throws IOException{
-		Parent homepage = FXMLLoader.load(getClass().getResource("AdminHome.FXML"));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.FXML"));
 		//System.out.println("asdasd");
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("My New Stage Title");
@@ -32,7 +32,7 @@ public class RequestsController implements Initializable {
 	}
 	@FXML
 	public void cancel(ActionEvent event) throws IOException{
-		Parent homepage = FXMLLoader.load(getClass().getResource("AdminHome.FXML"));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.FXML"));
 		//System.out.println("asdasd");
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("My New Stage Title");
@@ -43,7 +43,7 @@ public class RequestsController implements Initializable {
 	public AnchorPane HomeAdmin;
 	@FXML
 	public void login(ActionEvent event) throws IOException {
-		Parent homepage = FXMLLoader.load(getClass().getResource("Login.FXML"));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
 		//System.out.println("asdasd");
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("My New Stage Title");

@@ -27,7 +27,7 @@ public class BookroomController implements Initializable{
 	}
 	@FXML
 	public void login(ActionEvent event) throws IOException {
-		Parent homepage = FXMLLoader.load(getClass().getResource("Login.FXML"));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
 		//System.out.println("asdasd");
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("My New Stage Title");
