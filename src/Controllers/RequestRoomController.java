@@ -25,6 +25,21 @@ public class RequestRoomController implements Initializable{
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
 	}
+	public void cancel(ActionEvent event) throws IOException{
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("My New Stage Title");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+	}
+	public void accept(ActionEvent event) throws IOException{
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("My New Stage Title");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+	}
+	
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

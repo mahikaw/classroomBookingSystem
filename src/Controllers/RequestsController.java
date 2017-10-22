@@ -12,6 +12,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class RequestsController implements Initializable {
@@ -40,7 +41,7 @@ public class RequestsController implements Initializable {
         stage.show();
 	}
 	@FXML
-	public AnchorPane HomeAdmin;
+	public GridPane HomeAdmin;
 	@FXML
 	public void login(ActionEvent event) throws IOException {
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));

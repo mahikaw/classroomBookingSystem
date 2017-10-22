@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -19,7 +20,7 @@ public class AdminHomeController {
 	public Button logout;
 	
 	@FXML
-	public AnchorPane HomeAdmin;
+	public VBox HomeAdmin;
 	@FXML
 	public Pane pane;
 	// Event Listener on Button.onAction

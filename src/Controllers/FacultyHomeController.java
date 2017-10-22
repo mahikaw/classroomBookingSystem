@@ -14,6 +14,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class FacultyHomeController implements Initializable {
@@ -24,18 +25,19 @@ public class FacultyHomeController implements Initializable {
 	public Button Available_rooms;
 	// Event Listener on Button.onAction
 	@FXML
-	public AnchorPane HomeAdmin;
+	public VBox HomeAdmin;
 	@FXML
 	public Pane pane;
 	@FXML
 	public void login(ActionEvent event) throws IOException {
 
-		Parent homepage = FXMLLoader.load(getClass().getResource("Login.FXML"));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Home");
         stage.setScene(new Scene(homepage, 300, 275));
-        stage.show();
         stage.setFullScreen(true);
+        stage.show();
+        
 	}
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
