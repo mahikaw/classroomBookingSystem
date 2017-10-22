@@ -15,29 +15,31 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 public class RequestRoomController implements Initializable{
-	@FXML
-	public Button Submit;
+
 	@FXML
 	public void submitrequest(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/StudentHome.fxml"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("My New Stage Title");
+        stage.setTitle("Home");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
+        stage.setFullScreen(true);
 	}
 	public void cancel(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("My New Stage Title");
+        stage.setTitle("Home");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
+        stage.setFullScreen(true);
 	}
 	public void accept(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("My New Stage Title");
+        stage.setTitle("Home");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
+        stage.setFullScreen(true);
 	}
 	
 

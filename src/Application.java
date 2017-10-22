@@ -25,7 +25,7 @@ public class Application extends javafx.application.Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         mainStage = primaryStage;
-        Parent root = FXMLLoader.load(getClass().getResource("Resources/main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Resources/Login.fxml"));
         primaryStage.setTitle("IIIT-D Classroom Booking System");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.setFullScreen(true);
@@ -43,15 +43,6 @@ public class Application extends javafx.application.Application {
         ListofCourses.add(addcourse);
     }
 
-    /*public void login(ActionEvent event) throws IOException {
-//        Parent homepage = FXMLLoader.load(getClass().getResource("Login.fxml"));
-//        Parent errorpage = FXMLLoader.load(getClass().getResource("ErrorLogin.fxml"));
-//        System.out.println("LOGIN BUTTON PRESSED");
-//        if (Authenticate()) {
-//            mainStage.setScene(new Scene(homepage, 300, 275));
-//        }
-//        else mainStage.setScene(new Scene(errorpage,300,275));
-    }*/
 
     public boolean Authenticate() {
         //authenticate user

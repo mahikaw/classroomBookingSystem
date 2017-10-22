@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <GridPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TimetableController">
     <children>
-        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add Courses" translateX="500">
+        <Label text="Add Courses" translateX="500">
             <font>
                 <Font size="36.0" />
             </font>
-        </Text>
+        </Label>
         <VBox alignment="CENTER" prefWidth="2270" spacing="20.0" translateY="100">
             <children>
-                <TextArea maxHeight="40.0" minHeight="-Infinity" prefHeight="30.0" text="Enter comma-separated desired post-conditions here">
+                <TextArea maxHeight="40.0" minHeight="-Infinity" prefHeight="30.0" promptText="Enter comma-separated desired post-conditions here">
                     <font>
                         <Font size="20.0" />
                     </font>
