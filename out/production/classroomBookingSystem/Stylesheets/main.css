@@ -1,0 +1,33 @@
+.top-pane {
+    -fx-background-color:#3FADAB;
+    -fx-max-height: 5000%;
+    -fx-pref-height: 5000%;
+    -fx-min-height: 5000%;
+    -fx-pref-width: 1280;
+    -fx-max-width: 1280;
+    -fx-min-width: 1280;
+    -fx-text-fill: red;
+}
+.top-text {
+    -fx-text-fill: white;
+}
+
+.top-button{
+    -fx-background-color: white;
+    -fx-text-fill: grey;
+    -fx-border-color: white;
+    -fx-pref-height: 100%;
+}
+.head{
+-fx-translate-y: 100;
+}
+
+.announcement{
+    -fx-text-fill: maroon;
+}
+
+.para{
+    -fx-text-fill: gray;
+    -fx-translate-y: 300;
+    -fx-font-size: 20;
+}
