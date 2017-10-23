@@ -19,7 +19,7 @@ public class LoginController implements Initializable{
 
 	@FXML
     public void home(ActionEvent event) throws IOException {
-		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/FacultyHome.fxml"));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/StudentHome.fxml"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Home page");
         stage.setScene(new Scene(homepage, 300, 275));

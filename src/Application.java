@@ -25,7 +25,7 @@ public class Application extends javafx.application.Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         mainStage = primaryStage;
-        Parent root = FXMLLoader.load(getClass().getResource("Resources/main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Resources/Login.fxml"));
         primaryStage.setTitle("IIIT-D Classroom Booking System");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.setFullScreen(true);
