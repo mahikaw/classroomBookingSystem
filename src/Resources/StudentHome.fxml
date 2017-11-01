@@ -31,6 +31,7 @@
       <Button layoutX="300.0" layoutY="61.0" mnemonicParsing="false" onAction="#AvailableRooms" prefHeight="43.0" prefWidth="132.0" text="Available Rooms" />
       <Button layoutX="450.0" layoutY="61.0" onAction="#AddCourse" prefHeight="43.0" prefWidth="132.0" text="Add courses" />
       <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="132.0" text="Logout" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#getTimeTable" prefHeight="43.0" prefWidth="132.0" text="Generic Timetable" textAlignment="CENTER"  />
    </children>
 </HBox>
    <ImageView fitHeight="70.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true" translateY="-575.0" GridPane.rowIndex="1">

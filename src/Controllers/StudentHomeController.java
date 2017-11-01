@@ -55,9 +55,14 @@ public class StudentHomeController implements Initializable {
 	@FXML
 	public void AddCourse(ActionEvent event) throws IOException{
 		HomeStudent.getChildren().clear();
+		HomeStudent.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/Addcourse.fxml")));
+	}
+
+	@FXML
+	public void getTimeTable(ActionEvent event) throws IOException{
+		HomeStudent.getChildren().clear();
 		HomeStudent.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/Timetable.fxml")));
 	}
-	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub

@@ -6,7 +6,6 @@ import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
@@ -18,17 +17,13 @@ import javafx.stage.Stage;
 public class BookroomController implements Initializable{
 	@FXML
 	public AnchorPane HomeAdmin;
-
 	@FXML
-	public Button book;
 	public void Bookroom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("My New Stage Title");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
-        stage.setFullScreen(true);
-        System.out.println("asddasdasd");
 	}
 	@FXML
 	public void login(ActionEvent event) throws IOException {
@@ -38,7 +33,6 @@ public class BookroomController implements Initializable{
         stage.setTitle("My New Stage Title");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
-        stage.setFullScreen(true);
 	}
 	@FXML
 	public void bookroom(ActionEvent event) throws IOException{
