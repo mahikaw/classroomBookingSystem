@@ -7,9 +7,9 @@ public class Classroom {
     public Date[] Occupied_timeslot_start;//we will store the time when the room is occupied on the day of the week
     public Date[] Occupied_timeslot_end;
     
-    public Classroom(String name, int capacity) {
+    public Classroom(String name /*,int capacity*/) {
         this.classroom_name = name;
-        this.totalcapacity = capacity;
+//        this.totalcapacity = capacity;
         totalcapacity++;
     }
 
