@@ -1,0 +1,873 @@
+
+
+CSE101 (Credits: 4) 
+Title: Introduction to programming 
+Pre-requisite: none
+Introduction of Programming is the first programming course in the college curriculum, and aims to bridge the gap between students who have prior coding experience and those who have none. The main goal of this course is to prepare students to understand basic algorithms and data structures, write organized code, and to gain practical experience with debugging, compiling and running programs.
+
+
+CSE102 (Credits: 4) 
+Title: Data Structures and Algorithms 
+Pre-requisite: CSE101 ,CSE121
+This course teaches the basic data structures and algorithms for performing operations on these data structures, the use of data structures to provide software solutions that are efficient, and some algorithm paradigms for building efficient algorithms.
+
+
+CSE111 (Credits: 4) 
+Title: Digital Circuits 
+Pre-requisite: none
+Analog and Digital representations of information; Logic and arithmetic; Binary variables; Basic logic operations and gates; Essentials of Boolean algebra; Expressing a logical problem as a Boolean function; Positional number systems; Arithmetic operations; Combinational circuit design using multiplexers and gates; Sequential circuits ndash; Latches, Flip-flops, Ripple counters; Sequence generator using flip-flops; Synchronous counters; Basic constituents of a processor; Simple processor architecture.
+
+
+CSE112 (Credits: 4) 
+Title: Computer Organization 
+Pre-requisite: none
+This course gives the students an opportunity to apply the basic concepts that they had learnt in the Digital Circuit course in designing a simple computing system. It provides basic and generic knowledge of digital computer organization and design at the machine and microprogramming levels with the associated assembly language programming concepts. The curriculum will initially involve assembly language programming in a scaled down version of the MIPS processor followed by a realistic version of the MIPS processor, the pipelined MIPS. The course highlights the design and functioning of the control unit, input-output peripherals, and memory unit.
+
+
+CSE121 (Credits: 4) 
+Title: Discrete Mathematics 
+Pre-requisite: none
+Discrete Mathematics is the study of mathematical structures (objects) which are discrete, distinct in nature. This course provides the mathematical basis for the understanding of computers and modern computation. It is the backbone of computer science and has a lot of applications in cryptography and engineering.
+
+
+CSE201 (Credits: 4) 
+Title: Advanced Programming 
+Pre-requisite: CSE101 ,CSE102
+The Advanced Programming course is a successor to the Introduction to Programming course. This course teaches some advanced programming concepts. It builds upon prior knowledge of students about programming using languages like C. This is going to be an intensive hands-on course and is going to heavily based on programming assignments, labs and practical exams. The course begins with a discussion on Introduction to Object Oriented Paradigm and Programming Concepts. Students will learn the key elements of a typical object oriented application such as objects, classes, messages, interfaces, abstraction, inheritance, encapsulation and polymorphism. We will make use of Java language to demonstrate the concepts. However, the concepts can be applied using other programming languages. After covering the basics of object oriented programming, we will cover advanced Java programming features such as the Basic Error amp; Exception handling, IO amp; Streams, Concurrent programming with Threads , GUI programming, Collections Framework, and unit testing with JUnit. Throughout the course, students will use an integrated development environment like Eclipse and learn to make use of Java documentation and also learn to create documentation, using JavaDoc, with code.
+
+
+CSE202 (Credits: 4) 
+Title: Fundamentals of Database Systems 
+Pre-requisite: CSE102
+A course on fundamentals of database systems. Database Management Systems (DBMS) are an integral component of modern computing environment and applications. This is a first course in databases at the undergraduate level covering fundamentals concepts, aspects of database design, database languages and database system implementation. Students are taught concepts and algorithms in a general setting that is not tied to one particular database system. The course emphasizes both theory and application of database systems. Topics covered in the course are: introduction to the relational model, introduction to SQL, intermediate and advanced SQL, database design using entity relationship approach, data storage and querying, indexing and hashing and transaction management.
+
+
+CSE222 (Credits: 4) 
+Title: Analysis and Design of Algorithms 
+Pre-requisite: CSE102 , CSE121 ,CSE101
+This is the follow-up course to DSA (Data Structures and Algorithm). Here the focus is more on methods to design algorithms, and methods to analyse them for correctness and complexity. Part of the course also covers some commonly used algorithms not covered in DSA. Students learn different algorithmic techniques like greedy algorithm, dynamic programming, divide and conquer as part of tree and graph algorithms. They use these techniques to solve problems both in theoretical design and practical implementation. They are introduced to the notion of NP-complete problems in the later part of the course. Students are encouraged to write programs based on the taught algorithms to solve problems.
+
+
+CSE230 (Credits: 2) 
+Title: System Administration 
+Pre-requisite: CSE131
+This course is intended for second year B.Tech students, who wish to improve skills through hands-on experience in system administration. This course will be followed by another course on Network Administration. Students, who successfully complete these courses, will be offered part-time work for System and Network Admin in the institute and will be expected to work for at least two semesters.
+
+
+CSE231 (Credits: 4) 
+Title: Operating Systems 
+Pre-requisite: CSE102
+Operating system is the interface between the hardware and the user; it is responsible for the management and coordination of activities and the sharing of the resources of the computer. Operating system offers a number of services to application programs and users. Applications access these services through application programming interfaces (APIs) or system calls. By invoking these interfaces, the application can request a service from the operating system, pass parameters, and receive the results of the operation. The course on Operating System has two components: theory and programming. Theory component covers the underline concepts and principles of operating system whereas programming component involves the practical implementation of theoretical concepts.
+
+
+CSE232 (Credits: 4) 
+Title: Computer Networks 
+Pre-requisite: CSE101 ,CSE102
+This is the introductory course in computer networks. It teaches the standard layers in network, circuit and packet switching, protocols at the link layer, routing algorithms, TCP/IP protocol, and new challenges in wireless networks.
+
+
+CSE233 (Credits: 2) 
+Title: Network Administration 
+Pre-requisite: none
+This course is intended for second year B.Tech students, who wish to improve skills through hands-on experience in network administration. This course is a follow up of the course on System Administration. Students', who successfully complete these courses, will be offered part-time work for System and Network Admin in the institute and will be expected to work for at least two semesters.
+
+
+CSE304 (Credits: 4) 
+Title: Practice of Programming 
+Pre-requisite: none
+This course focus on programming techniques related to the most important activities of software development, namely, low level design, coding, debugging, and testing. In particular, the course would emphasize on techniques that would enable the students to write high-quality code for large and complex software. The techniques would be essential to achieve the required level of scalability as well as quality associated with the correctness, security, dependability, performance, portability, and maintainability of programs.
+
+
+CSE312/CSE512 (Credits: 4) 
+Title: Sensing Systems and Data Analytics in Building Energy Management 
+Pre-requisite: none
+This course is designed to allow students to put together an end-to-end system involving software development, hardware design, data collection and data analytics for the upcoming research domain of Cyber Physical Systems (or Internet of Things as some people would prefer to call it). Specifically, the course focusses on Building Energy Consumption within the broader perspective of Cyber Physical Systems.
+
+
+CSE320 (Credits: 4) 
+Title: Advanced Algorithms 
+Pre-requisite: none
+Discrete optimization problems form the basis of solutions to problems in several areas of computer science, operations research and economics. The work-horse of discrete optimization is integer and linear programming. The course will introduce the theory of linear programs, as well as algorithms for solving them. We will then look at fundamental discrete optimization problems, study LP based techniques, as well as specialized combinatorial algorithms for solving these problems. We will also briefly cover integer programming and techniques to solve them. Students may be required to write a survey paper, or do a research project.
+
+
+CSE322 (Credits: 4) 
+Title: Theory of Computation 
+Pre-requisite: none
+The course gives an overview over basic formal grammars and abstract machine models used in Computer Science. In particular, finite automata, pushdown automata, context-free grammars and Turing machines are studied with respect to their properties and limits. Based on Turing machines the concepts of decidability and recursive enumerability are introduced.
+
+
+CSE333/533 (Credits: 4) 
+Title: Computer Graphics 
+Pre-requisite: MTH100 , CSE101 , CSE201 , CSE102 ,CSE222
+This course will provide basic concepts of computer graphics including necessary mathematics and algorithms. Primary focus of this course will be to understand the basics of 2D/3D rendering. The course will also cover various aspects of the rendering pipeline and realistic image synthesis using raytracing. The standard shader based OpenGL rendering API will be introduced, and used with lab exercises, assignments, and projects. The students will learn building complete graphics systems through projects.
+
+
+CSE340/CSE540 (Credits: 4) 
+Title: Image Analysis 
+Pre-requisite: MTH100 ,MTH201
+Course includes fundamental theories and algorithms of digital image acquisition, color representation, sampling and quantization, frequency transform via DFT, enhancement, filtering, restoration, analysis, feature extraction, segmentation, morphological transform, and compression. Practical applications such as JPEG compression will be covered.
+
+
+CSE341 (Credits: 4) 
+Title: Biometrics 
+Pre-requisite: MTH201
+This course will introduce the students to biometrics, its importance and the steps involved in the development of a biometric system. The assignments and projects will involve applying linear algebra and probability based techniques to biometric modalities for basic feature extraction and matching. They will also equip the students with techniques to evaluate the performance of biometric verification or identification systems.
+
+
+CSE342/CSE542 (Credits: 4) 
+Title: Pattern Recognition 
+Pre-requisite: MTH201
+This course will introduce students to salient topics in pattern classification. Fundamentals and advanced theoretical and mathematical concepts related to classification techniques and learning paradigms will be discussed. The programming assignments will provide hands-on experience of implementing some of these techniques. The project component of this course will test the student's ability to design, apply, and evaluate classifiers on appropriate datasets. The application domain for the projects will be from diverse areas such as object recognition, handwritten character recognition, and emotion recognition.
+
+
+CSE343/CSE543 (Credits: 4) 
+Title: Machine Learning 
+Pre-requisite: MTH100 , MTH201 , CSE101 ,MTH203
+This is an introductory course on Machine Learning (ML) that is offered to undergraduate and graduate students. The contents are designed to cover both theoretical and practical aspects of several well-established ML techniques. The assignments will contain theory and programming questions that help strengthen the theoretical foundations as well as learn how to engineer ML solutions to work on simulated and publicly available real datasets. The project(s) will require students to develop a complete Machine Learning solution requiring preprocessing, design of the classifier/regressor, training and validation, testing and evaluation with quantitative performance comparisons.
+
+
+CSE344/CSE544 (Credits: 4) 
+Title: Computer Vision 
+Pre-requisite: MTH100
+This is an introductory course on Computer Vision offered to undergraduate and graduate students. The goal is to develop understanding of the fundamental concepts in computer vision and enable students to understand and develop applications using existing tools. Students will be given theoretical and programming assignments targeted towards solving real-world computer vision problems. Groups of two or three will do a course project and show a demonstration at the end of the semester.
+
+
+CSE421/CSE621 (Credits: 4) 
+Title: Complexity Theory 
+Pre-requisite: none
+Computational problems can be studied from the point of view of computational resources (e.g., running time) required to solve them; "this forms the notional of computational difficulty. Apart from the nature of the problem, the difficulty also depends on the underlying model of computation, including non-deterministic, non-uniform and randomized models. Problems can be related to each other based on their resource usage, and problems with similar difficulty can be grouped together to form a classification of computational problems into complexity classes. Computational complexity is about studying the above concepts, and is especially concerned with giving precise upper and lower bound on the amount of resources required to solve certain problems. This has had a profound impact on current algorithm design and cryptography, and still sees applications in areas outside of theoretical computer science.
+
+
+CSE440 (Credits: 4) 
+Title: Intelligent Systems I 
+Pre-requisite: none
+The development of intelligent software systems is an area that is becoming increasingly important in applied Computer Science. The goals of this course are to enable students: (a) to understand the basic concepts and techniques underlying classical Artificial Intelligence, namely problem solving, search, representation and reasoning, decision making and learning; and (b) to read and to write programs in the Prolog programming language to help understand these concepts better.
+
+
+CSE441 (Credits: 4) 
+Title: Advance Biometrics 
+Pre-requisite: CSE340/CSE540
+The course will utilize the concepts studied in Image Analysis and Pattern Recognition/Machine Learning courses. Project work will involve the implementation of advanced biometric algorithms pertaining to the face, fingerprint, iris, and multimodal modalities.
+
+
+CSE501 (Credits: 4) 
+Title: Designing Human-Centered Systems 
+Pre-requisite: none
+Why are things so hard to use these days? Why does not this thing I just bought work? Why is this web site so hard to use? Why are users not liking my design? Why is my app not getting popular? These are frustrations that we have all faced from systems not designed with people in mind. The question this course will focus on is: how can we design human-centered systems that people find useful and usable? This course is an introduction to designing, prototyping, and evaluating user interfaces. If you take only one course in Human-Computer Interaction, this is the course for you. This course is heavily inspired by the course that Prof. Jason Hong teaches at CMU, Designing Human-Centered Systems.
+
+
+CSE503 (Credits: 4) 
+Title: Program Analysis 
+Pre-requisite: CSE102 ,CSE201
+This course will focus on static and dynamic program analysis techniques that can be used to perform tasks such as program verification, profiling, optimization, repair, and comprehension. The students will learn the concepts behind the techniques, and will apply their learning to develop analyses using the state-of-art tools. Ensuring program correctness can be very challenging. Programmers depend on testing to build some confidence in the expected behavior of programs. Although testing is essential, the complexity as well as the criticality of modern software demands more rigorous techniques, in addition to testing, to ensure software correctness. The properties that programs need to satisfy vary from safety properties to security properties and in terms of expressiveness from simple predicates that check the program states at specific execution points to regular expressions and context-free grammars that check the legality of traversed program paths. In this course, we will focus on program verification and the students will learn about static analysis techniques, i.e., the techniques that can be applied to programs without running the programs as well as about dynamic analysis (or runtime monitoring) techniques that analyze programs during runtime. The students will learn about the strengths and weaknesses of both techniques and may possibly explore ways to combine them to increase their effectiveness. In the static analysis, we will primarily focus on dataflow analysis, and learn about some standard analyses that are used in program verification and optimization. However, the course will also introduce students to some advanced static analysis topics such as symbolic execution, and will cover some topics related to security analysis. We will primarily use Java as programming language and "Soot" as a static analysis tool. In the dynamic analysis part, the students will learn to specify properties of interest mainly using regular expressions and finite state automata, and use "JavaMOP" and aspects to build runtime monitors to check those properties. In the process, they will learn to develop "aspects" to instrument and monitor programs.
+
+
+CSE507 (Credits: 4) 
+Title: Database System Implementation 
+Pre-requisite: CSE102 ,CSE202
+This course covers topics relating to components of a Database System including file structures, access methods, query processing and optimization, transactions, concurrency control, recovery, distributed databases, security and some trend topics (e.g., distributed databases, spatial databases, etc.)
+
+
+CSE508 (Credits: 4) 
+Title: Information Retrieval 
+Pre-requisite: CSE201 , CSE102 ,CSE202
+This course will teach basic concepts, tools & techniques in the field of Information Retrieval (IR) & Search. It will cover theoretical foundations, implementation aspects, issues and state-of-the-art in the area of information retrieval, representation, organization, indexing and categorization. The course will cover topics such as retrieval models, inverted index construction, performance evaluation in information retrieval, search engine architecture, crawling, indexing, ranking, text categorization & clustering In the end, trends and research issues will be discussed
+
+
+CSE521 (Credits: 4) 
+Title: Logic for Computer Science 
+Pre-requisite: CSE322
+This courses introduces formal logics and their applications in computer science. The logics considered in detail are Propositional Logic and First Order Logic for which the concepts of syntax, semantics, satisfiability, validity, and logical deductions are clarified. Proof systems and logic algorithms are studied. Applications within Computer Science are illustrated.
+
+
+CSE522 (Credits: 4) 
+Title: Verification of Reactive Systems 
+Pre-requisite: CSE322
+The course introduces abstract models for concurrent, reactive, non-terminating systems which are used for verification purposes. Various concepts of correctness in terms of equivalence or compliance with formal properties expressed in a temporal logic are considered. Algorithm verifying equivalence or compliance are analysed with respect to their complexity. During the second part of the course the students will use software tools to verify simple systems.
+
+
+CSE523 (Credits: 4) 
+Title: Randomized Algorithms 
+Pre-requisite: CSE102 , CSE121 ,MTH201
+This course studies algorithms which, by design, may not be correct 100% of the time, or run within the stipulated resource always, but definitely do so in an overwhelmingly large number of cases. The course will be split into three main logical sections - tools from probability theory, algorithms which are probabilistic and analysis of deterministic algorithms for different input distributions. Some of the topics include Markov chain, random walk, Monte Carlo sampling, Minimax theorem, Randomised algorithms, Probabilistic analysis of Quicksort and Hashing.
+
+
+CSE524 (Credits: 4) 
+Title: Theory of Modern Cryptography 
+Pre-requisite: MTH201 ,CSE121
+This course introduces students to the theoretical foundations of modern cryptography. We will study multiple notions of security under various models with a focus on provable guarantees of security. We will show how to use primitives having weak security properties to construct schemes satisfying very strong notions of security. The emphasis of the course will be on general principles related to encryption (symmetric amp; public key), digital signature, message authentication and key distribution but, for concreteness, we shall also look at a number of examples and applications. The focus will be analysis of provable properties, using theoretical tools like one-way functions, collision-resistant hashing, pseudorandomness, number-theoretic results. Other advanced topics that could be covered are commitment schemes, zero-knowledge proofs, random oracles, secret sharing, advanced notions of security, and multi-party cryptographic protocols.
+
+
+CSE525 (Credits: 4) 
+Title: Graduate Algorithms 
+Pre-requisite: none
+This course is an advanced form of an introductory algorithms course, and is meant to have a thorough grounding in core Algorithms required for pursuing PG degree in Computer Science. The course covers topics such as asymptotic notation, recurrence relation, graph algorithms, heaps, dynamic programming, greedy algorithms, divide and conquer, NP-completeness where the UG contents of each topic is first reviewed (in a fast-paced manner), and is followed by some advanced content.
+
+
+CSE530 (Credits: 4) 
+Title: Distributed Systems Security 
+Pre-requisite: CSE231 ,CSE232
+The aims of this course are to study the fundamental characteristics of distributed systems, including their models and architectures; the implications for software design; some of the techniques that have been used to build them; and the resulting details of good distributed algorithms and applications.
+
+
+CSE531 (Credits: 4) 
+Title: Multi-agent systems 
+Pre-requisite: none
+Multi-agent systems is the study of interaction between multiple self-interested agents. The aim of this course is to provide an introduction to multi-agent systems, methods and algorithms to analyze several such systems under different settings. In particular, this course focuses on Game theory - cooperative and non-cooperative games, auctions and negotiation based methods. The multi-agent system techniques are general and have wide range of applications like e-commerce, robotics, health management, etc. The main application domain for this course is multi-robot systems.
+
+
+CSE535 (Credits: 4) 
+Title: Mobile Computing 
+Pre-requisite: none
+The Mobile Computing course prepares and trains the students to program mobile devices with understanding or constaints and opportunites that mobile devices offer. The course also aims to provide information on what is latest in research in the field of Mobile Computing.
+
+
+CSE541 (Credits: 4) 
+Title: Advance Biometrics 
+Pre-requisite: none
+The course will utilize the concepts studied in Image Analysis and Pattern Recognition/Machine Learning courses. Project work will involve the implementation of advanced biometric algorithms pertaining to the face, fingerprint, iris, and multimodal modalities.
+
+
+CSE560 (Credits: 4) 
+Title: GPU Computing 
+Pre-requisite: CSE101 ,CSE102
+This course will introduce parallel computing paradigms with focus on GPU programming to harness the massively parallel GPU architecture in solving computationally demanding tasks. The NVIDIA CUDA and industry standard OpenCL frameworks will be introduced and used with most of the labs. This is a project based course where the students will work on scientific computational problems.
+
+
+CSE561 (Credits: 4) 
+Title: Probabilistic Graphical Models 
+Pre-requisite: MTH201
+This course will introduce the basic concepts of probabilistic graphical models. Graphical Models are a unified framework that allow to express and manipulate complex probability distributions in a compact and efficient way. They allow to one to reach mathematically sound conclusions in presence of limited and noisy observations. Many machine learning applications are tackled by the use of these models.
+
+
+CSE601 (Credits: 4) 
+Title: Compilers 
+Pre-requisite: MTH100 , CSE101 ,CSE201
+The course covers principles of compiler design including introduction to compiler technology, overview of compiler followed by in depth study of various phases and component of compilers including lexical analysis, syntax analysis, semantic analysis, intermediate code generation, run time environment as well as machine code generation and optimization. The student will learn writing a complete working compiler in a modular fashion through intensive lab assignments and will be exposed to some advanced topics in compilers.
+
+
+CSE602 (Credits: 4) 
+Title: Program Optimization 
+Pre-requisite: none
+With the emergence of many new computing platforms such as multi-core, GPUs etc. automatic program optimization has taken on a renewed importance. In this course, students will analyze programs and find and leverage opportunities to improve performance, memory footprint, locality etc. The course will cover optimizations such as redundancy elimination, code scheduling, vectorization, data layout and parallelization. A course project using state-of-the-art tools will give students hands-on experience in this area.
+
+
+CSE622 (Credits: 4) 
+Title: Introduction to Quantum Computing 
+Pre-requisite: MTH101 , MTH201 ,CSE222
+This is an introductory course about designing solutions for computation problems using the quantum computing models. It has been shown that these models allow us to solve certain problems more efficiently compared to classical platforms (like Digital circuits or Turing machines). On the other hand, there are certain scenarios where this model is siimlar or even worse than classical platforms. In this course a student will learn about the models and interesting solutions (circuits, algorithms) for some problems from the perspective of computer science. The first half of the course will introduce the postulates of quantum computing, operations and operators and basic structure of circuits and algorithms on the circuit model and the Turing machine model. We will also cover some simple but amazing solutions like quantum teleportation, super-dense coding and Deutsch-Jozsa algorithm. The second half of the course will cover important algorithmic tools like the quantum Fourier transformation, amplitude amplification and eigenvalue estimation and discuss important algorithms like Grover's search, Shor's factoring, BB84 protocol which bring significant efficiency compared to classical algorithms. Depending upon time and interest, some recent advances will be covered. Students may have to read a recent/classical research paper and/or simulate some of their algorithms and circuits on some quantum circuit simulator (e.g., Microsoft LIQUi simulator) to get a better feel about the system.
+
+
+CSE635 (Credits: 4) 
+Title: Programming Cloud Services for Mobile Applications 
+Pre-requisite: CSE231 , CSE232 ,CSE535
+Mobile and Cloud Systems are evolving very fast and have now become very complex system comprising of web services, database integration etc. A knowledge of Cloud Mobile systems and ability to build complete end-to-end systems is essential. Building upon the foundations of mobile computing course, this course aims to provide a thorough understanding of Cloud Mobile systems and also develop capability to build end-to-end systems using a combination of web technologies e.g. JSON, NoSQL databases, REST, HTTP, OAuth etc.
+
+
+CSE638 (Credits: 4) 
+Title: Wireless Networks 
+Pre-requisite: none
+A brief introduction to different applications and their requirements in terms of typical metrics of interest like throughput and delay is followed by lectures on the wireless channel and physical layer (OSI layer 1) technologies, with emphasis on their abstractions as relevant to understanding OSI layers 2 and above in 802.11 like wireless networks. Medium access techniques, for example, as specified in 802.11, a distributed network of nodes (for example, a network of vehicles or sensors in a field) can use to share the wireless medium are taught. Power and rate control, spatial reuse, self-organization, and scheduling in ad hoc wireless networks are taught. Time permitting common routing protocols and TCP over wireless are covered. Most topics involve a mix of analysis and experimentation.
+
+
+CSE642 (Credits: 4) 
+Title: Advanced Pattern Recognition and Machine Learning 
+Pre-requisite: CSE342/CSE542 ,CSE343/CSE543
+This is an advanced course on Pattern Recognition and Machine Learning. It is intended for senior undergraduate and graduate students who already have background in PR or ML. The course is designed as a set of special topics that will be covered through research papers and books. The course will focus on algorithms and models along with providing a good perspective of different real world applications.
+
+
+CSE643 (Credits: 4) 
+Title: Artificial Intelligence 
+Pre-requisite: CSE102
+This is an introductory course in Artificial Intelligence. This course introduces the students to various search techniques, knowledge representation, reasoning, and learning.
+
+
+CSE645 (Credits: 4) 
+Title: Digital and Cyber Forensics 
+Pre-requisite: none
+Host-Based Forensics provides a systematic introduction to the field of digital forensics. The course aims to familiarize students with the forensic process and to apply forensic principles with many tools of the trade. Upon completion of this course, a student should feel confident in participating in a digital forensic investigation. This course focuses on the forensic process (planning, acquisition, analysis, reporting) as it relates to host system forensics. This course will also concentrate on providing introduction to cyber crime and on the collection and analysis of evidence left on the cyber world. A student will feel comfortable with the full scope of a cyber forensic investigation. Class periods will consist of lecture and exercise. Students will learn about the data types that may have forensic value; and will be introduced to several techniques for capturing data off the network and how each option impacts the data that is available. Students will be further presented with several incident response challenges on live networks and be tasked with determining and proving what happened. They will have to collect various logs, network traffic, create timelines, and draw conclusions
+
+
+CSE650 (Credits: 4) 
+Title: Privacy in Location-based Services 
+Pre-requisite: CSE102
+Personalised services for mobile devices are currently hot on wheels due to the ubiquity of these devices and the increasing popularity of personalised services. The most popular form of these services enable us to obtain information on-the-go, information which depend on the spatio-temporal location and the identity of the requesting user. No wonder these services have caught the fancy of global population, and currently, there are many commercial ventures engaged in large business around the world. On the other hand, privacy advocates claim that such services come with an inherent risk of privacy breach in the sense that service is provided based on private information. This course will focus on issues related to these risks of privacy breach from various perspectives such as privacy threats in location based services, different computational notions of privacy, mechanisms to mitigate privacy attacks, tradeoff in privacy and utility in different types of location based services, database algorithms to execute private queries.Students will be assigned some papers each week which they have to present as well as review and implement.
+
+
+CSE694F (Credits: 4) 
+Title: Multimedia Security 
+Pre-requisite: CSE340/CSE540 ,ECE350
+Media Security course introduces the multimedia fundamentals and security related issues such as rights protection, authentication, traitor tracing, forensics, adversarial signal processing, covert communication and surveillance. Overview of different aspects of multimedia security and compression techniques, architectures and standards will be discussed. Some of the course topics are information hiding and its applications, media compression, robustness analysis, encryption, passive forensics, source identification, multimedia signatures and egocentric video forensics, adversarial signal processing, Discrete Fourier/Wavelet Transform, electrical network frequency estimation, visual surveillance, steganography and steganalysis.
+
+
+CSE734 (Credits: 4) 
+Title: Advanced Topics in Mobile Computing 
+Pre-requisite: CSE231
+Mobile Computing research is progressing at a fast pace. While the initial research challenges were about enabling "information anywhere, anytime", we have largely achieved that aim today with mobile devices providing ubiquitous email and web access. With initial goals achieved, mobile computing research now routinely involves use of several other technologies, e.g. cloud computing, sensing and activity inference, opportunistic communications, etc. to create the next-generation mobile computing systems. In this course, through latest research papers, several of these technologies, e.g. external sensor integration, power consumption and analysis, cross-platform applications etc., are studied.
+
+
+CSE749 (Credits: 4) 
+Title: Network Anonymity and Privacy 
+Pre-requisite: none
+Overview of topics to be covered: Historical network anonymity and privacy protocols ndash; MIXes and MIXnets, various theoretical and practical attack strategies against high and low-latency anonymity networks, practical traffic analysis against modern anonymity systems like Tor, Freenet, GNUnet, JAP, defenses against traffic analysis attacks, performance vs anonymity trade-offs, side-channel attacks, covert channel communications, pseudonymity and privacy, Anonymous P2P communication systems (e.g. Oneswarm), traffic analysis against anonymous VoIP communications, Internet censorship and censorship resistance tools and strategies, large-scale Internet surveillance and anti-surveillance, decoy routing.Good part of the first half of the class (about 5 weeks) would involve the instructor giving lectures to students in topics pertinent to the research areas. The remainder of the classes would involve the students presenting relevant papers (of their choice) to everyone in the class. Students (other than the presenter) would be expected to participate in productive discussion about to various challenges of the research topic being discussed. Moreover every week, each student would be expected to submit a weekly write-up which would mostly be either a review or critique of a paper, or some design questions, relevant to the topics covered in the class (e.g. what do you think could be vulnerabilities in the XYZ system that the authors didnrsquo;t mention upfront in the paper and could you suggest ways to defend the system against those vulnerabilities). There would be a mid-term where the students would be tested on topics covered during the lectures. For finals, the students would be expected to write a survey paper, reviewing several papers on a chosen topic.
+
+
+CSE793A (Credits: 4) 
+Title: Topics in Cryptanalysis 
+Pre-requisite: none
+This course aims for analyzing the security of various cryptosystems. The course will befocusing mainly on the fundamentals of cryptanalysis techniques as mentioned: Differential Cryptanalyis; Linear Cryptanalysis; Meet in the Middle Attack; Rebound Attack; Time-Memory Trade-off Attack; Hash function attacks (Damgaard's MD4 attack, Wang's attack on MD4, MD5, SHA-1); Attacks against RSA, Number Field Sieve; Side channel attacks (Cache timing, Fault attacks, Memory remanence); Algebraic attacks; Quantum Attacks (Shor's algorithm, Grover's algorithm) etc.
+
+
+CSE798B (Credits: 4) 
+Title: Special Topics in Database Management: Algorithms in Spatial Databases 
+Pre-requisite: CSE102 , CSE202 ,CSE201
+This course introduces algorithms in spatial databases dealing with storing, retrieving, and reasoning over objects with spatial attributes. The most widely used spatial attribute of a spatial object is its location. Spatial objects may also have extent, such as a line segment or a polygonal area. This course covers index structures and algorithms for solving queries such as NN, RNN, Aggregate NN, Aggregate RNN, Spatial Join, and Skyline Queries.
+
+
+CSE546 (Credits: 4) 
+Title: Applied Cryptography 
+Pre-requisite: CSE121
+In this course on Applied cryptography, we will learn about the following topics:Security notions, adversary powers, Perfect security;Stream ciphers, block ciphers, hash functions;Message authentication;Public key cryptography;Some interesting Cryptograhic protocols;Some mathematics will be required, and will be taught as needed. No background is necessary. Interest in mathematics and theoretical computer science is a prerequisite.
+
+
+CSE640 (Credits: 4) 
+Title: Collaborative Filtering 
+Pre-requisite: MTH100
+Recommender systems have around for sometime. But in recent times with the boom of retail online trade recommendation systems and the hype around the NetFlix competition has made recommender systems a major topic in data mining. In this course we will learn about different aspects of recommender systems with particular emphasis on its algorithms.
+
+
+CSE506 (Credits: 4) 
+Title: Data Mining 
+Pre-requisite: CSE202 , CSE101 , MTH100 ,MTH201
+Data mining aims at finding the useful patterns in large data sets. Interest in the field is motivated by the growth of computerized data collection due to ubiquity of Internet enabled devices. This course will cover a set of techniques designed to be used for finding interesting patterns from the data. The techniques include classification, clustering, association rule minin and sequence mining. Students will learn and use the open source R statistical software, see http://www.r-project.org, and machine learning packages such as Weka in this course.
+
+
+CSE345/CSE545 (Credits: 4) 
+Title: Foundations of Computer Security 
+Pre-requisite: none
+This course provides a principled introduction to techniques for defending against hostile adversaries in modern computer systems and computer networks. Topics covered in the course include Threat modeling; ACL mechanism, Access control list; Access Control; Matrix Types of ACL; network security, including cryptography and cryptographic protocols, firewalls, and network denial-of-service attacks and defenses; Crime-ware addressing issues like phishing, malware, social engineering; Auditing; Multilevel and multi-lateral security Information flow control, MAC, MLS; Security protocols. More advanced topics will additionally be covered as time permits, such as: Program Security; techniques to provide privacy in Internet applications; and protecting digital content (music, video, software) from unintended use.
+
+
+CSE555 (Credits: 4) 
+Title: Introduction to Spatial Computing 
+Pre-requisite: CSE202 ,CSE102
+This course introduces fundamental ideas underlying geo-spatial science, systems and services. These include spatial concepts and data models, spatial query languages, spatial storage and indexing, query processing and optimization, spatial networks and spatial data mining.
+
+
+CSE319/CSE519 (Credits: 4) 
+Title: Modern Algorithm Design 
+Pre-requisite: none
+The field of algorithm design has matured and grown in scope over the last sixty years - starting with the basic algorithmic questions of sorting and searching, to algorithms for problems from various disciplines; so that neary every field of human endeavour is being revolutionized by the algorithmic viewpoint. Students of this course will learn to use these modern tools irrespective of their future field of study or specialization.
+
+
+CSE350/CSE550 (Credits: 4) 
+Title: Network Security 
+Pre-requisite: CSE231 ,CSE232
+Network security complements Security Engineering (CSE352/552) class. While Security Engineering focuses on host centered security postures, issues, and ptential defenses. Network Security approaches computer security from the point of view of network traffic flowing between communication peers, viz. confidentiality, system availability, authenticating and authorizing user accessing a networked service, access controls, anonymity and privacy.
+
+
+CSE600A/ECE600A (Credits: 2) 
+Title: Object Oriented Programming and Design 
+Pre-requisite: none
+It is a 2 credit postgraduate level core course in advanced object oriented programming, designed to improve programming skills, and ability to use contemporary software development practices and tools. The course curriculum focuses on large software development, collaborative development environment, automatic testing and deployment, common libraries and continuous integration. It also aims to enhance the quality of design in terms of scalability and maintainability with design principles and design patterns. Along with course, students get an opportunity to learn development tools like IDEs and common frameworks.
+
+
+CSE576 / ECE576 (Credits: 4) 
+Title: Smart Sensing for Internet of Things (IoT) 
+Pre-requisite: none
+This course will introduce students to sensors and sensing systems that are in the "real-world" and are increasingly connected to the internet and are accessible via web technologies. The objective of the course is to understand IoT sensing systems, protocols, and technologies. An integral part of the course will be a IoT project that the students will have to design, build and demonstrate. The final project will span the full research cycle - from problem formulation to obtaining & analyzing results to paper writing.
+
+
+CSE131 (Credits: 4) 
+Title: System Management 
+Pre-requisite: none
+This course exposes the students to how a computer functions, and how they can manage their own systems. Starting with an Operating Systems installation, dual-OS installation and OS installation on a virtual machine, to knowing Linux commands, writing shell scripts, using tools such as sed and awk, connecting the machine to the network, setting up WiFi, understanding networking, setting up a website, use of Internet tools, cloud based systems, the course covers a vast ground.
+
+
+CSE510A (Credits: 2) 
+Title: Big Data Analytics 
+Pre-requisite: CSE102
+Distributed processing frameworks have emerged as a feasible and cost effective way of analyzing the increasing volume of data. This course provides a solid understanding of two of the most popular of distributed processing frameworks - Hadoop and a more recent incarnation called Spark. Examples and hands-on exercises will prepare those taking this course to be able to apply these frameworks in practice.
+
+
+CSE528A (Credits: 2) 
+Title: Convex Optimisation 
+Pre-requisite: CSE344/CSE544
+This short course is to introduce students (final year UG+ PG) to the world of optimisation, specifically through convex problems. Knowing which problems are Convex will help them to quickly decide on various tools available to solve them. They will also learn about various problems in domains of signal processing, machine learning and communications.
+
+
+CSE641 (Credits: 4) 
+Title: Deep Learning 
+Pre-requisite: none
+Recent advances in machine learning and specifically deep learning techniques have made it a popular and often a default option in many problem domains. The objective of this course is to introduce students through some of the latest techniques in deep learning. The focus of the course will be hands on and the students should be able to design intelligent deep learning systems for solving the problems in the area of their interests.
+
+
+CSE502 (Credits: 4) 
+Title: Foundations of Parallel Programming 
+Pre-requisite: CSE101 , CSE102 ,CSE201
+Constrained by the heat and power usage, today all computing devices are composed of multicore processors, with little or no increase in clock speed per core. In order to harness the power of the multicore processors, software applications being developed also needs to be parallelized. This makes parallel programming a very important paradigm of computing.This course introduces the fundamentals of parallel programming. It will cover both traditional approaches and new advancements in the area of parallel programming. A key aim of this course is to provide hands-on knowledge on parallel programming by writing parallel programs in different programming models taught in this course.
+
+
+CSE633 (Credits: 4) 
+Title: Robotics 
+Pre-requisite: none
+The goal of this course is to provide comprehensive knowlege is robotic from theory to implementation. The course will cover transformations, planning in discrete and continuous spaces, collision avoidance, localization, and vision-based control. We will use ROS as the software platform on which the simulations will be carried out and the projects can be carried on hardware. ROS allows seemless integration from simulation to real-world implementation.
+
+
+CSE552 (Credits: 4) 
+Title: Security Engineering 
+Pre-requisite: CSE231
+This course is designed to present the students a "host" centric approach to various aspects of computer software security. Broadly, the course would cover: Traditional multi-level security models (Bell La-Padula, Biba etc.), access controls, security in traditional computer programs and attacks against them (buffer/heap overflow attacks), defences against such attacks, writing secure programs (Secure Coding), Viruses/Malware and Trojans, OS level hardening, application and system level security primitives and APIs, cryptographic system primitives and APIs (how to (not) use (and break) them), system level authentication frameworks, introduction to allied topics-IDS, network security etc.
+
+
+CSE565 (Credits: 4) 
+Title: Software Defined Networking 
+Pre-requisite: CSE232
+Traditionally, networking equipments consists of proprietary switching hardware with embedded software. This not only made manageability of networks complex but also stymied innovation. SDN paradigm proposed to change this, primarily by separating networking software into data and control planes. The data plane's goal is to do switching in distributed hardware equipments. The control plane centrally governs what will be the switching rules at the data plane. As the control plane is separated from the switching hardware, it is easier to change its software, thereby speeding up software development cycle and in turn lowering the barrier for innovation. The separation of planes and centralization of control plane simplifies manageability of networks. In addition to these two benefits, SDN also facilitates network virtualization, which is a key enabler Cloud Computing. In this course, we will begin by getting familiarized to the aforementioned functions in the traditional networks. We will then learn how SDN changes the way networks will function now. We will look at open source technologies that enable deployment of SDN on real hardware and in simulation. We will see how all of networking functions, e.g. switching, routing, firewall, load balancers, and VPN, are instrumented in the new paradigm. We will explore SDN via lectures from the instructor, assignments, presentations of research papers by students, and a course project.
+
+
+CSE609 (Credits: 4) 
+Title: Statistical Computation 
+Pre-requisite: MTH201
+The objective of this course is to provide knowledge about concepts and methods of statistical analysis. Data can be generated by machine or manually collected during surveys. All kinds of data-sets need analysis to the point such that we can make conclusions about the trend in the data. Hence statistical modelling and inference is often needed. Recently multiple kinds of statistical modelling approach have been suggested. Some statistical methods have been implemented as tools while some are implemented by users according to need of data-analysis. This course would provide the basics of statistical inference and methods introducing some computational techniques to perform modelling of systems. Through this course student will also learn about weakness and strength of such statistical modelling methods which could guide them to distinguish or develop suitable analysis techniques.
+
+
+CSE5TAC (Credits: 4) 
+Title: Topics in Adaptive Cybersecurity (TAC) 
+Pre-requisite: CSE345/CSE545 ,CSE350/CSE550
+This course focuses on providing students an interactive discussion based learning platform for exploration of topics in adaptive cyber security. The learning will be through instruction, course project and more importantly through discussions on student(s) presentation of assigned research papers. The instruction part of the course will cover basic contents required to understand the course materials, including topics such as threat intelligence, situational awareness and real-time adaptive security. Through this course, students can learn the state of the art and open problems in adaptive cyber security, thus enhancing their potential to perform research or pursue a career in this emerging area.
+
+
+ECE112 (Credits: 4) 
+Title: Computer Organization 
+Pre-requisite: none
+This course gives the students an opportunity to apply the basic concepts that they had learnt in the Digital Circuit course in designing a simple computing system. It provides basic and generic knowledge of digital computer organization and design at the machine and microprogramming levels with the associated assembly language programming concepts. The curriculum will initially involve assembly language programming in a scaled down version of the MIPS processor followed by a realistic version of the MIPS processor, the pipelined MIPS. The course highlights the design and functioning of the control unit, input-output peripherals, and memory unit.
+
+
+ECE214 (Credits: 4) 
+Title: Integrated Electronics 
+Pre-requisite: CSE111/ECE111 , ECE113 ,DES130
+The course focuses on building the ability to analyze and design electronic circuits. This course starts with an overview of semiconductor technology. Subsequently it covers Bipolar Junction Transistor (BJT), Small Signal BJT models, BJT based amplifiers, Metal Oxide Field Effect Transistors (MOSFET), Small Signal MOS models, MOSFET based amplifiers; and analog and digital circuits and applications. Design and lab exercises are also significant components of the course.
+
+
+ECE230 (Credits: 4) 
+Title: Fields and Waves 
+Pre-requisite: MTH100
+This is an introductory course to electrodynamics (along with electrostatics and magnetostatics). This course will serve as a foundational course for students interested in working in RF and micro-wave, millimeter wave and optical systems.
+
+
+ECE240 (Credits: 4) 
+Title: Principles of Communication Systems 
+Pre-requisite: ECE250 ,MTH201
+The course is intended to be a broad introduction to Communication Systems. The course will develop understanding of the principles underlying communication systems, describe basic methods for communication and develop requisite mathematical background required for noise analysis of communication systems. The lectures will be supplemented by PyLab simulation exercises, a final term paper/project.
+
+
+ECE270 (Credits: 4) 
+Title: Embedded Logic Design 
+Pre-requisite: none
+This course will introduce students to the various programmable logic devices (PLDs) available in the market and get them started with how to program such devices to develop simple applications. First half of this course will be targeting MCU programming and the second half will cover FPGA programming and synthesis.
+
+
+ECE344/ECE544 (Credits: 4) 
+Title: Computer Vision 
+Pre-requisite: none
+There are three main objectives of this course: (i) to introduce the fundamental main concepts/techniques of computer vision, (ii) to enable the students to understand related literature, and (iii) to enable the students to implement solutions for realistically compound applications. Topics include image analysis concepts, including wavelets, image transformations (e.g., warping, morphing, and mosaics), object segmentation, visual recognition/ description methods, structure from motion, video analysis, depth from stereo, medical imaging, and computational photography.
+
+
+ECE431/ECE631 (Credits: 4) 
+Title: Antenna Theory and Design 
+Pre-requisite: ECE230
+The course aims to introduce the principles of antenna theory and design as well as wave propagation to senior undergraduate and graduate students who have a background in fundamental electromagnetics. The course will enable the students to understand the operation of common antennas and provide them an opportunity to design and test antennas. Thus the course will combine both the theoretical and practical aspects of antenna design. This course may be useful to students interested in implementing wireless systems (communications and radar).
+
+
+ECE452/ECE552 (Credits: 4) 
+Title: Statistical Signal Processing 
+Pre-requisite: MTH101 ,ECE501
+This post graduate course is designed to cover techniques for statistical signal processing, detection and parameter estimation. It will briefly review the preliminaries on linear algebra and statistics. The rest of the course is broadly divided into three parts. The first part will deal with the design, implementation and performance evaluation of detectors; this would cover composite and M-ary hypothesis testing. The second part of the course deals with estimation techniques like Maximum Likelihood, MAP and MMSE estimation. The third part introduces adaptive filtering approaches; this will cover stochastic and data-driven approach with emphasis on least squares based techniques. Homework will be a mix of theory and programming assignments.
+
+
+ECE470/ECE670 (Credits: 4) 
+Title: Robotics 
+Pre-requisite: none
+A fully functional outdoor robot system requires a physical structure (robot), motors for movement (propulsion), sensors to interact with the real-world (sensing systems/actuation), uncertainty (filters) and intelligence to perform actions (motion planning and decision-making). The course will cover each of these topics with theory and experiments. The experiments are designed such that the implementation of the experiments in a systematic manner will enable the students to completely program a robot and perform basic intelligent tasks for outdoor navigation.
+
+
+ECE501 (Credits: 4) 
+Title: Probability and Random Processes 
+Pre-requisite: ECE240
+The course will provide students with an in depth introduction to stochastic processes with applications in electrical engineering. A review of axioms of probability, single and multivariate distributions, and	functions of random variables will be followed by study of fundamental theorems like Markovrsquo;s inequal-ity, Chebyshevrsquo;s inequality, Chernoffrsquo;s Bound, weak and strong law of large numbers (convergence in probability and almost sure convergence), mean-squared convergence, convergence in distribution, the	central limit theorem, random waveforms, stationarity, ergodicity, linear systems with stochastic inputs,	autocorrelation and the power spectrum. Along the course we will also look at examples like the Weiner process, Poisson process and Markov Chains.
+
+
+ECE512 (Credits: 4) 
+Title: Introduction to VLSI Design 
+Pre-requisite: ECE221 ,DES130
+Introduction to Digital Design of integrated circuits with emphasis on high-performance (low power and high-speed).
+
+
+ECE516 (Credits: 4) 
+Title: System on Chip Design and Test 
+Pre-requisite: ECE512
+This course introduces students to design trends in deep submicron (DSM) era, including scaling trend, clock cycle and power issues; Role of interconnects in contemporary SoC Design; System-on-Chip and platform-based design ndash; IP-based design and reusability, Multiprocessor SoC platform design, 3D integration, on-chip optical and wireless communication, Design for testability (DFT), Test Access Mechanism (TAM), concept of core-based test amp; IEEE P1500 standard for SoC test; Importance of Power and Low power SoC design methodology. A course project using state-of-the-art computer aided design (CAD) tools in VLSI gives students hands-on experience of the most current technology/process.
+
+
+ECE528S (Credits: 4) 
+Title: Special Topics on RF Circuits Design 
+Pre-requisite: ECE321 ,ECE521
+This course will build on the knowledge gained and skills developed in RF Circuit Design (ECE321/521). It is primarily a course that takes the participants to the latest advancements in the domain of RF components, circuits, and systems at wireless and wireline frequencies. The main emphasis of the course is on the advances in design technologies on passive and active planar RF Circuits such as coupler, switch, filter, power divider, and power amplifier. The salient feature includes a project component on ldquo;design of multi-band design techniquerdquo; using industry standard tool ADS and the subsequent fabrication and measurement. The complete design cycle will equip the students with the skills required for component prototype development and measurement/characterization.
+
+
+CSE538 (Credits: 4) 
+Title: Wireless Networks 
+Pre-requisite: none
+The course provides an in depth introduction to the state-of-the-art modeling of wireless networks, their simulation, and experimentation.
+
+
+ECE539 (Credits: 4) 
+Title: Wireless System Implementation 
+Pre-requisite: ECE240
+This course will help the students to design and implement a basic wireless communication system. Starting with the large scale propagation models, the students will study the modelling of wireless channel as a linear time varying filter, statistical multipath models and wireless Digital Modulation/ Digital Demodulation techniques. The performance of the digital modulation techniques in Rayleigh fading channel, and with different spatial diversity techniques will also be studied. Moreover, the course will also highlight the trade-off associated between single-carrier and multicarrier (e.g. OFDM) modulation techniques. . The course also involves a hardware (NI USRP) / software (using Matlab) project where the students will validate the theoretical concept studied during lectures.
+
+
+ECE553 (Credits: 4) 
+Title: Advanced Signal Processing 
+Pre-requisite: none
+This course introduces advanced time domain (statistical) and transform domain methods in signal processing. This is mainly a course on non-linear signal processing. A small portion of this course is dedicated statistical signal processing techniques like ARMA estimation, Kalman Filter and Hidden Markov Model. The main focus of this course is on inverse problems. A majority of modern signal processing problems can be recast as inverse problems - deblurring, deconvolution, denoising, reconstruction etc. to name a few. The course introduces the students to powerful optimization based non-linear inversion and filtering techniques.
+
+
+ECE570 (Credits: 4) 
+Title: Control Theory 
+Pre-requisite: none
+The goal of this course is to provide fundamental knowledge in control systems. This course covers modelling a system, analyzing the response of the system in time and frequency domain, and designing a feedback controller to control the system. The course will have an equal weight on theoretical foundations and simulation based implementation.
+
+
+ECE573 (Credits: 4) 
+Title: Advanced Embedded Logic Design 
+Pre-requisite: CSE112 ,ECE270
+At first this course will expose students to concepts of an object programming language such as C++, which serves as the foundation to implement designs in SystemC. Using a high level programming language with additional hardware support in industrial projects, result in shorter development timings, easier verification and earlier availability of design models. 
+After a brief excursion into assembler languages and compiler tool chains, the students will be introduced into various existing and upcoming computer architectures. Among others, this course will focus on reconfigurable architectures such as FPGAs and Coarse-Grained Reconfigurable Architectures (CGRAs), data flow and control flow execution paradigms, and current research problems in these areas.
+Using SystemC in assignments the students will build their own CGRA, comprised of computational resources embedded in an interconnect such as a Network-on-Chip (NoC). Algorithms are hand-compiled into a language understood by the self-developed CGRA and performance measurements in terms of latency and throughput are extracted and compared.
+
+
+ECE672 (Credits: 2) 
+Title: Stochastic Estimation and Control 
+Pre-requisite: ECE501
+This course deals with the estimation and control of dynamical systems. We will begin with an introduction of probability, random variables, stochastic differential equations, and basics in parameter estimation. These concepts will then be applied to state-space descriptions of linear systems following up to the Linear Quadratic Gaussian (LQG) controller and Kalman filter. Nonlinear estimation methods such as the extended Kalman filter and particle filter will be introduced.
+
+
+ECE315/ECE515 (Credits: 4) 
+Title: Analog CMOS Circuit Design 
+Pre-requisite: none
+This course introduces the basic analog building blocks and quantifies their performance parameters. More advanced circuits are derived from these basic building blocks. Concepts of feedback and stability are introduced to enable analysis of complex circuits. The course also includes a self-learning lab component in which the students are expected to learn circuit simulation and design tools such as LTSpice, Eldo, Cadence Analog Suite etc. A design project is an essential component of this course.
+
+
+ECE113 (Credits: 4) 
+Title: Basic Electronics 
+Pre-requisite: none
+The course introduces the topics of (a) Circuit elements - active, passive, time-variant, time - invariant, linear, non-linear, unilateral, bilateral;(b) Sources - independent and dependent;(c) Electric circuit and analysis - Ohm's law, Kirchhoff's laws, loop and node analyses, limitations of lumped circuit analysis;(d) Network theorems - Superposition, Thevenin, Norton, Maximum power transfer;(e) Natural and forced responses to DC excitation - RL, RC and RLC circuits; Sinusoidal steady state analysis;(f) Designing basic circuits using operational amplifiers;(g) Basic circuits using diodes
+
+
+ECE215 (Credits: 4) 
+Title: Circuit Theory and Devices 
+Pre-requisite: none
+This course intends to develop problem solving skills and understanding of circuit theory through the application of techniques and principles of electrical circuit analysis to common circuit problems. Subsequently, most common aspects such as filter realization and stability will be elaborated through frequency response analysis, feedback topologies etc. Broadly, the goals of the course are to inculcate understanding of: (a) waveforms, signals, transient, and steady-state responses of RLC circuits, (b) the ability to apply circuit analysis to AC circuits, and (c) advanced mathematical methods such as Laplace and Fourier transforms along with linear algebra and differential equations techniques for solving circuits problems.
+
+
+ECE636 / CSE636 (Credits: 4) 
+Title: Communication Networks - An analytical approach 
+Pre-requisite: MTH201
+The course introduces the student to analytical tools that help understand the performance of various aspects of a communications network. We will analyze various aspects of the layer 2 of the OSI model, including automatic repeat request, multiple access, and flow control. We will learn how to apply simple queueing models to analyze the delay and throughput performance of networks. Finally, we will analyze the performance of the transmission control protocol (TCP). It is hoped that the exposure to analysis will help us design good real world protocols.
+
+
+ECE454 / ECE554 (Credits: 4) 
+Title: Compressive Sensing 
+Pre-requisite: MTH100
+This is a senior UG / PG level course on Compressed Sensing. Compressed Sensing (CS) is most talked about topic in signal processing today and is taught in all the top universities across the world. CS is the study of under-determined linear inverse problems where the solution is typically a lower dimensional many fold embedded in a higher dimensional space. The most prominent examples being - a sparse solution or a low-rank solution. Today compressed sensing permeates not only signal processing and applied maths but also encompasses a variety of topics in machine learning and computer vision. This course is open to both CS and ECE students.
+
+
+ECE340 (Credits: 4) 
+Title: Digital Communication Systems 
+Pre-requisite: ECE240
+This course will introduce students to the fundamental blocks that constitute a digital communication system. Starting with the analog to digital conversion block, the students will study the functionalities of the blocks such as Digital Modulator/ Digital Demodulator, Channel Encoder-Decoder. The performance of various digital modulation schemes in AWGN channel will also be studied. Moreover, the course will also highlight the trade-off associated with bandwidth and power for various channel coding and digital modulation schemes. The course will also lay a foundation for designing optimum receivers for digital communication system in presence of AWGN channel
+
+
+ECE510 (Credits: 4) 
+Title: Digital Hardware Design 
+Pre-requisite: ECE270
+Field programmable gate arrays (FPGAs) are first choice for implementation of digital systems due to their distributed and parallel architecture. FPGAs also allow complete control over arithmetic world-lengths and dynamic partial reconfigurability thereby leading to optimal computational efficiency. Integration of FPGA with ARM processor has led to significant interests in Zynq SoC because of their usefulness in applications such as software defined radios, cellular base stations, datacenters, video processing and computer vision etc. In this course, students will learn how to implement algorithms in an FPGA using Verilog. Though this course assumes prior knowledge of digital design and Verilog, first couple of weeks will be dedicated to revise these concepts. Labs and assignments will focus on developing working programs that use various features and ports of FPGA boards (ATLYS and Zedboard) including VGA, UART, memory etc. Couple of weeks will be dedicated to Zynq SoC which integrates ARM dual Cortex-A9 based processor system with Xilinx 7-series FPGA. Tutorials on Zynq programming using Vivado will motivate the students to take advanced FPGA courses.
+
+
+ECE351 (Credits: 4) 
+Title: Digital Signal Processing 
+Pre-requisite: ECE250
+Course includes the fundamentals of discrete-time signal and systems; sampling and quantization theory; transform domain techniques - DTFT, z-Transform, DFT and DCT, and their relationships; fast computation algorithms via FFT; IIR and FIR filter design techniques; filter implementation structures.
+
+
+ECE314 / ECE514 (Credits: 4) 
+Title: Digital VLSI Design 
+Pre-requisite: none
+This course introduces students to CMOS circuits, develops first-order current-voltage and capacitance-voltage models for transistors, transfer characteristics of CMOS inverter, performance estimation for circuits through logical effort, interconnects, combinational circuit design, circuit families, sequential circuit design including clocking and latching techniques, design of datapath subsystems (adders, shifters, multipliers etc.), design of memory subsystems. A course project using state-of-the-art computer aided design (CAD) tools in VLSI gives students hands-on exposer to the most current technology/process.
+
+
+ECE543 (Credits: 4) 
+Title: Principles of Digital Communications 
+Pre-requisite: ECE240
+Optimal receiver designs for digital communications using statistical communication theory principle, Using Signal Space concepts for optimum receiver design, Multiple access systems like CDMA and OFDM, Using MIMO to achieve Receive &Transmit Diversity and multiplexing gains
+
+
+CSE536 / ECE580 (Credits: 4) 
+Title: Robotic Systems 
+Pre-requisite: none
+This is an online course offered by University of Pennsylvania (UPenn) as part of robotics specialization in coursera . The course will have three modules - Perception, Estimation and Learning, and Aerial Robotics. Each module lasts for 4 weeks. The course will have a project using robots (simulated or hardware) which is monitored at IIITD. In the Aerial robotics module, the basics of quadrotor flying and how to control it are the main components. In the perception module, some essential elements of computer vision applied to aerial robots are taught, while in estimation and learning module - designing estimation filters for localization and mapping along with their implementation are taught. Each module has several assignments.
+
+
+ECE250 (Credits: 4) 
+Title: Signals & Systems 
+Pre-requisite: MTH100
+This course introduces the concepts of continuous and discrete time signal representation, Linear Time Invariant Systems (LTI), Fourier series representation of periodic signals, continuous and discrete time Fourier transform, Laplace and Z-transforms and their application.
+
+
+ECE518 (Credits: 4) 
+Title: Solid State Devices 
+Pre-requisite: none
+This course provides fundamental knowledge required for many other courses in Analog, digital and Mixed signal IC design (Analog CMOS Circuit Design, Mixed Signal Design, Low Power Design and Digital VLSI Design). The course starts with an overview of semiconductors and their conduction mechanism. Then explains PN junction formation and operation of various types of two terminal semiconductor devices and BJTs. The discussion will be extended to MOSCAP and MOSFETs, which are very important elements in the modern IC design. In addition MOSFET short channel effects will also be explained as they are becoming highly significant with technology scaling. Fabrication process will also be covered.
+
+
+ECE513 (Credits: 4) 
+Title: VLSI Design Flow 
+Pre-requisite: none
+The objective of this course is to develop a basic understanding of the methods, tools and technologies that go into transforming an "idea" into an "integrated circuit". This course is intended to give an overall perspective of the VLSI design flow, going through various stages of designing such as synthesis, floorplanning, placement, routing etc. and various steps of verification such as simulation, formal methods and timing/power analysis. In this course, ample opportunities will be provided to employ the-state-of-the-art CAD tools and gain a practical understanding of the VLSI design flow. A few representative algorithms that work inside the CAD tools will also be discussed.
+
+
+ECE5AD (Credits: 2) 
+Title: Autonomous Driving 
+Pre-requisite: ECE570
+The goal of this course is to provide hands-on-experience in implementing several modules of autonomous driving through software-in-the-loop and hardware-in-the-loop. This is a project-based course and covers modules on perception, path planning, and vehicle control for autonomous driving. The course is mainly designed towards implementation and hence intensive programming is involved in C++ or Python. The course will use Mahindra e20 and auto-rickshaw as the hardware testbeds.
+
+
+CSE111/ECE111 (Credits: 2) 
+Title: Digital Circuits 
+Pre-requisite: ECE113
+Introduction to Digital Circuits. The aim of the course is to get the students thrugh the process of Digital Circuit Design after introducing the students to signal representation,Boolean Algebra, Logic Gates and Design with Logic Gates. Give them the awareness of Combinationaland Sequential Circuits and their Design approaches. The students will be exposed to Pipelining concepts and an introduction to Semiconductor Memories.
+
+
+ECE5INE (Credits: 4) 
+Title: Introduction to Nanoelectronics 
+Pre-requisite: none
+Nanoelectronics is an interdisciplinary area of research which has a huge potential and is currently attracting a great deal of attention. The objective of this course is to understand the basic principles that govern the operation and electrical characteristics of nanoelectronic devices and become familiar with the recent research being undertaken in nanoelectronics.
+
+
+ECE612 (Credits: 4) 
+Title: Mixed signal Design 
+Pre-requisite: ECE315/ECE515 ,ECE213
+This course teaches mixed signal circuits, which are very important bolcks in many modern processors. It covers switched capacitor circuits, comparators, different types of DACs, nyquist and over sampling ADCs.
+
+
+ECE343 (Credits: 4) 
+Title: Mobile Communications 
+Pre-requisite: ECE240
+The wireless telecommunications industry has grown tremendously since first cellular system was developed in 1983. Systems evolved from providing voice (2G) to all-IP data networks (4G), creating a need for researchers and engineers with knowledge about cellular radio systems and digital wireless communications techniques. Wireless systems that provide personal and M2M communications constitute a major research area of vital importance. The course will provide important knowledge to students who wish to work in wireless communications or wish to enter the telecommunications industry. The course is mainly focused at physical layer and includes fundamental theory, design trade-offs and practical issues of high capacity cellular communications systems. Trunking, RF propagation, frequency reuse, co channel interference management, hand-off, dropped calls and design of CDMA systems.
+
+
+ECE534 (Credits: 4) 
+Title: Optical Communications Systems 
+Pre-requisite: ECE240
+To introduce students to the fundamental principles of modern fiber-optic communication systems which include components and system design of optical fiber communication and apply these principles to calculate system performance. Topics include step-index fibers, graded-index fibers, fiber modes, single-mode fibers, multimode fibers, dispersion, loss mechanics, fiber fabrication, light-emission processes in semiconductors, light-emitting diodes, laser diodes, modulation response, source-fiber coupling, photo-detectors, receivers, receiver noise and sensitivity, system design, power budget and rise-time budget, Optical networks, wavelength division multiplexing (WDM) and coherent optical communications.
+
+
+ECE432 /ECE632 (Credits: 4) 
+Title: Radar Systems 
+Pre-requisite: none
+The course aims to introduce the principles of radar systems to senior undergraduate and graduate students. The course will combine system perspectives, radar phenomenology concepts such as radar cross-section and clutter, and popular waveform design and signal processing techniques. The course will conclude with a brief discussion of common radar applications (weather radar, police radar, air traffic control etc.)
+
+
+ECE5WC (Credits: 4) 
+Title: Wireless Communication : Evolution from 3G to 5G 
+Pre-requisite: ECE240 
+This course will focus on past and current research issues in wireless communication, specifically evolution of techniques that led to development of cellular standards from 3G to 5G, and Wi-Fi standards from IEEE 802.11a to IEEE 802.11ac. This course will introduce students to channel capacity in non-fading and fading channel conditions, multiple access techniques (including multiple antenna systems), cellular system design, and advanced wireless techniques such as Multi-user MIMO, Carrier Bonding/ Aggregation etc. Lectures will be based on required reading from textbook / reference book sections, magazine and journal articles or supplemental handouts. Active class participation is mandatory - required reading must be done before class, and in-class time will be divided between lectures, group discussions and on-spot presentations. The course grade will be based on class participation, several paper surveys based on the required and supplemental reading, several homework assignments based on the required reading, end semester exam and a final project.
+
+
+MTH100 (Credits: 4) 
+Title: Maths 1 
+Pre-requisite: none
+This first level math course covers basics of linear algebra including vector spaces, matrix algebra, linear transformations, eigenvalues and eigenvectors, orthogonality, properties of symmetric matrices, positive definite matrices, and SVD. The course is developed with an aim to provide a strong foundation in linear algebra which will be used in the subsequent curriculum by both CS and ECE students. Time permitting, some applications of linear algebra in engineering disciplines will be introduced. The course also attempts to increase the mathematical maturity of students by introducing proofs and mathematical rigour.
+
+
+MTH201 (Credits: 4) 
+Title: Probability and Statistics 
+Pre-requisite: none
+The objective of this course is to provide the students basic knowledge about probability and statistics with applications. The course will include probability theory, discrete and continuous distributions, stochastic processes and Markov chains. The study of these topics will prepare the background of students to pursue statistical theory or methodology and analyze data in any stream of computer science. The students will also be able to gain some experience with a statistical software tool.
+
+
+MTH203 (Credits: 4) 
+Title: Math 3 
+Pre-requisite: none
+The course is intended to cover topics in multivariable calculus, complex variables and vector calculus. The topics included are those required for concurrent or subsequent courses in signals and systems, electro-magnetic theory and mathematics which most of these students will have to take as core courses.
+
+
+MTH204 (Credits: 4) 
+Title: Maths IV (ODE/PDEs and Numerical Methods) 
+Pre-requisite: none
+The course is intended to cover the essential topics in differential equations and numerical methods required for concurrent or subsequent courses in the ECE curriculum.
+
+
+MTH302 (Credits: 4) 
+Title: Algebra 
+Pre-requisite: none
+The purpose of the course is to introduce abstract algebra and the most important algebraic structures: groups, rings and fields. Abelian groups, dihedral groups, and permutation groups are treated in some detail. The field theory portion concentrates on finite fields. Applications to number theory, computer science and other branches are introduced briefly.
+
+
+MTH303 (Credits: 4) 
+Title: Graph Theory 
+Pre-requisite: none
+This is an introductory course on the theory of graphs. The primary focus is on understanding graph properties, learning common proof techniques and studying relations between various graph parameters. Topics include graph fundamentals, matching, trees, cuts, coloring, planar graphs etc.
+
+
+MTH401/MTH601 (Credits: 4) 
+Title: Modeling Complex Systems 
+Pre-requisite: MTH101
+Synchronization in fireflies, schooling in fish, and formation of snowflakes are all examples of complex patterns that emerge from a large number of components interacting through simple rules. These patterns arise in the absence of a central control and continue to do so even if existing components are removed or new ones are added. In this course, we will use mathematical models to understand the rules that give rise to such patterns. Starting with the motivation on why we should model anyway, we will simulate examples of complex systems using methods from population dynamics, self-propelled particles, networks, and cellular automata. The course will consist of weekly lectures and labs, and a final project where you will get to model a system of your choice. Knowledge of undergraduate level calculus, linear algebra, and basic programming (preferably in MATLAB) is required. The objective of this course is to help the student better understand the emergence of complexity in nature and the intuition to take a first crack at modeling a complex system.
+
+
+MTH502 (Credits: 4) 
+Title: Number Theory 
+Pre-requisite: none
+This course provides an introduction to number theory. Topics include primes, congruences, quadratic reciprocity, diophantine equations, irrational numbers, continued fractions and elliptic curves.
+
+
+BIO301/BIO501 (Credits: 4) 
+Title: System Biology 
+Pre-requisite: none
+According Trey Idekker, a pioneer in systems biology, explains systems biology as the use of data from genomic, proteomic and metabolomic technologies to construct mathematical models of complex biological systems and diseases. These approaches have recently become more powerful that requires tremendous skills in modeling techniques. So there is a need to provide a well rounded understanding of signalling networks, small scale genetic networks and its properties. This course aims to provide the understanding of the role of these networks and its implications in biological systems through the construction of simple mathematical models.
+
+
+BIO303/BIO503 (Credits: 4) 
+Title: Introduction to Mathematical Biology 
+Pre-requisite: MTH101 ,MTH102
+The aim of this course is to introduce mathematics as applied in quantitative study of biological systems. Use of ordinary and partial differential equations (ODEs and PDEs) will be emphasized in this course. Both exact and numerical solution of ODEs will be discussed. We also plan to briefly introduce dynamical systems theory to elucidate the behavior of ODE solutions. Application of mathematical approaches in biological data analysis and to solve problems of biomedical / technological relevance will be discussed.
+
+
+BIO400/BIO600 (Credits: 4) 
+Title: Foundations of Biology - II 
+Pre-requisite: MTH201
+This is the second foundational course for the minor program in computational biology. This course aims to cover the basics of molecular biology and traditional classical genetics, which are the two pillars of modern biology (Other two being cell biology and biochemistry, and these are extensively covered in FOB-I). While the molecular biology part will be qualitative in nature, the classical genetics part will be quantitative, where students will learn to use the techniques from probability and statistics to predict the occurrence of various phenotypes.
+
+
+BIO505 (Credits: 4) 
+Title: Introduction to computational neuroscience 
+Pre-requisite: MTH101 ,MTH102
+This course is in two parts. In the first part that constitute the 2/3 of the course, students will be introduced to the human nerve cell and the analytical mathematical models used to describe the a) mechanism of generation and propagation of action potential, b) the excitability and bursting of neurons. In the second part of the course, students will be introduced the basics of functional and structural magnetic resonance imaging (MRI), fMRI experiment design and fMRI data analysis.
+
+
+BIO5SPSB (Credits: 4) 
+Title: Stochastic Simulations in Systems biology & biophysics 
+Pre-requisite: MTH201
+This course will introduce students to stochastic simulation techniques as used in solving biological problems. Theoretical basis of stochastic simulations (master equation based approaches) will be elucidated. Monte Carlo simulations will be introduced as a tool to obtain solution of master equations. Kinetic Monte Carlo approaches will be discussed in the context of dynamical problems and single cell biology. Data analysis for Monte Carlo simulations and single cell biology will be part of this course. Hybrid simulation techniques will be taken up as applied to solve problems in biology and immunology. We will also discuss biomedical / technological applications of stochastic modeling such as for vaccine design and cancer therapy.
+
+
+COM301A (Credits: 2) 
+Title: Technical Communication 
+Pre-requisite: none
+The course has two parts - first part will focus on understanding and communicating a technical idea, and the second part will be on forecasting/prediction for some technology trend. For the first part, students will be taught what good communication is (both written and presentation) - how is a well written paper organized, and how to organize a good presentation. The second part will focus on technology forecasting and trend analysis. Here the students will work in groups on some forecasting/trends project. In the end they write a small report, and make a presentation in class.
+
+
+DES130 (Credits: 4) 
+Title: Introduction to Engineering Design 
+Pre-requisite: none
+Introduction to Engineering Design is a core, multidisciplinary course offered with an aim to ignite the young minds with concepts in design and innovation. Using the tools and skills learnt in the lab, the students participate in a project challenge to build functional prototypes in the field of intelligent buildings, automotive, and robotics which will provide solutions to real life problems. The students are supported with a seed money from the institute for this project. Without going into much complexity, multiple faculty members familiarize students with foundation into three domains; electronic design, wireless communication and robotics. The labs are structured to provide the building blocks of modern electronic gadgets where students learn and use characteristics of active and passive electronic components, solder and build their own voltage regulators PCB, solve real day to day problems while using sense-think-act paradigm to interface and program Arduino microcontroller to a variety of sensors, motors, and learn and experience real time coverage issues and wireless coding techniques.
+
+
+DES302 (Credits: 4) 
+Title: Animation & Graphics 
+Pre-requisite: none
+This course will take you right through the fundamentals of Graphic Design from photorealism up to the point where fantasy and imagination begins. You will understand usage of the colour wheel and its role in creating Digital Art. You will be given a grounding on Engineering Drawing principles such as making Orthographic and Isometric Drawings Through actual classroom exercises, you will be able to comprehend concepts of how to put 3D objects on a 2D paper. Visualise the physical space, create it through the computers, visualising scenes, lighting them, understanding surfaces, materials, animating anything you create, including objects, lights, cameras. Even studying the effects of weather on how you view things. For those who are creative even the sky is not your limit.
+
+
+ECO301 (Credits: 4) 
+Title: Introduction to Economic Analysis 
+Pre-requisite: none
+This is an introductory course in economics. Two-thirds of course content draws from topics in microeconomics, and the rest from macroeconomics. Specific topics include: Fundamentals of Consumer Theory, Firms in Competitive Markets, Market equilibrium and efficiency, Market failures and Government Intervention, Imperfect Competition, Public Goods and Common Resources, Strategic Behavior and Game Theory, Risk and Uncertainty, Auctions and Mechanisms, Economic Growth and GDP, Banking and Interest rates, Inflation and Monetary Policy, International Trade and Foreign Exchange.
+
+
+ECO302 (Credits: 4) 
+Title: Applied Econometric Analysis 
+Pre-requisite: MTH201
+This course introduces students to various models economists use for statistical analysis starting with multiple linear regression estimated via ordinary least squares, adding special models for count data, discrete choice models, and basic analysis of time series data.
+
+
+ECO303 (Credits: 4) 
+Title: Economics of Information and IT 
+Pre-requisite: none
+Introductory economics courses usually study markets with perfect competition or monopoly. Actual markets however are in between these two extremes. This course introduces students to the basic models economists use to analyze consumer and firm behavior in markets with imperfect competition. Most of the economic framework in this area is based on applications of game theory. Course topics include: Oligopoly, Product Differentiation, Privacy and Information Obfuscation, Price Discrimination, Tying and Bundling, Advertising, Strategic Alliances and Mergers, Search and Matching, Bargaining, Mechanism Design, and Auction Theory.
+
+
+ECO3IGT (Credits: 4) 
+Title: Introduction to Game Theory 
+Pre-requisite: none
+Popularized by movies such as ldquo;A Beautiful Mindrdquo;, game theory is the mathematical modeling of strategic interaction among rational (and irrational) agents. Beyond what we usually call rsquo;gamesrsquo; in common language, such as chess, poker, soccer, etc., it includes the modeling of competition among rival firms, conflict among nations, trading behavior in markets such as the BSE or collusion of firms. The course will discuss the basics: representing games and strategies, the extensive form (which computer scientists call game trees), Bayesian games (modeling things like auctions), repeated and stochastic games, and more. Wersquo;ll include a variety of examples including classic games and some applications.
+
+
+ENT402 (Credits: 2) 
+Title: Entrepreneurship: Managing Venture 
+Pre-requisite: ENT401
+The course will take the students through the process of starting their own business. A set of modules will cover different areas of knowledge required for starting a business such as finance, marketing, legal aspects, human resource management, strategy etc. The students will come prepared to the class after reading the material suggested by the instructor and the class time will mainly be used for discussions.As part of the course students, in a group of two, will develop a business idea, conduct market research, take the first steps necessary to start their business, work to acquire financing, and more. While most projects will be ldquo;on-paperrdquo;, it is hoped that the project will help students find their entrepreneurial spirit.The topics covered are -Business Plan.Marketing amp; E-business,Intro to Financial Management,Human Resource Management,Intellectual Property,Business Ethics
+
+
+ESC205A (Credits: 2) 
+Title: Environmental Sciences 
+Pre-requisite: none
+This course introduces to Environmental Science and Sustainable Development. Topics covered are: Ecology and biodiversity, natural resources, air quality management, water quality management, solid and hazardous waste management, environmental management system.
+
+
+HSS202 (Credits: 4) 
+Title: Perspectives on Knowledge 
+Pre-requisite: none
+The basic objective for this course is to broaden and deepen studentsrsquo; understanding of issues concerning knowledge. The course is a basic introduction to epistemology (theory of knowledge). A major focus of the course is to address philosophical theories of knowledge. Additionally, we will address issues of knowledge that have moved from specialized reflections to general social discourse in the information age. The course culminates with discussions on the contemporary context of knowledge, where the professional training that the students receive in IT can be linked to broader social and cultural currents.
+
+
+HSS203 (Credits: 4) 
+Title: Introduction to the Study of Literature 
+Pre-requisite: none
+The course will introduce the students to literature through exposure to different literary genres within the three main categories of prose, poetry, and drama. The focus of the course will be on how to read a literary text in terms of its use of language and style as well its thematic content. In the process, students will learn about the different approaches to literary analysis as a way of understanding, interpreting, and evaluating specific literary texts. Lecture-wise break-up: Lectures will be devoted to covering the above course content with reference to the specific literary texts chosen by the instructor.
+
+
+HSS204 (Credits: 4) 
+Title: Introduction to Psychology 
+Pre-requisite: none
+This is an introductory course on psychology and will be largely application based, the idea being to empower the students with an understanding and skills of human behavior. Some of the topics will be the concept of self, personality and stress, understanding human needs and behaviour, group dynamics, effective communication, counselling and mentoring, cognitive behaviour therapy, fundamentals of organizational behaviour.
+
+
+HSS205 (Credits: 4) 
+Title: Introduction to Sociology 
+Pre-requisite: none
+Sociology is the study of human social life. It has its roots in the significant societal changes taking place in society. It is an attempt to understand the social world by situating social events in their corresponding environment, such as, community, culture, history and trying to understand the social phenomena by collecting and analyzing relevant data. Some of the topics are origin and development of sociology, sociological methods, individual and society, Socialization and major forms of social structure, Family - characteristics of the family, types of family, modern family, Community - its physical and psychological configurations, State - origin and development of state, state as a institution of force, Social stratification - Social class and caste, Ethnic and racial groups, Theories of society, Social change.
+
+
+HSS208 (Credits: 4) 
+Title: Theory and Practice of Engineering Ethics 
+Pre-requisite: none
+The course aims at orienting the students to the theory and practice of meta-ethics, using a multidisciplinary and cross cultural approach. The goal is to help engineering and IT professionals think of ethics as part of the very process of their work. The course does not provide solutions to critical dilemmas. It does not claim to create lsquo;moralrsquo; people, or ethical engineers. Rather, it encourages critical thinking about ethical issues and decision making. The course enables students to apply meta ethical theories to IT scenarios.
+
+
+HSS211 (Credits: 4) 
+Title: Theatre Appreciation 
+Pre-requisite: none
+The course is designed not only to give a theoretical appreciation of theatre but it will be largely interspersed with class room improvisations and exercise so that they have a hands-on feel right from the start. At the end of the course, the students will have an understanding of key concepts of theater like speech, blocking, positioning, an understanding of the techniques of theater making, ability to examine play scripts for their theatrical possibilities and some ability to produce/put-up a play.
+
+
+HSS212 (Credits: 4) 
+Title: Critical Thinking 
+Pre-requisite: none
+This course introduces the learner to the fundamentals of critical thinking and informal logic.
+
+
+HSS213 (Credits: 4) 
+Title: Issues in Contemporary World 
+Pre-requisite: none
+The course covers central themes of the 20th century: Causes and Consequences of World War I, Russian Revolution and its global impact, Paris Peace Settlement (1919), League of Nations,The Great Depression (1929-33), Rise of Fascism and World War II, The United Nations and the UN System,The Cold War, Globalisation, Human Rights and the North-South Divide, Environmental Movement, Earth Summit and Climate Change, World Feminist Movement.
+
+
+HSS216 (Credits: 4) 
+Title: Positive Psycology 
+Pre-requisite: none
+The mentioned course would be based on the key concepts of Positive Psychology, its principles, concepts and experiential practices. This course is designed to explore the concepts, research behind the concepts, techniques, factors and exercises to enhance optimism, decrease stressors, and significantly increase well-being. The format of the course will be experiential, workshop based and interactive along with assigned lectures and readings to create an environment conducive to learning new concepts, skills and applications.
+

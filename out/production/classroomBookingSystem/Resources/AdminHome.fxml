@@ -15,7 +15,7 @@
 <?import javafx.scene.image.Image?>
 <GridPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminHomeController">
 
-   <VBox fx:id="HomeStudent" prefHeight="578.0" prefWidth="702.0" alignment="CENTER">
+   <VBox fx:id="HomeAdmin" prefHeight="578.0" prefWidth="702.0" alignment="CENTER">
       <children>
          <Text textAlignment="CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
             <font>

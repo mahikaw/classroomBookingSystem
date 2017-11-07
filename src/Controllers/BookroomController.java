@@ -12,11 +12,12 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class BookroomController implements Initializable{
 	@FXML
-	public AnchorPane HomeAdmin;
+	public VBox HomeAdmin;
 	@FXML
 	public void Bookroom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
@@ -24,36 +25,53 @@ public class BookroomController implements Initializable{
         stage.setTitle("My New Stage Title");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
+        stage.setFullScreen(true);
 	}
 	@FXML
 	public void login(ActionEvent event) throws IOException {
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
-		//System.out.println("asdasd");
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("My New Stage Title");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
+        stage.setFullScreen(true);
 	}
 	@FXML
 	public void bookroom(ActionEvent event) throws IOException{
-		HomeAdmin.getChildren().clear();
-		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/Bookroom.fxml")));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Bookroom.FXML"));
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("My New Stage Title");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+        stage.setFullScreen(true);
 	}
 	@FXML
 	public void cancelroom(ActionEvent event) throws IOException{
-		HomeAdmin.getChildren().clear();
-		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/cancelroom.fxml")));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/cancelroom.FXML"));
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("My New Stage Title");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+        stage.setFullScreen(true);
 	}
 	@FXML
 	public void viewRequests(ActionEvent event) throws IOException{
-		HomeAdmin.getChildren().clear();
-		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/Requests.fxml")));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Requests.FXML"));
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("My New Stage Title");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+        stage.setFullScreen(true);
 	}
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
 		//System.out.println(HomeStudent.getChildren().indexOf(pane));
-		HomeAdmin.getChildren().clear();
-		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/AvailableRooms.fxml")));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AvailableRooms.FXML"));
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("My New Stage Title");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+        stage.setFullScreen(true);
 		
 	}
 

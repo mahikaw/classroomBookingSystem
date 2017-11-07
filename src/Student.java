@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 public class Student extends RootUser {
     ArrayList<Request> requestMade;
     public Student() {

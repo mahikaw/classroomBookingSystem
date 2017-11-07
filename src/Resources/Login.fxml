@@ -21,8 +21,8 @@
         <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="433.0" GridPane.rowIndex="4">
             <children>
 
-                <TextArea promptText="Email ID" />
-                <TextArea promptText="Password" />
+                <TextArea fx:id="email" promptText="Email ID" />
+                <TextArea fx:id="password" promptText="Password" />
                 <Button mnemonicParsing="false" onAction="#home" text="Login" translateY="20" ButtonBar.buttonData="LEFT" />
                 <Button mnemonicParsing="false" onAction="#signup" text="Sign Up" translateX="210" translateY="40" />
 

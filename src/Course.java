@@ -1,6 +1,8 @@
 import java.util.Date;
 
 public class Course {
+	String name;
+	String code;
     private String prerequisite;
     private String postconditions;
     public Date[] CourseTimeSlot_Start;//on Index 0, we store the time at which the class starts on monday, tuesday on 1st....
@@ -9,16 +11,20 @@ public class Course {
     private Classroom roomalloted;
     private int inteded_audience;
 
-    public Course(String courseprerequisite, String coursepostconditions, Date stime, Date etime, Classroom allotedroom, int capacity) {
+    public Course(String code,String name,String courseprerequisite, String coursepostconditions/*, Date stime, Date etime, Classroom allotedroom,*/, int capacity) {
         this.prerequisite = courseprerequisite;
+        this.name = name;
+        this.code = code;
         this.postconditions = coursepostconditions;
         //todo correct beneath
 //        this.CourseTimeSlot_Start = stime;
 //        this.endTime=etime;
-        this.roomalloted = allotedroom;
+        //this.roomalloted = allotedroom;
         this.inteded_audience = capacity;
     }
-
+    public String toString(){
+    	return this.code+"\n"+this.name+"\n"+this.prerequisite+"\n"+this.postconditions;
+    }
     public String getPrerequisite() {
         return prerequisite;
     }

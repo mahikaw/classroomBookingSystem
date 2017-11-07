@@ -1,31 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<?import javafx.scene.control.Label?>
-<GridPane xmlns="http://javafx.com/javafx/8.0.112">
+<GridPane xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StudentHomeController">
+
+   <VBox fx:id="HomeStudent" alignment="CENTER" prefHeight="578.0" prefWidth="702.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TIMETABLE" textAlignment="CENTER">
+            <font>
+               <Font size="36.0" />
+            </font>
+         </Text>
+         <Pane fx:id="pane" prefHeight="466.0" prefWidth="683.0">
+            <children>
+               <ListView layoutX="7.0" layoutY="85.0" prefHeight="446.0" prefWidth="1476.0" />
+            </children></Pane>
+      </children>
+   </VBox>
+<HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="1500.0" spacing="20.0">
    <children>
-      <VBox alignment="CENTER_LEFT" prefHeight="500" prefWidth="1270" spacing="20.0" translateY="200.0">
-         <children>
-            <Label text="Timetable" textAlignment="CENTER" translateX="500" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
-               <font>
-                  <Font size="36.0" />
-               </font>
-            </Label>
-            <ListView />
-         </children>
-      </VBox>
+      <Button layoutX="1.0" layoutY="61.0" mnemonicParsing="false" onAction="#MyTimeTable" prefHeight="43.0" prefWidth="132.0" text="My Timetable" />
+      <Button layoutX="150.0" layoutY="61.0" mnemonicParsing="false" onAction="#RequestRooms" prefHeight="43.0" prefWidth="132.0" text="Request Rooms" />
+      <Button layoutX="300.0" layoutY="61.0" mnemonicParsing="false" onAction="#AvailableRooms" prefHeight="43.0" prefWidth="132.0" text="Available Rooms" />
+      <Button layoutX="450.0" layoutY="61.0" onAction="#AddCourse" prefHeight="43.0" prefWidth="132.0" text="Add courses" />
+      <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="132.0" text="Logout" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#getTimeTable" prefHeight="43.0" prefWidth="132.0" text="Generic Timetable" textAlignment="CENTER" />
    </children>
+</HBox>
+   <ImageView fitHeight="70.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true" translateY="-575.0" GridPane.rowIndex="1">
+      <image>
+         <Image url="@../Images/logonew.png" />
+      </image></ImageView>
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
+      <RowConstraints />
       <RowConstraints />
    </rowConstraints>
 </GridPane>
