@@ -45,6 +45,7 @@ class Class {
 
 public class TimeTable {
     public static HashMap<String, Course> courseMap = new HashMap<>();
+    public static HashMap<String, Course> course_pre = new HashMap<>();
     private ArrayList<Class> Monday_TimeTable;
     private ArrayList<Class> Tuesday_TimeTable;
     private ArrayList<Class> Wednesday_TimeTable;
@@ -100,6 +101,8 @@ public class TimeTable {
                 if (!courseMap.containsKey(info[2])) {
                     //todo add the course in hashmap
                     Course dummy = new Course(info[0], info[1], info[2], info[3], Integer.parseInt(info[4]), info[5], info[13], info[14]);
+                    //System.out.println(info[14]);
+                    course_pre.put(info[14], dummy);
                     courseMap.put(info[2],dummy);
                 }
 

@@ -105,7 +105,7 @@ public class StudentHomeController implements Initializable {
 	public void search(ActionEvent event) throws IOException{
 		//list.setVisible(false);
 		final ObservableList<Course> data = FXCollections.observableArrayList();
-		
+		String keyw = keyword.getText();
 		namecol.setCellValueFactory(new PropertyValueFactory<Course, String>("name"));
 		codecol.setCellValueFactory(new PropertyValueFactory<Course, String>("course_ID"));
 		typecol.setCellValueFactory(new PropertyValueFactory<Course, String>("type"));
@@ -113,11 +113,14 @@ public class StudentHomeController implements Initializable {
 		acronymcol.setCellValueFactory(new PropertyValueFactory<Course, String>("course_acronym"));
 		precol.setCellValueFactory(new PropertyValueFactory<Course, String>("prerequisite"));
 		postcol.setCellValueFactory(new PropertyValueFactory<Course, String>("postconditions"));
-		 Iterator it = TimeTable.courseMap.entrySet().iterator();
+		 Iterator it = TimeTable.course_pre.entrySet().iterator();
 		    while (it.hasNext()) {
+		    	//if(!keyw.isEmpty()){
 		        Map.Entry pair = (Map.Entry)it.next();
-		        System.out.println(pair.getValue());
-		        data.add((Course) pair.getValue());
+		        //System.out.println(pair.getValue());
+		        if(pair.getKey().toString().toLowerCase().contains(keyw.toLowerCase())){
+		        	data.add((Course) pair.getValue());//}
+		        }
 		    }
 		Table.setItems(data);
 		//Table.
