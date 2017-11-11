@@ -51,6 +51,7 @@ public class TimeTable {
     private ArrayList<Class> Wednesday_TimeTable;
     private ArrayList<Class> Thursday_TimeTable;
     private ArrayList<Class> Friday_TimeTable;
+    public ArrayList<Course> Time_Table;
 
     public TimeTable(HashMap<String, Course> courseMap, ArrayList<Class> monday_TimeTable, ArrayList<Class> tuesday_TimeTable, ArrayList<Class> wednesday_TimeTable, ArrayList<Class> thursday_TimeTable, ArrayList<Class> friday_TimeTable) {
         this.courseMap = courseMap;

@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 import main.Admin;
 import main.Classroom;
 import main.Request;
+import main.Student;
 
 public class RequestRoomController implements Initializable{
 	@FXML
@@ -32,19 +33,25 @@ public class RequestRoomController implements Initializable{
 		Classroom roomreq = new Classroom(studentroom);
 		String roomcap = cap.getText();
 		if(studentroom.isEmpty()){
+			Request req = new Request(studentpurpose, Integer.parseInt(roomcap));
 			if(Admin.ListofRequests.isEmpty()){
-				Admin.ListofRequests.add(0, new Request(studentpurpose, Integer.parseInt(roomcap)));
+				
+				Admin.ListofRequests.add(0, req);
 			}
 			else
 				Admin.ListofRequests.add(new Request(studentpurpose, Integer.parseInt(roomcap)));
+			Student.requestMade.add(req);
 		}
 		else{
+			Request req = new Request(studentpurpose, Integer.parseInt(roomcap), roomreq);
 			if(Admin.ListofRequests.isEmpty()){
-				Admin.ListofRequests.add(0,new Request(studentpurpose, Integer.parseInt(roomcap), roomreq));
+				Admin.ListofRequests.add(0,req);
 			}
 			else
 				Admin.ListofRequests.add(new Request(studentpurpose, Integer.parseInt(roomcap), roomreq));
+			Student.requestMade.add(req);
 		}
+		
 		//int roomcap = Integer.parseInt(cap.getText());
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/StudentHome.fxml"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
