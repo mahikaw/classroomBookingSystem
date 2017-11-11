@@ -14,7 +14,9 @@ public class Classroom {
         totalcapacity++;
     }
 
-   
+    public String toString(){
+    	return classroom_name;
+    }
 
 	public String getClassroom_name() {
         totalcapacity++;

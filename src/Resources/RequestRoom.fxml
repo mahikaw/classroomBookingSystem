@@ -35,22 +35,30 @@
                <Font size="20.0" />
             </font>
          </Label>
-         <TextField alignment="TOP_LEFT" layoutX="144.0" layoutY="116.0" prefHeight="144.0" prefWidth="442.0" />
+         <TextField fx:id="purpose" alignment="TOP_LEFT" layoutX="144.0" layoutY="116.0" prefHeight="144.0" prefWidth="442.0" />
 
          <Label text="Room Required:">
             <font>
                <Font size="20.0" />
             </font>
          </Label>
-         <TextField />
+         <Label text="(optional)" translateY="-20" />
+         <TextField fx:id="room" />
          <Label text="Student Capacity:">
             <font>
                <Font size="20.0" />
             </font>
          </Label>
-         <Label text="(optional)" translateY="-20" />
-         <TextField />
-         <Button mnemonicParsing="false" onAction="#submitrequest" prefHeight="52.0" prefWidth="138.0" text="Submit" translateX="500" />
+         <TextField fx:id="cap" />
+            <Button mnemonicParsing="false" onAction="#cancelrequest" prefHeight="63.0" prefWidth="127.0" text="cancel">
+               <VBox.margin>
+                  <Insets left="150.0" top="-10.0" />
+               </VBox.margin>
+            </Button>
+         <Button layoutX="50.0" layoutY="88.0" mnemonicParsing="false" onAction="#submitrequest" prefHeight="52.0" prefWidth="138.0" text="Submit" translateX="500">
+               <VBox.margin>
+                  <Insets left="500.0" top="-50.0" />
+               </VBox.margin></Button>
 
       </children>
    </VBox>

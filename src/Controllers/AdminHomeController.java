@@ -2,6 +2,7 @@ package Controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -12,10 +13,12 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 
-public class AdminHomeController {
+public class AdminHomeController implements Initializable{
 	@FXML
 	public Button logout;
 	
@@ -69,6 +72,11 @@ public class AdminHomeController {
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
 		stage.setFullScreen(true);
+		
+	}
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		// TODO Auto-generated method stub
 		
 	}
 

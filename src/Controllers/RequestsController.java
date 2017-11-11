@@ -1,77 +1,137 @@
 package Controllers;
 
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
-
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import main.Admin;
+import main.Classroom;
+import main.Course;
+import main.Request;
+import main.TimeTable;
 
-public class RequestsController implements Initializable {
+import java.io.IOException;
+import java.net.URL;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.ResourceBundle;
 
-	@Override
-	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
-		
-	}
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+
+public class RequestsController implements Initializable{
 	@FXML
-	public void accept(ActionEvent event) throws IOException{
-		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.FXML"));
-		//System.out.println("asdasd");
-		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("My New Stage Title");
-        stage.setScene(new Scene(homepage, 300, 275));
-        stage.show();
-	}
+	public Button logout;
 	@FXML
-	public void cancel(ActionEvent event) throws IOException{
-		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.FXML"));
-		//System.out.println("asdasd");
-		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("My New Stage Title");
-        stage.setScene(new Scene(homepage, 300, 275));
-        stage.show();
-	}
+	public TableView<Request> table;
 	@FXML
-	public GridPane HomeAdmin;
+	public TableColumn<Request,String> room;
+	@FXML
+	public TableColumn<Request, Integer> capacity;
+	@FXML
+	public TableColumn<Request, String> purpose;
+	@FXML
+	public VBox HomeAdmin;
+	@FXML
+	public Pane pane;
+	// Event Listener on Button.onAction
 	@FXML
 	public void login(ActionEvent event) throws IOException {
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
-		//System.out.println("asdasd");
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("My New Stage Title");
+        stage.setTitle("Home");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
+		stage.setFullScreen(true);
 	}
 	@FXML
 	public void bookroom(ActionEvent event) throws IOException{
-		HomeAdmin.getChildren().clear();
-		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/Bookroom.fxml")));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Bookroom.FXML"));
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Home");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+		stage.setFullScreen(true);
 	}
 	@FXML
 	public void cancelroom(ActionEvent event) throws IOException{
-		HomeAdmin.getChildren().clear();
-		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/cancelroom.fxml")));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/cancelroom.FXML"));
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Home");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+		stage.setFullScreen(true);
 	}
 	@FXML
 	public void viewRequests(ActionEvent event) throws IOException{
-		HomeAdmin.getChildren().clear();
-		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/Requests.fxml")));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Requests.FXML"));
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Home");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+		stage.setFullScreen(true);
 	}
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
 		//System.out.println(HomeStudent.getChildren().indexOf(pane));
-		HomeAdmin.getChildren().clear();
-		HomeAdmin.getChildren().add(FXMLLoader.load(getClass().getResource("../Resources/AvailableRooms.fxml")));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AvailableRooms.FXML"));
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Home");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+		stage.setFullScreen(true);
 		
+	}
+	@FXML
+	public void cancel(ActionEvent event) throws IOException{
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Home");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+        stage.setFullScreen(true);
+	}
+	@FXML
+	public void accept(ActionEvent event) throws IOException{
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Home");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+        stage.setFullScreen(true);
+	}
+	@FXML
+	public void loadRequests() throws IOException{
+		//list.setVisible(false);
+		final ObservableList<Request> data = FXCollections.observableArrayList(Admin.ListofRequests);
+		
+		room.setCellValueFactory(new PropertyValueFactory<Request, String>("roompreferred"));
+		capacity.setCellValueFactory(new PropertyValueFactory<Request, Integer>("capacityrequired"));
+		purpose.setCellValueFactory(new PropertyValueFactory<Request, String>("purpose"));
+		
+		table.setItems(data);
+		
+	}
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		// TODO Auto-generated method stub
+		try {
+			loadRequests();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
