@@ -1,9 +1,15 @@
 package Controllers;
 
 import java.io.IOException;
+import main.Course;
 import java.net.URL;
-import java.util.ResourceBundle;
+import main.TimeTable;
 
+import java.util.Iterator;
+import java.util.Map;
+import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +18,10 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -29,7 +38,23 @@ public class StudentHomeController implements Initializable {
 	@FXML
 	public Pane pane;
 	@FXML
-	public ListView list;
+	public TableView<Course> Table ;
+	@FXML
+	public TableColumn<Course,String> namecol;
+	@FXML
+	public TableColumn<Course,String> codecol;
+	@FXML
+	public TableColumn<Course,String> typecol;
+	@FXML
+	public TableColumn<Course,String> instructorcol;
+	@FXML
+	public TableColumn<Course,String> acronymcol;
+	@FXML
+	public TableColumn<Course,String> precol;
+	@FXML
+	public TableColumn<Course,String> postcol;
+	@FXML
+	public TextField keyword; 
 	@FXML
 	public void login(ActionEvent event) throws IOException {
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
@@ -78,7 +103,36 @@ public class StudentHomeController implements Initializable {
 	}
 	@FXML
 	public void search(ActionEvent event) throws IOException{
-		list.setVisible(false);
+		//list.setVisible(false);
+		final ObservableList<Course> data = FXCollections.observableArrayList();
+		
+		namecol.setCellValueFactory(new PropertyValueFactory<Course, String>("name"));
+		codecol.setCellValueFactory(new PropertyValueFactory<Course, String>("course_ID"));
+		typecol.setCellValueFactory(new PropertyValueFactory<Course, String>("type"));
+		instructorcol.setCellValueFactory(new PropertyValueFactory<Course, String>("instructor_name"));
+		acronymcol.setCellValueFactory(new PropertyValueFactory<Course, String>("course_acronym"));
+		precol.setCellValueFactory(new PropertyValueFactory<Course, String>("prerequisite"));
+		postcol.setCellValueFactory(new PropertyValueFactory<Course, String>("postconditions"));
+		 Iterator it = TimeTable.courseMap.entrySet().iterator();
+		    while (it.hasNext()) {
+		        Map.Entry pair = (Map.Entry)it.next();
+		        System.out.println(pair.getValue());
+		        data.add((Course) pair.getValue());
+		    }
+		Table.setItems(data);
+		//Table.
+		//System.out.println("Asdasdasdasdasdasdas");
+		
+		// initialize listview
+		 //list.setItems(list);
+		//Application.ListofCourses
+		//list.setItems(Application.ListofCourses);
+		
+		
+		
+		//System.out.println(keyword.getText());
+		//System.out.println(Application.ListofCourses.get(5));
+		
 	}
 	@FXML
 	public void getTimeTable(ActionEvent event) throws IOException{

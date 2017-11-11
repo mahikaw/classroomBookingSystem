@@ -2,7 +2,8 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -26,9 +27,19 @@
          </Text>
          <Pane fx:id="pane" prefHeight="466.0" prefWidth="683.0">
             <children>
-               <ListView fx:id="list" layoutX="9.0" layoutY="189.0" prefHeight="257.0" prefWidth="1478.0" />
-               <Button alignment="CENTER" contentDisplay="CENTER" layoutX="881.0" layoutY="503.0" mnemonicParsing="false" onAction="#search" prefHeight="43.0" prefWidth="96.0" text="Search" />
+               <Button alignment="CENTER" contentDisplay="CENTER" layoutX="881.0" layoutY="550.0" mnemonicParsing="false" onAction="#search" prefHeight="43.0" prefWidth="96.0" text="Search" />
             </children></Pane>
+         <TableView fx:id="Table" editable="true" prefHeight="566.0" prefWidth="1500.0">
+           <columns>
+             <TableColumn fx:id="namecol" prefWidth="75.0" text="Name" />
+             <TableColumn fx:id="codecol" prefWidth="94.4000244140625" text="Course Code" />
+               <TableColumn fx:id="typecol" prefWidth="78.4000244140625" text="Type" />
+               <TableColumn fx:id="instructorcol" prefWidth="98.39997863769531" text="Instructor" />
+               <TableColumn fx:id="acronymcol" prefWidth="121.60003662109375" text="Acronym" />
+               <TableColumn fx:id="precol" prefWidth="137.60003662109375" text="Pre-Requisite" />
+               <TableColumn fx:id="postcol" prefWidth="891.9998779296875" text="Post-conditions" />
+           </columns>
+         </TableView>
       </children>
    </VBox>
 <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="1500.0" spacing="20.0">
@@ -45,7 +56,7 @@
       <image>
          <Image url="@../Images/logonew.png" />
       </image></ImageView>
-   <TextField prefHeight="25.0" prefWidth="624.0" promptText="Enter Keyword">
+   <TextField fx:id="keyword" prefHeight="25.0" prefWidth="624.0" promptText="Enter Keyword">
       <GridPane.margin>
          <Insets bottom="100.0" />
       </GridPane.margin>
