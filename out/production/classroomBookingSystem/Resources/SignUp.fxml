@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="478.0" prefWidth="565.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignUpController">
+<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="478.0" prefWidth="565.0" vgap="10" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignUpController">
     <padding>
         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
     </padding>
@@ -28,11 +28,10 @@
                <Font size="24.0" />
             </font>
             </TextField>
-            <TextFlow minHeight="189.0" minWidth="100.0" prefHeight="189.0" prefWidth="192.0">
-                <TextArea maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="43.0" prefWidth="194.0" promptText="Email ID" translateY="40.0">
-
-                </TextArea>
-                <TextArea prefHeight="46.0" prefWidth="192.0" promptText="Type of User" translateY="70.0" />
+            <TextFlow minHeight="189.0" minWidth="100.0" prefHeight="229.0" prefWidth="192.0">
+                <TextArea id="email" fx:id="email" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="43.0" prefWidth="194.0" promptText="Email ID" translateY="40.0" />
+                <TextArea id="password" fx:id="password" layoutY="-200.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="43.0" prefWidth="194.0" promptText="Password" translateY="40.0" />
+                <TextArea id="type" fx:id="type" prefHeight="46.0" prefWidth="192.0" promptText="Type of User" translateY="70.0" />
                 <FlowPane.margin>
                     <Insets left="180.0" top="50.0" />
                 </FlowPane.margin>
@@ -51,7 +50,7 @@
                 </rotationAxis>
             </Pane>
         </FlowPane>
-      <Button mnemonicParsing="false" text="Back" translateY="-200.0" onAction="#back">
+      <Button mnemonicParsing="false" onAction="#back" text="Back" translateY="-200.0">
          <GridPane.margin>
             <Insets left="10.0" />
          </GridPane.margin>

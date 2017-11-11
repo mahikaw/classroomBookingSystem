@@ -40,6 +40,9 @@ public class SignUpController implements Initializable {
         String typeOfUser = type.getText();
         String emailID = email.getText();
         String pass = password.getText();
+        System.out.println(typeOfUser);
+        System.out.println(emailID);
+        System.out.println(pass);
         switch (typeOfUser.toLowerCase()) {
             case "admin": {
                 newUser = new Admin(emailID, pass);
@@ -66,7 +69,7 @@ public class SignUpController implements Initializable {
 
     @FXML
     public void back(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Resources/Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../Resources/Login.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("IIIT-D Classroom Booking System");
         stage.setScene(new Scene(root, 300, 275));
