@@ -27,11 +27,11 @@ public class LoginController implements Initializable{
 		String emailentered = email.getText();
 		String passwordentered = password.getText();
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.fxml"));
-		if(emailentered.equals("admin"))
+		if(emailentered.toLowerCase().equals("admin"))
 			homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
-		else if(emailentered.equals("faculty"))
+		else if(emailentered.toLowerCase().equals("faculty"))
 			homepage = FXMLLoader.load(getClass().getResource("../Resources/FacultyHome.fxml"));
-		else if(emailentered.equals("student"))
+		else if(emailentered.toLowerCase().equals("student"))
 			homepage = FXMLLoader.load(getClass().getResource("../Resources/StudentHome.fxml"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Home page");

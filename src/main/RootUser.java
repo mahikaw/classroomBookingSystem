@@ -6,12 +6,18 @@ import java.util.ArrayList;
  */
 public class RootUser {
     protected String typeofuser;
-    private String userEmailId;
-    private static ArrayList<Student> StudentArrayList;
-    private static ArrayList<Faculty> facultyArrayList;
-    private static ArrayList<Classroom> classroomArrayList;
-    private static ArrayList<Course> courseArrayList;
+    protected String userEmailId;
+    protected String password;
+//    private static ArrayList<Student> StudentArrayList;
+//    private static ArrayList<Faculty> facultyArrayList;
+//    private static ArrayList<Classroom> classroomArrayList;
+//    private static ArrayList<Course> courseArrayList;
 
+    public RootUser(String userEmailId, String password){
+        this.userEmailId=userEmailId;
+        this.password=password;
+
+    }
     public void logout() {
         //logout user
     }
@@ -38,21 +44,21 @@ public class RootUser {
         return userEmailId;
     }
 
-    public ArrayList<Student> getStudentArrayList() {
-        return StudentArrayList;
-    }
-
-    public ArrayList<Faculty> getFacultyArrayList() {
-        return facultyArrayList;
-    }
-
-    public ArrayList<Classroom> getClassroomArrayList() {
-        return classroomArrayList;
-    }
-
-    public ArrayList<Course> getCourseArrayList() {
-        return courseArrayList;
-    }
+//    public ArrayList<Student> getStudentArrayList() {
+//        return StudentArrayList;
+//    }
+//
+//    public ArrayList<Faculty> getFacultyArrayList() {
+//        return facultyArrayList;
+//    }
+//
+//    public ArrayList<Classroom> getClassroomArrayList() {
+//        return classroomArrayList;
+//    }
+//
+//    public ArrayList<Course> getCourseArrayList() {
+//        return courseArrayList;
+//    }
 
     public String getTypeofuser() {
         return typeofuser;

@@ -1,4 +1,5 @@
 package main;
+
 import javafx.beans.InvalidationListener;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
@@ -9,218 +10,214 @@ import javafx.stage.Stage;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 /**
  * Created by tgit on 06/10/17.
  */
 public class Application extends javafx.application.Application {
 
+    public static List<RootUser> users = new ArrayList<>();
     public static ObservableList<Course> ListofCourses = new ObservableList<Course>() {
 
-		@Override
-		public boolean add(Course e) {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        @Override
+        public boolean add(Course e) {
+            // TODO Auto-generated method stub
+            return false;
+        }
 
-		@Override
-		public void add(int index, Course element) {
-			// TODO Auto-generated method stub
-			
-		}
+        @Override
+        public void add(int index, Course element) {
+            // TODO Auto-generated method stub
 
-		@Override
-		public boolean addAll(Collection<? extends Course> c) {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        }
 
-		@Override
-		public boolean addAll(int index, Collection<? extends Course> c) {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        @Override
+        public boolean addAll(Collection<? extends Course> c) {
+            // TODO Auto-generated method stub
+            return false;
+        }
 
-		@Override
-		public void clear() {
-			// TODO Auto-generated method stub
-			
-		}
+        @Override
+        public boolean addAll(int index, Collection<? extends Course> c) {
+            // TODO Auto-generated method stub
+            return false;
+        }
 
-		@Override
-		public boolean contains(Object o) {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        @Override
+        public void clear() {
+            // TODO Auto-generated method stub
 
-		@Override
-		public boolean containsAll(Collection<?> c) {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        }
 
-		@Override
-		public Course get(int index) {
-			// TODO Auto-generated method stub
-			return null;
-		}
+        @Override
+        public boolean contains(Object o) {
+            // TODO Auto-generated method stub
+            return false;
+        }
 
-		@Override
-		public int indexOf(Object o) {
-			// TODO Auto-generated method stub
-			return 0;
-		}
+        @Override
+        public boolean containsAll(Collection<?> c) {
+            // TODO Auto-generated method stub
+            return false;
+        }
 
-		@Override
-		public boolean isEmpty() {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        @Override
+        public Course get(int index) {
+            // TODO Auto-generated method stub
+            return null;
+        }
 
-		@Override
-		public Iterator<Course> iterator() {
-			// TODO Auto-generated method stub
-			return null;
-		}
+        @Override
+        public int indexOf(Object o) {
+            // TODO Auto-generated method stub
+            return 0;
+        }
 
-		@Override
-		public int lastIndexOf(Object o) {
-			// TODO Auto-generated method stub
-			return 0;
-		}
+        @Override
+        public boolean isEmpty() {
+            // TODO Auto-generated method stub
+            return false;
+        }
 
-		@Override
-		public ListIterator<Course> listIterator() {
-			// TODO Auto-generated method stub
-			return null;
-		}
+        @Override
+        public Iterator<Course> iterator() {
+            // TODO Auto-generated method stub
+            return null;
+        }
 
-		@Override
-		public ListIterator<Course> listIterator(int index) {
-			// TODO Auto-generated method stub
-			return null;
-		}
+        @Override
+        public int lastIndexOf(Object o) {
+            // TODO Auto-generated method stub
+            return 0;
+        }
 
-		@Override
-		public boolean remove(Object o) {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        @Override
+        public ListIterator<Course> listIterator() {
+            // TODO Auto-generated method stub
+            return null;
+        }
 
-		@Override
-		public Course remove(int index) {
-			// TODO Auto-generated method stub
-			return null;
-		}
+        @Override
+        public ListIterator<Course> listIterator(int index) {
+            // TODO Auto-generated method stub
+            return null;
+        }
 
-		@Override
-		public boolean removeAll(Collection<?> c) {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        @Override
+        public boolean remove(Object o) {
+            // TODO Auto-generated method stub
+            return false;
+        }
 
-		@Override
-		public boolean retainAll(Collection<?> c) {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        @Override
+        public Course remove(int index) {
+            // TODO Auto-generated method stub
+            return null;
+        }
 
-		@Override
-		public Course set(int index, Course element) {
-			// TODO Auto-generated method stub
-			return null;
-		}
+        @Override
+        public boolean removeAll(Collection<?> c) {
+            // TODO Auto-generated method stub
+            return false;
+        }
 
-		@Override
-		public int size() {
-			// TODO Auto-generated method stub
-			return 0;
-		}
+        @Override
+        public boolean retainAll(Collection<?> c) {
+            // TODO Auto-generated method stub
+            return false;
+        }
 
-		@Override
-		public List<Course> subList(int fromIndex, int toIndex) {
-			// TODO Auto-generated method stub
-			return null;
-		}
+        @Override
+        public Course set(int index, Course element) {
+            // TODO Auto-generated method stub
+            return null;
+        }
 
-		@Override
-		public Object[] toArray() {
-			// TODO Auto-generated method stub
-			return null;
-		}
+        @Override
+        public int size() {
+            // TODO Auto-generated method stub
+            return 0;
+        }
 
-		@Override
-		public <T> T[] toArray(T[] a) {
-			// TODO Auto-generated method stub
-			return null;
-		}
+        @Override
+        public List<Course> subList(int fromIndex, int toIndex) {
+            // TODO Auto-generated method stub
+            return null;
+        }
 
-		@Override
-		public void addListener(InvalidationListener listener) {
-			// TODO Auto-generated method stub
-			
-		}
+        @Override
+        public Object[] toArray() {
+            // TODO Auto-generated method stub
+            return null;
+        }
 
-		@Override
-		public void removeListener(InvalidationListener listener) {
-			// TODO Auto-generated method stub
-			
-		}
+        @Override
+        public <T> T[] toArray(T[] a) {
+            // TODO Auto-generated method stub
+            return null;
+        }
 
-		@Override
-		public boolean addAll(Course... elements) {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        @Override
+        public void addListener(InvalidationListener listener) {
+            // TODO Auto-generated method stub
 
-		@Override
-		public void addListener(ListChangeListener<? super Course> listener) {
-			// TODO Auto-generated method stub
-			
-		}
+        }
 
-		@Override
-		public void remove(int from, int to) {
-			// TODO Auto-generated method stub
-			
-		}
+        @Override
+        public void removeListener(InvalidationListener listener) {
+            // TODO Auto-generated method stub
 
-		@Override
-		public boolean removeAll(Course... elements) {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        }
 
-		@Override
-		public void removeListener(ListChangeListener<? super Course> listener) {
-			// TODO Auto-generated method stub
-			
-		}
+        @Override
+        public boolean addAll(Course... elements) {
+            // TODO Auto-generated method stub
+            return false;
+        }
 
-		@Override
-		public boolean retainAll(Course... elements) {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        @Override
+        public void addListener(ListChangeListener<? super Course> listener) {
+            // TODO Auto-generated method stub
 
-		@Override
-		public boolean setAll(Course... elements) {
-			// TODO Auto-generated method stub
-			return false;
-		}
+        }
 
-		@Override
-		public boolean setAll(Collection<? extends Course> col) {
-			// TODO Auto-generated method stub
-			return false;
-		}
-	};
+        @Override
+        public void remove(int from, int to) {
+            // TODO Auto-generated method stub
+
+        }
+
+        @Override
+        public boolean removeAll(Course... elements) {
+            // TODO Auto-generated method stub
+            return false;
+        }
+
+        @Override
+        public void removeListener(ListChangeListener<? super Course> listener) {
+            // TODO Auto-generated method stub
+
+        }
+
+        @Override
+        public boolean retainAll(Course... elements) {
+            // TODO Auto-generated method stub
+            return false;
+        }
+
+        @Override
+        public boolean setAll(Course... elements) {
+            // TODO Auto-generated method stub
+            return false;
+        }
+
+        @Override
+        public boolean setAll(Collection<? extends Course> col) {
+            // TODO Auto-generated method stub
+            return false;
+        }
+    };
 
 
     //JavaFX components
@@ -263,7 +260,7 @@ public class Application extends javafx.application.Application {
         }
         TimeTable t = new TimeTable(new HashMap<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
         t.read();
-        t.showTimetable();
+//        t.showTimetable();
     }
 
     public ArrayList<Course> searchcourses(String keywords) {

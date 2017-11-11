@@ -188,7 +188,7 @@ public class TimeTable {
     }
     public void showTimetable(){
         courseMap.forEach((k,v)->{
-            //System.out.println(k+" "+v.toString());
+            System.out.println(k+" "+v.toString());
                 }
         );
     }

@@ -4,7 +4,9 @@ import java.util.ArrayList;
 public class Admin extends RootUser {
     public static ArrayList<Request> ListofRequests = new ArrayList<Request>();
 
-    public Admin() {
+
+    public Admin(String email, String password) {
+        super(email,password);
         super.typeofuser = "Admin";
     }
 
