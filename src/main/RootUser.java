@@ -21,6 +21,10 @@ public class RootUser implements Serializable {
     @SerializedName("email")
     protected String userEmailId;
 
+    public String getPassword() {
+        return password;
+    }
+
     @SerializedName("password")
     protected String password;
 //    private static ArrayList<Student> StudentArrayList;

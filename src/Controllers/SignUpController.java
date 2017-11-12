@@ -1,5 +1,7 @@
 package Controllers;
 
+import com.google.gson.Gson;
+import com.mongodb.client.MongoCursor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 import main.*;
+import org.bson.Document;
 
 import java.io.IOException;
 import java.net.URL;
@@ -36,9 +39,30 @@ public class SignUpController implements Initializable {
         String typeOfUser = type.getText();
         String emailID = email.getText();
         String pass = password.getText();
-        System.out.println(typeOfUser);
-        System.out.println(emailID);
-        System.out.println(pass);
+
+        MongoCursor<Document> cursor = Application.mongoClient
+                .getDatabase("db")
+                .getCollection("users")
+                .find().iterator();
+
+        //check if user exists already
+        while (cursor.hasNext()) {
+            Gson g = new Gson();
+            String json = cursor.next().toJson();
+            if (g.fromJson(json, RootUser.class).getUserEmailId().compareToIgnoreCase(emailID) == 0) {
+                System.out.println("USER ALREADY EXISTS");//todo show it on ui
+                return;
+            }
+        }
+
+        //check id iiitd.ac.in email ID
+        if (emailID.contains("@iiitd.ac.in") == false) {
+            System.out.println("Please use your IIITD email ID as your username");
+            return;
+        }
+//        System.out.println(typeOfUser);
+//        System.out.println(emailID);
+//        System.out.println(pass);
         switch (typeOfUser.toLowerCase()) {
             case "admin": {
                 newUser = new Admin(emailID, pass);
@@ -57,7 +81,8 @@ public class SignUpController implements Initializable {
 
 //        Application.users.add(newUser);
 //        try {
-            RootUser.serialize(newUser);
+        RootUser.serialize(newUser);
+        System.out.println("Signed up new user");
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
