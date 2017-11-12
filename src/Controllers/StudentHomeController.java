@@ -2,6 +2,8 @@ package Controllers;
 
 import java.io.IOException;
 import main.Course;
+import main.Student;
+
 import java.net.URL;
 import main.TimeTable;
 
@@ -19,19 +21,24 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class StudentHomeController implements Initializable {
-
+	public Course selected;
 	@FXML
 	public Button Logout;
 	@FXML
 	public Button Available_rooms;
+	@FXML
+	public Button add;
+	
 	// Event Listener on Button.onAction
 	@FXML
 	public VBox HomeStudent;
@@ -103,7 +110,6 @@ public class StudentHomeController implements Initializable {
 	}
 	@FXML
 	public void search(ActionEvent event) throws IOException{
-		//list.setVisible(false);
 		final ObservableList<Course> data = FXCollections.observableArrayList();
 		String keyw = keyword.getText();
 		namecol.setCellValueFactory(new PropertyValueFactory<Course, String>("name"));
@@ -115,27 +121,56 @@ public class StudentHomeController implements Initializable {
 		postcol.setCellValueFactory(new PropertyValueFactory<Course, String>("postconditions"));
 		 Iterator it = TimeTable.course_pre.entrySet().iterator();
 		    while (it.hasNext()) {
-		    	//if(!keyw.isEmpty()){
 		        Map.Entry pair = (Map.Entry)it.next();
-		        //System.out.println(pair.getValue());
 		        if(pair.getKey().toString().toLowerCase().contains(keyw.toLowerCase())){
 		        	data.add((Course) pair.getValue());//}
 		        }
 		    }
 		Table.setItems(data);
-		//Table.
-		//System.out.println("Asdasdasdasdasdasdas");
-		
-		// initialize listview
-		 //list.setItems(list);
-		//Application.ListofCourses
-		//list.setItems(Application.ListofCourses);
+		System.out.println("asdasdasdasdasdasd");
+		add(event);
 		
 		
 		
-		//System.out.println(keyword.getText());
-		//System.out.println(Application.ListofCourses.get(5));
-		
+	}
+	@FXML
+	public void add(ActionEvent event){
+		//public Course selected;
+		final ObservableList<Course> data = FXCollections.observableArrayList();
+		String keyw = keyword.getText();
+		namecol.setCellValueFactory(new PropertyValueFactory<Course, String>("name"));
+		codecol.setCellValueFactory(new PropertyValueFactory<Course, String>("course_ID"));
+		typecol.setCellValueFactory(new PropertyValueFactory<Course, String>("type"));
+		instructorcol.setCellValueFactory(new PropertyValueFactory<Course, String>("instructor_name"));
+		acronymcol.setCellValueFactory(new PropertyValueFactory<Course, String>("course_acronym"));
+		precol.setCellValueFactory(new PropertyValueFactory<Course, String>("prerequisite"));
+		postcol.setCellValueFactory(new PropertyValueFactory<Course, String>("postconditions"));
+		 Iterator it = TimeTable.course_pre.entrySet().iterator();
+		    while (it.hasNext()) {
+		        Map.Entry pair = (Map.Entry)it.next();
+		        if(pair.getKey().toString().toLowerCase().contains(keyw.toLowerCase())){
+		        	data.add((Course) pair.getValue());//}
+		        }
+		    }
+		Table.setItems(data);
+		add.setDisable(false);
+		System.out.println("adasd");
+		Table.setRowFactory(tv->{
+			TableRow<Course>row = new TableRow<>();
+			row.setOnMouseClicked(eventmouse -> {
+				if(((MouseEvent) eventmouse).getClickCount()==2 &&(!row.isEmpty())){
+					
+					//add.setDisable(false);
+					Course rowdata = row.getItem();
+					Student.listofcourses.put(rowdata.getCourse_ID(), rowdata);
+					selected = rowdata;
+					System.out.println(selected);
+				}
+			});
+			return row;
+		});
+		System.out.println("---------------------------------------------------------------------------------------------------------");
+		System.out.println(Student.listofcourses);
 	}
 	@FXML
 	public void getTimeTable(ActionEvent event) throws IOException{

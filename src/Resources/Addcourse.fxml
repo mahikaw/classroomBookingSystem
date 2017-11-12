@@ -27,7 +27,7 @@
          </Text>
          <Pane fx:id="pane" prefHeight="466.0" prefWidth="683.0">
             <children>
-               <Button alignment="CENTER" contentDisplay="CENTER" layoutX="881.0" layoutY="550.0" mnemonicParsing="false" onAction="#search" prefHeight="43.0" prefWidth="96.0" text="Search" />
+               <Button alignment="CENTER" contentDisplay="CENTER" layoutX="950.0" layoutY="542.0" mnemonicParsing="false" onAction="#search" prefHeight="43.0" prefWidth="96.0" text="Search" />
             </children></Pane>
          <TableView fx:id="Table" editable="true" prefHeight="566.0" prefWidth="1500.0">
            <columns>
@@ -42,7 +42,7 @@
          </TableView>
       </children>
    </VBox>
-<HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="1500.0" spacing="20.0">
+<HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="43.0" prefWidth="1500.0" spacing="20.0">
    <children>
       <Button layoutX="1.0" layoutY="61.0" mnemonicParsing="false" onAction="#MyTimeTable" prefHeight="43.0" prefWidth="132.0" text="My Timetable" />
       <Button layoutX="150.0" layoutY="61.0" mnemonicParsing="false" onAction="#RequestRooms" prefHeight="43.0" prefWidth="132.0" text="Request Rooms" />
@@ -51,6 +51,9 @@
       <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="132.0" text="Logout" textAlignment="CENTER" wrapText="true" />
       <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#getTimeTable" prefHeight="43.0" prefWidth="132.0" text="Generic Timetable" textAlignment="CENTER" />
    </children>
+      <GridPane.margin>
+         <Insets top="-300.0" />
+      </GridPane.margin>
 </HBox>
    <ImageView fitHeight="70.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true" translateY="-575.0" GridPane.rowIndex="1">
       <image>
@@ -61,6 +64,11 @@
          <Insets bottom="100.0" />
       </GridPane.margin>
    </TextField>
+   <Button fx:id="add" mnemonicParsing="false" onAction="#add" prefHeight="46.0" prefWidth="72.0" text="ADD" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets left="850.0" />
+      </GridPane.margin>
+   </Button>
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>

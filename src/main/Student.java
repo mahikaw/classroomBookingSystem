@@ -1,9 +1,11 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Student extends RootUser {
-    public ArrayList<Request> requestMade;
+    public static ArrayList<Request> requestMade;
+    public static HashMap<String,Course> listofcourses= new HashMap<>();
 
     public Student(String emailID, String pass) {
         super(emailID,pass);
