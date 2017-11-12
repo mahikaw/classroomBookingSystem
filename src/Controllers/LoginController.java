@@ -9,12 +9,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
-import main.Application;
-import main.RootUser;
+import main.*;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.Iterator;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
@@ -29,26 +27,24 @@ public class LoginController implements Initializable {
         String passwordentered = password.getText();
         Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.fxml"));
 
-        Iterator<RootUser> it = Application.users.iterator();
-        boolean userAuthenticated = false;
-        while (it.hasNext()) {
-            RootUser temp = it.next();
-            if ((temp.getUserEmailId().compareToIgnoreCase(emailentered) == 0) && (temp.getPassword()).compareTo(passwordentered) == 0) {
-                userAuthenticated = true;
-                if (temp.getTypeofuser().toLowerCase().equals("admin"))
-                    homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
-                else if (temp.getTypeofuser().toLowerCase().equals("faculty"))
-                    homepage = FXMLLoader.load(getClass().getResource("../Resources/FacultyHome.fxml"));
-                else if (temp.getTypeofuser().toLowerCase().equals("student"))
-                    homepage = FXMLLoader.load(getClass().getResource("../Resources/StudentHome.fxml"));
-                break;
-            }
+        String auth = Application.Authenticate(emailentered, passwordentered);
 
+        if (auth.split(" ")[0].compareTo("true") == 0) {
+            String type = auth.split(" ")[1];
+
+            if (type.toLowerCase().equals("admin")) {
+                Application.currentUser = new Admin(emailentered, passwordentered);
+                homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
+            } else if (type.toLowerCase().equals("faculty")) {
+                Application.currentUser = new Faculty(emailentered, passwordentered);
+                homepage = FXMLLoader.load(getClass().getResource("../Resources/FacultyHome.fxml"));
+            } else if (type.toLowerCase().equals("student")) {
+                Application.currentUser = new Student(emailentered, passwordentered);
+                homepage = FXMLLoader.load(getClass().getResource("../Resources/StudentHome.fxml"));
+            }
         }
-        if(!userAuthenticated){
-            System.out.println("Wrong credentials");
-            homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.fxml"));
-        }
+
+
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Home page");

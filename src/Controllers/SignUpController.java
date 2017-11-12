@@ -83,6 +83,13 @@ public class SignUpController implements Initializable {
 //        try {
         RootUser.serialize(newUser);
         System.out.println("Signed up new user");
+        Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Home page");
+        stage.setScene(new Scene(homepage, 300, 275));
+        stage.show();
+        stage.setFullScreen(true);
+
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }

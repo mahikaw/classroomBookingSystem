@@ -24,8 +24,9 @@ public class Application extends javafx.application.Application {
 
     public static List<RootUser> users = new ArrayList<>();
     public static MongoClient mongoClient = new MongoClient("localhost", 27017);
+    public static RootUser currentUser;
+    public static int requestCounter = 0;
     public static ObservableList<Course> ListofCourses = new ObservableList<Course>() {
-
         @Override
         public boolean add(Course e) {
             // TODO Auto-generated method stub
@@ -259,6 +260,7 @@ public class Application extends javafx.application.Application {
         launch(args);
     }
 
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         Application.deserializingData();
@@ -307,10 +309,27 @@ public class Application extends javafx.application.Application {
     }
 
 
-    public boolean Authenticate() {
+    public static String Authenticate(String emailentered, String passwordentered) {
         //authenticate user
-        int xyz;
-        return true;
+
+        Iterator<RootUser> it = Application.users.iterator();
+        boolean userAuthenticated = false;
+        String ret = "";
+        while (it.hasNext()) {
+            RootUser temp = it.next();
+//            System.out.println("user: "+temp.getUserEmailId()+" password: "+temp.getPassword());
+            if ((temp.getUserEmailId().toLowerCase().compareTo(emailentered.toLowerCase()) == 0) && (temp.getPassword()).compareTo(passwordentered) == 0) {
+                userAuthenticated = true;
+//                System.out.println("user enteres: "+emailentered+" password entered: "+passwordentered);
+                ret = temp.getTypeofuser();
+                break;
+            }
+        }
+        if (!userAuthenticated) {
+            System.out.println("Wrong credentials");
+        }
+        return userAuthenticated + " " + ret;
 
     }
+
 }

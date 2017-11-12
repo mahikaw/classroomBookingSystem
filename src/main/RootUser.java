@@ -1,7 +1,6 @@
 package main;
 
 import com.google.gson.annotations.SerializedName;
-import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
@@ -52,22 +51,33 @@ public class RootUser implements Serializable {
     }
 
     public static void serialize(RootUser r) throws IOException {
-//        ObjectOutputStream out = null;
-//        try {
-//            out = new ObjectOutputStream(
-//                    new FileOutputStream("users.txt", true));
-//
-//            out.writeObject(r);
-//        } finally {
-//            out.close();
-//        }
         MongoDatabase database = Application.mongoClient.getDatabase("db");
         MongoCollection<Document> collection_users = database.getCollection("users");
-        Document doc = new Document("email", r.getUserEmailId())
-                .append("type", r.getTypeofuser())
-                .append("password",r.password);
-        collection_users.insertOne(doc);
-
+        switch (r.getTypeofuser().toLowerCase()) {
+            case "faculty": {
+                Document doc = new Document("email", r.getUserEmailId())
+                        .append("type", r.getTypeofuser())
+                        .append("password", r.password);
+                collection_users.insertOne(doc);
+                break;
+            }
+            case "admin":{
+                Document doc = new Document("email", r.getUserEmailId())
+                        .append("type", r.getTypeofuser())
+                        .append("password", r.password)
+                        .append("requestReceived",new Document());
+                collection_users.insertOne(doc);
+                break;
+            }
+            case "student":{
+                Document doc = new Document("email", r.getUserEmailId())
+                        .append("type", r.getTypeofuser())
+                        .append("password", r.password)
+                        .append("requestmade",new Document());
+                collection_users.insertOne(doc);
+                break;
+            }
+        }
     }
 
     public static List<RootUser> deserialize() throws IOException, ClassNotFoundException {
