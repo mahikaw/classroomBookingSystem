@@ -9,10 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
-import main.Admin;
-import main.Faculty;
-import main.RootUser;
-import main.Student;
+import main.*;
 
 import java.io.IOException;
 import java.net.URL;
@@ -34,9 +31,8 @@ public class SignUpController implements Initializable {
     private TextArea password;
 
     @FXML
-    public void home(ActionEvent event) {
-        RootUser newUser;
-//        String typeOfUser="";
+    public void home(ActionEvent event) throws ClassNotFoundException, IOException {
+        RootUser newUser = null;
         String typeOfUser = type.getText();
         String emailID = email.getText();
         String pass = password.getText();
@@ -58,6 +54,13 @@ public class SignUpController implements Initializable {
             }
             default: //todo throw exception/show error
         }
+
+//        Application.users.add(newUser);
+//        try {
+            RootUser.serialize(newUser);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
 
 //        try {

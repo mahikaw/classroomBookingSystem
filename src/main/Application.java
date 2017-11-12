@@ -1,5 +1,8 @@
 package main;
 
+import com.google.gson.Gson;
+import com.mongodb.MongoClient;
+import com.mongodb.client.MongoCursor;
 import javafx.beans.InvalidationListener;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
@@ -7,9 +10,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.bson.Document;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 
 /**
@@ -18,6 +23,7 @@ import java.util.*;
 public class Application extends javafx.application.Application {
 
     public static List<RootUser> users = new ArrayList<>();
+    public static MongoClient mongoClient = new MongoClient("localhost", 27017);
     public static ObservableList<Course> ListofCourses = new ObservableList<Course>() {
 
         @Override
@@ -223,6 +229,31 @@ public class Application extends javafx.application.Application {
     //JavaFX components
     Stage mainStage;
 
+    public static void deserializingData() throws IOException, ClassNotFoundException {
+//        Application.users = RootUser.deserialize();
+//        System.out.println("number os users:"+Application.users.size());
+//        for (RootUser r:users){
+//            System.out.println(r.toString());
+//        }
+        MongoCursor<Document> cursor = Application.mongoClient
+                .getDatabase("db")
+                .getCollection("users")
+                .find().iterator();
+        try {
+            while (cursor.hasNext()) {
+                Gson g = new Gson();
+                String json = cursor.next().toJson();
+                RootUser a = g.fromJson(json, RootUser.class);
+                users.add(a);
+            }
+        } finally {
+            cursor.close();
+        }
+//System.out.println("users in databseeeee");
+//        for (RootUser e:users){
+//            System.out.println(e.toString());
+//        }
+    }
 
     public static void main(String args[]) {
         launch(args);
@@ -230,6 +261,7 @@ public class Application extends javafx.application.Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        Application.deserializingData();
         mainStage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("../Resources/Login.fxml"));
         primaryStage.setTitle("IIIT-D Classroom Booking System");
