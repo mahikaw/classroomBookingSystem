@@ -27,6 +27,7 @@ public class Application extends javafx.application.Application {
     public static RootUser currentUser;
     public static int requestCounter = 0;
     public static HashMap<String, Classroom> classrooms = new HashMap<>();
+    public static List<Course> booked = new ArrayList<>();
     public static ObservableList<Course> ListofCourses = new ObservableList<Course>() {
         @Override
         public boolean add(Course e) {

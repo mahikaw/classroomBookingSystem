@@ -14,8 +14,18 @@
 
 <GridPane xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RequestRoomController">
 <children>
+   <ImageView pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/light-flowers-line-pattern-triangle-face-volume-texture-geometry-polygonal-polygonal-geometria.jpg" />
+               </image>
+            </ImageView>
    <VBox alignment="CENTER_LEFT" prefHeight="500" prefWidth="1270" spacing="20.0" translateY="200.0">
       <children>
+         <ImageView fitHeight="163.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/logonew.png" />
+                           </image>
+                        </ImageView>
          <GridPane translateX="500">
          <Label text="Request Room">
             <font>
@@ -61,15 +71,11 @@
                </VBox.margin></Button>
 
       </children>
-   </VBox>
-      <ImageView fitHeight="163.0" fitWidth="266.0" layoutX="78.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+
          <GridPane.margin>
-            <Insets bottom="300.0" left="40.0" />
+            <Insets top="-500.0" />
          </GridPane.margin>
-         <image>
-            <Image url="@../Images/logonew.png" />
-         </image>
-      </ImageView>
+   </VBox>
 </children>
 <columnConstraints>
    <ColumnConstraints />

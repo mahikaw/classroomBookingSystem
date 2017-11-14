@@ -13,10 +13,63 @@ import java.util.HashMap;
 
 class Class {
     String course_ID;
+    String venues;
+     String end;
+     String start;
     Classroom venue;
     Date start_time;
     Date end_time;
+    public String getVenues() {
+        		return venues;
+        	}
+ 	public void setVenues(String venues) {
+ 		this.venues = venues;
+        	}
+ 	public String getMonday() {
+        		return monday;
+        	}
+ 	public void setMonday(String monday) {
+        		this.monday = monday;
+        	}
+ 	public String getTuesday() {
+        		return tuesday;
+        	}
+ 	public void setTuesday(String tuesday) {
+        		this.tuesday = tuesday;
+        	}
+ 	public String getWednesday() {
+        		return wednesday;
+        }
+ 	public void setWednesday(String wednesday) {
+ 		this.wednesday = wednesday;
+        	}
+ 	public String getThursday() {
+        		return thursday;
+        	}
+ 	public void setThursday(String thursday) {
+        		this.thursday = thursday;
+        	}
+ 	public String getFriday() {
+        		return friday;
+        	}
+ 	public void setFriday(String friday) {
+        		this.friday = friday;
+        	}
 
+         	String monday;
+     String tuesday;
+     String wednesday;
+     String thursday;
+     String friday;
+   public Class(String course_ID,String venue,String mon,String tues,String wed,String thu,String fri){
+            	this.course_ID=course_ID;
+            	this.venues=venue;
+            	this.monday=mon;
+            	this.tuesday=tues;
+            	this.wednesday=wed;
+            	this.thursday=thu;
+            	this.friday = fri;
+    }
     public Class(String course_ID, Classroom venue, Date start_time, Date end_time) {
         this.course_ID = course_ID;
         this.venue = venue;
@@ -54,11 +107,12 @@ class Class {
 public class TimeTable {
     public static HashMap<String, Course> courseMap = new HashMap<>();
     public static HashMap<String, Course> course_pre = new HashMap<>();
-    private ArrayList<Class> Monday_TimeTable;
-    private ArrayList<Class> Tuesday_TimeTable;
-    private ArrayList<Class> Wednesday_TimeTable;
-    private ArrayList<Class> Thursday_TimeTable;
-    private ArrayList<Class> Friday_TimeTable;
+    public ArrayList<Class> Monday_TimeTable;
+    public ArrayList<Class> Tuesday_TimeTable;
+    public ArrayList<Class> Wednesday_TimeTable;
+    public ArrayList<Class> Thursday_TimeTable;
+    public ArrayList<Class> Friday_TimeTable;
+    public ArrayList<Course> Time_Table;
 
     public TimeTable(HashMap<String, Course> courseMap, ArrayList<Class> monday_TimeTable, ArrayList<Class> tuesday_TimeTable, ArrayList<Class> wednesday_TimeTable, ArrayList<Class> thursday_TimeTable, ArrayList<Class> friday_TimeTable) {
         this.courseMap = courseMap;

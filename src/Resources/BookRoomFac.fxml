@@ -1,52 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+        <?import javafx.geometry.Insets?>
+        <?import javafx.scene.control.Button?>
+        <?import javafx.scene.control.ListView?>
+        <?import javafx.scene.image.Image?>
+        <?import javafx.scene.image.ImageView?>
+        <?import javafx.scene.layout.ColumnConstraints?>
+        <?import javafx.scene.layout.GridPane?>
+        <?import javafx.scene.layout.HBox?>
+        <?import javafx.scene.layout.Pane?>
+        <?import javafx.scene.layout.RowConstraints?>
+        <?import javafx.scene.layout.VBox?>
+        <?import javafx.scene.text.Font?>
+        <?import javafx.scene.text.Text?>
 
-<GridPane xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BookRoomFacController">
+        <GridPane xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BookRoomFacController">
+      <ImageView fitHeight="1520.0" fitWidth="2100.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/12c12eb48b27fd8eca58b6564c95b3d0.jpg" />
+         </image>
+      </ImageView>
 
-   <VBox fx:id="HomeAdmin" alignment="CENTER" prefHeight="578.0" prefWidth="702.0">
-      <children>
-         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Book Rooms" textAlignment="CENTER">
-            <font>
-               <Font size="36.0" />
-            </font>
-         </Text>
-         <Pane fx:id="pane" prefHeight="466.0" prefWidth="683.0">
-            <children>
-               <ListView layoutY="92.0" prefHeight="370.0" prefWidth="1500.0" />
-            </children></Pane>
-      </children>
-   </VBox>
-   <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="1500.0" spacing="20.0">
-      <children>
-         <Button layoutX="1.0" layoutY="61.0" mnemonicParsing="false" onAction="#bookroom" prefHeight="43.0" prefWidth="200.0" text="Book Room" wrapText="true" />
-         <Button layoutX="150.0" layoutY="61.0" mnemonicParsing="false" onAction="#cancelroom" prefHeight="43.0" prefWidth="200.0" text="Cancel Room booking" wrapText="true" />
-         <Button layoutX="300.0" layoutY="61.0" mnemonicParsing="false" onAction="#AvailableRooms" prefHeight="43.0" prefWidth="200.0" text="Available Rooms" wrapText="true" />
-         <Button layoutX="450.0" layoutY="61.0" onAction="#viewRequests" prefHeight="43.0" prefWidth="200.0" text="View Requests" wrapText="true" />
-         <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="200.0" text="Logout" textAlignment="CENTER" wrapText="true" />
-      </children>
-   </HBox>
-   <ImageView fitHeight="70.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true" translateY="-575.0" GridPane.rowIndex="1">
-      <image>
-         <Image url="@../Images/logonew.png" />
-      </image></ImageView>
-   <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#Bookroom" text="Book" textAlignment="CENTER" GridPane.rowIndex="1" />
-   <columnConstraints>
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
-</GridPane>
+      <VBox fx:id="HomeAdmin" alignment="CENTER" prefHeight="578.0" prefWidth="702.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Book Rooms" textAlignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Pane fx:id="pane" prefHeight="466.0" prefWidth="683.0">
+               <children>
+                  <ListView layoutY="92.0" prefHeight="370.0" prefWidth="1500.0" />
+               </children></Pane>
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="1500.0" spacing="20.0">
+         <children>
+            <Button layoutX="1.0" layoutY="61.0" mnemonicParsing="false" onAction="#bookroom" prefHeight="43.0" prefWidth="200.0" text="Book Room" wrapText="true" />
+            <Button layoutX="150.0" layoutY="61.0" mnemonicParsing="false" onAction="#cancelroom" prefHeight="43.0" prefWidth="200.0" text="Cancel Room booking" wrapText="true" />
+            <Button layoutX="300.0" layoutY="61.0" mnemonicParsing="false" onAction="#AvailableRooms" prefHeight="43.0" prefWidth="200.0" text="Available Rooms" wrapText="true" />
+            <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="200.0" text="Logout" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="70.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true" translateY="-575.0" GridPane.rowIndex="1">
+         <image>
+            <Image url="@../Images/logonew.png" />
+         </image></ImageView>
+      <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#Bookroom" text="Book" textAlignment="CENTER" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="80.0" left="50.0" />
+         </GridPane.margin></Button>
+      <columnConstraints>
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="648.8" minHeight="583.1999877929687" prefHeight="648.8" />
+         <RowConstraints maxHeight="65.60001220703123" minHeight="0.0" prefHeight="0.0" />
+      </rowConstraints>
+   </GridPane>

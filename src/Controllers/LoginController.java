@@ -23,7 +23,6 @@ public class LoginController implements Initializable {
 
     @FXML
     public void home(ActionEvent event) throws IOException {
-        System.out.println("\n\nLOGIN CLICKED\n\n");
         String emailentered = email.getText();
         String passwordentered = password.getText();
         Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.fxml"));

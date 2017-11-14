@@ -12,7 +12,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
 <GridPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FacultyHomeController">
-
+   <ImageView fitHeight="1500.0" pickOnBounds="true">
+            <image>
+               <Image url="@../Images/12c12eb48b27fd8eca58b6564c95b3d0.jpg" />
+            </image>
+   </ImageView>
    <VBox fx:id="HomeAdmin" prefHeight="578.0" prefWidth="702.0" alignment="CENTER">
       <children>
          <Text textAlignment="CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
@@ -39,6 +43,7 @@
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
-      <RowConstraints />
+   <RowConstraints maxHeight="648.8" minHeight="586.4" prefHeight="648.8" />
+   <RowConstraints maxHeight="62.39999999999998" minHeight="0.0" prefHeight="0.0" />
    </rowConstraints>
 </GridPane>

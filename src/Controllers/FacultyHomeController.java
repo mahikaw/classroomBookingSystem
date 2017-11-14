@@ -42,7 +42,7 @@ public class FacultyHomeController implements Initializable {
 	}
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
-		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AvailableRooms.FXML"));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AvailableRoomsFac.FXML"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Home");
         stage.setScene(new Scene(homepage, 300, 275));
@@ -52,7 +52,7 @@ public class FacultyHomeController implements Initializable {
 	}
 	@FXML
 	public void BookRooms(ActionEvent event) throws IOException{
-		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/BookRoomfac.FXML"));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/BookRoomFac.FXML"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Home");
         stage.setScene(new Scene(homepage, 300, 275));
@@ -62,7 +62,7 @@ public class FacultyHomeController implements Initializable {
 	}
 	@FXML
 	public void CancelRoom(ActionEvent event) throws IOException{
-		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/cancelroom.FXML"));
+		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/cancelroomFac.FXML"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Home");
         stage.setScene(new Scene(homepage, 300, 275));

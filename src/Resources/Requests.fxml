@@ -16,7 +16,11 @@
 <?import javafx.scene.text.Text?>
 
 <GridPane xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RequestsController">
-
+   <ImageView fitHeight="1520.0" fitWidth="2100.0" pickOnBounds="true">
+            <image>
+               <Image url="@../Images/artsfon.com-65938.jpg" />
+            </image>
+         </ImageView>
    <VBox fx:id="HomeAdmin" alignment="CENTER" prefHeight="578.0" prefWidth="702.0">
       <children>
          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="View Requests" textAlignment="CENTER">
@@ -59,14 +63,14 @@
    </Button>
    <Button alignment="CENTER" mnemonicParsing="false" onAction="#accept" text="Accept" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
       <GridPane.margin>
-         <Insets right="100.0" />
+         <Insets bottom="50.0" left="100.0" />
       </GridPane.margin>
    </Button>
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
+      <RowConstraints maxHeight="648.8" minHeight="583.9999755859375" prefHeight="648.8" />
+      <RowConstraints maxHeight="64.80002441406248" minHeight="0.0" prefHeight="0.0" />
    </rowConstraints>
 </GridPane>
