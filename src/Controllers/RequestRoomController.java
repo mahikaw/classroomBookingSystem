@@ -32,7 +32,7 @@ public class RequestRoomController implements Initializable {
 
         String studentpurpose = purpose.getText();
         String studentroom = room.getText();
-        Classroom roomreq = new Classroom(studentroom);
+        Classroom roomreq = new Classroom(studentroom);//todo pass proper string to constructor
         String roomcap = cap.getText();
         Request req;
         MongoCollection collection = Application.mongoClient

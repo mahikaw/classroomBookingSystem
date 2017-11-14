@@ -23,12 +23,13 @@ public class LoginController implements Initializable {
 
     @FXML
     public void home(ActionEvent event) throws IOException {
+        System.out.println("\n\nLOGIN CLICKED\n\n");
         String emailentered = email.getText();
         String passwordentered = password.getText();
         Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.fxml"));
 
         String auth = Application.Authenticate(emailentered, passwordentered);
-
+        System.out.println("authentication function output: "+auth);
         if (auth.split(" ")[0].compareTo("true") == 0) {
             String type = auth.split(" ")[1];
 
