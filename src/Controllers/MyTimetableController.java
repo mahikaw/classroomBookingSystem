@@ -4,6 +4,10 @@ import java.io.IOException;
 import main.Classes;
 import main.Course;
 import main.timetable_student;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c42440... timetable display
 import java.net.URL;
 import java.util.Iterator;
 import java.util.Map;

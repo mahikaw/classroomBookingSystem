@@ -6,6 +6,7 @@ import main.Student;
 
 import java.net.URL;
 import main.TimeTable;
+import main.timetable_student;
 
 import java.util.Iterator;
 import java.util.Map;
@@ -127,17 +128,26 @@ public class StudentHomeController implements Initializable {
 		        }
 		    }
 		Table.setItems(data);
-		System.out.println("asdasdasdasdasdasd");
+		//System.out.println("asdasdasdasdasdasd");
 		add(event);
 		
 		
 		
+	}
+	public boolean contains(String[] array,String data){
+		for(int i=0;i<array.length;i++){
+			if(data.contains(array[i]))
+				return true;
+			
+		}
+		return false;
 	}
 	@FXML
 	public void add(ActionEvent event){
 		//public Course selected;
 		final ObservableList<Course> data = FXCollections.observableArrayList();
 		String keyw = keyword.getText();
+		String[] words = keyw.split(",");
 		namecol.setCellValueFactory(new PropertyValueFactory<Course, String>("name"));
 		codecol.setCellValueFactory(new PropertyValueFactory<Course, String>("course_ID"));
 		typecol.setCellValueFactory(new PropertyValueFactory<Course, String>("type"));
@@ -148,13 +158,13 @@ public class StudentHomeController implements Initializable {
 		 Iterator it = TimeTable.course_pre.entrySet().iterator();
 		    while (it.hasNext()) {
 		        Map.Entry pair = (Map.Entry)it.next();
-		        if(pair.getKey().toString().toLowerCase().contains(keyw.toLowerCase())){
+		        if(contains(words,pair.getKey().toString().toLowerCase())){
 		        	data.add((Course) pair.getValue());//}
 		        }
 		    }
 		Table.setItems(data);
 		add.setDisable(false);
-		System.out.println("adasd");
+		//System.out.println("adasd");
 		Table.setRowFactory(tv->{
 			TableRow<Course>row = new TableRow<>();
 			row.setOnMouseClicked(eventmouse -> {
@@ -164,14 +174,16 @@ public class StudentHomeController implements Initializable {
 					Course rowdata = row.getItem();
 					Student.listofcourses.put(rowdata.getCourse_ID(), rowdata);
 					selected = rowdata;
-					System.out.println(selected);
+					System.out.println(selected.getCourse_ID());
 				}
 			});
 			return row;
 		});
-		System.out.println("---------------------------------------------------------------------------------------------------------");
-		System.out.println(Student.listofcourses);
+		//System.out.println("---------------------------------------------------------------------------------------------------------");
+		//System.out.println(Student.listofcourses);
+		timetable_student.generate();
 	}
+	
 	@FXML
 	public void getTimeTable(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Timetable.FXML"));
