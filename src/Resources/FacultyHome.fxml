@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-<GridPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FacultyHomeController">
 
-   <VBox fx:id="HomeAdmin" prefHeight="578.0" prefWidth="702.0" alignment="CENTER">
+<GridPane xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FacultyHomeController">
+   <ImageView fitHeight="1500.0" pickOnBounds="true">
+      <image>
+         <Image url="@../Images/12c12eb48b27fd8eca58b6564c95b3d0.jpg" />
+      </image>
+   </ImageView>
+
+   <VBox fx:id="HomeAdmin" alignment="CENTER" prefHeight="578.0" prefWidth="702.0">
       <children>
-         <Text textAlignment="CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME" textAlignment="CENTER">
             <font>
                <Font size="36.0" />
             </font>
@@ -25,9 +31,9 @@
    </VBox>
    <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="1500.0" spacing="20.0">
       <children>
-         <Button layoutX="1.0" layoutY="61.0" mnemonicParsing="false" onAction="#BookRooms" prefHeight="43.0" prefWidth="200.0" text="Book Room" wrapText="true"/>
-         <Button layoutX="150.0" layoutY="61.0" mnemonicParsing="false" onAction="#CancelRoom" prefHeight="43.0" prefWidth="200.0" text="Cancel Room booking" wrapText="true"/>
-         <Button layoutX="300.0" layoutY="61.0" mnemonicParsing="false" onAction="#AvailableRooms" prefHeight="43.0" prefWidth="200.0" text="Available Rooms" wrapText="true"/>
+         <Button layoutX="1.0" layoutY="61.0" mnemonicParsing="false" onAction="#BookRooms" prefHeight="43.0" prefWidth="200.0" text="Book Room" wrapText="true" />
+         <Button layoutX="150.0" layoutY="61.0" mnemonicParsing="false" onAction="#CancelRoom" prefHeight="43.0" prefWidth="200.0" text="Cancel Room booking" wrapText="true" />
+         <Button layoutX="300.0" layoutY="61.0" mnemonicParsing="false" onAction="#AvailableRooms" prefHeight="43.0" prefWidth="200.0" text="Available Rooms" wrapText="true" />
          <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="200.0" text="Logout" textAlignment="CENTER" wrapText="true" />
       </children>
    </HBox>
@@ -39,6 +45,7 @@
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
-      <RowConstraints />
+      <RowConstraints maxHeight="648.8" minHeight="586.4" prefHeight="648.8" />
+      <RowConstraints maxHeight="62.39999999999998" minHeight="0.0" prefHeight="0.0" />
    </rowConstraints>
 </GridPane>

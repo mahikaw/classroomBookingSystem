@@ -13,7 +13,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StudentHomeController">
+
+<GridPane xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MyTimetableController">
+   <ImageView fitHeight="1520.0" fitWidth="2100.0" pickOnBounds="true">
+      <image>
+         <Image url="@../Images/light-flowers-line-pattern-triangle-face-volume-texture-geometry-polygonal-polygonal-geometria.jpg" />
+      </image>
+   </ImageView>
 
    <VBox fx:id="HomeStudent" alignment="CENTER" prefHeight="578.0" prefWidth="702.0">
       <children>
@@ -22,10 +28,23 @@
                <Font size="36.0" />
             </font>
          </Text>
-         <Pane fx:id="pane" prefHeight="466.0" prefWidth="683.0">
-            <children>
-               <ListView layoutX="7.0" layoutY="85.0" prefHeight="446.0" prefWidth="1476.0" />
-            </children></Pane>
+
+         <Pane fx:id="pane" prefHeight="466.0" prefWidth="683.0" />
+         <TableView fx:id="table" prefHeight="672.0" prefWidth="1500.0">
+           <columns>
+             <TableColumn fx:id="course_ID" prefWidth="116.79998475313187" text="Course Code" />
+             <TableColumn fx:id="venues" prefWidth="151.1999969482422" text="Venue" />
+               <TableColumn fx:id="monday" prefWidth="226.4000244140625" text="Monday" />
+               <TableColumn fx:id="tuesday" prefWidth="252.79986572265625" text="Tuesday" />
+               <TableColumn fx:id="wednesday" prefWidth="252.8001708984375" text="Wednesday" />
+               <TableColumn fx:id="thursday" minWidth="2.39996337890625" prefWidth="259.2000732421875" text="Thursday" />
+               <TableColumn fx:id="friday" prefWidth="239.199951171875" text="Friday" />
+           </columns>
+            <VBox.margin>
+               <Insets bottom="50.0" />
+            </VBox.margin>
+         </TableView>
+
       </children>
    </VBox>
 <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="1500.0" spacing="20.0">
@@ -35,7 +54,7 @@
       <Button layoutX="300.0" layoutY="61.0" mnemonicParsing="false" onAction="#AvailableRooms" prefHeight="43.0" prefWidth="132.0" text="Available Rooms" />
       <Button layoutX="450.0" layoutY="61.0" onAction="#AddCourse" prefHeight="43.0" prefWidth="132.0" text="Add courses" />
       <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="132.0" text="Logout" textAlignment="CENTER" wrapText="true" />
-      <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#getTimeTable" prefHeight="43.0" prefWidth="132.0" text="Generic Timetable" textAlignment="CENTER" />
+      <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#getTimeTable" prefHeight="43.0" prefWidth="132.0" text="Requests Made" textAlignment="CENTER" />
    </children>
 </HBox>
    <ImageView fitHeight="70.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true" translateY="-575.0" GridPane.rowIndex="1">
@@ -46,7 +65,7 @@
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
+      <RowConstraints maxHeight="648.8" minHeight="587.1999877929687" prefHeight="648.8" />
+      <RowConstraints maxHeight="61.60001220703123" minHeight="0.0" prefHeight="0.0" />
    </rowConstraints>
 </GridPane>

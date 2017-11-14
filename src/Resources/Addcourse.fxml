@@ -17,6 +17,11 @@
 <?import javafx.scene.text.Text?>
 
 <GridPane xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StudentHomeController">
+   <ImageView fitHeight="1520.0" fitWidth="2100.0" pickOnBounds="true">
+      <image>
+         <Image url="@../Images/light-flowers-line-pattern-triangle-face-volume-texture-geometry-polygonal-polygonal-geometria.jpg" />
+      </image>
+   </ImageView>
 
    <VBox fx:id="HomeStudent" alignment="CENTER" prefHeight="578.0" prefWidth="702.0">
       <children>
@@ -25,11 +30,16 @@
                <Font size="36.0" />
             </font>
          </Text>
+<<<<<<< HEAD
          <Pane fx:id="pane" prefHeight="466.0" prefWidth="683.0">
             <children>
                <Button alignment="CENTER" contentDisplay="CENTER" layoutX="950.0" layoutY="542.0" mnemonicParsing="false" onAction="#search" prefHeight="43.0" prefWidth="96.0" text="Search" />
             </children></Pane>
          <TableView fx:id="Table" editable="true" prefHeight="566.0" prefWidth="1500.0">
+=======
+         <Pane fx:id="pane" prefHeight="466.0" prefWidth="683.0" />
+         <TableView fx:id="Table" editable="true" layoutY="200.0" prefHeight="318.0" prefWidth="1500.0">
+>>>>>>> UI update
            <columns>
              <TableColumn fx:id="namecol" prefWidth="75.0" text="Name" />
              <TableColumn fx:id="codecol" prefWidth="94.4000244140625" text="Course Code" />
@@ -39,6 +49,9 @@
                <TableColumn fx:id="precol" prefWidth="137.60003662109375" text="Pre-Requisite" />
                <TableColumn fx:id="postcol" prefWidth="891.9998779296875" text="Post-conditions" />
            </columns>
+            <VBox.margin>
+               <Insets top="-250.0" />
+            </VBox.margin>
          </TableView>
       </children>
    </VBox>
@@ -49,7 +62,7 @@
       <Button layoutX="300.0" layoutY="61.0" mnemonicParsing="false" onAction="#AvailableRooms" prefHeight="43.0" prefWidth="132.0" text="Available Rooms" />
       <Button layoutX="450.0" layoutY="61.0" onAction="#AddCourse" prefHeight="43.0" prefWidth="132.0" text="Add courses" />
       <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="132.0" text="Logout" textAlignment="CENTER" wrapText="true" />
-      <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#getTimeTable" prefHeight="43.0" prefWidth="132.0" text="Generic Timetable" textAlignment="CENTER" />
+      <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#getTimeTable" prefHeight="43.0" prefWidth="132.0" text="Requests Made" textAlignment="CENTER" />
    </children>
       <GridPane.margin>
          <Insets top="-300.0" />
@@ -61,19 +74,30 @@
       </image></ImageView>
    <TextField fx:id="keyword" prefHeight="25.0" prefWidth="624.0" promptText="Enter Keyword">
       <GridPane.margin>
-         <Insets bottom="100.0" />
+         <Insets bottom="100.0" top="-150.0" />
       </GridPane.margin>
    </TextField>
+<<<<<<< HEAD
    <Button fx:id="add" mnemonicParsing="false" onAction="#add" prefHeight="46.0" prefWidth="72.0" text="ADD" GridPane.rowIndex="1">
       <GridPane.margin>
          <Insets left="850.0" />
+=======
+   <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#search" prefHeight="43.0" prefWidth="96.0" text="Search">
+      <GridPane.margin>
+         <Insets bottom="-630.0" left="950.0" />
+      </GridPane.margin>
+   </Button>
+   <Button fx:id="add" mnemonicParsing="false" onAction="" prefHeight="46.0" prefWidth="72.0" text="ADD" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets bottom="30.0" left="850.0" />
+>>>>>>> UI update
       </GridPane.margin>
    </Button>
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
+      <RowConstraints maxHeight="649.6" minHeight="420.8000244140625" prefHeight="649.6" />
+      <RowConstraints maxHeight="227.99997558593748" minHeight="0.0" prefHeight="0.0" />
    </rowConstraints>
 </GridPane>
