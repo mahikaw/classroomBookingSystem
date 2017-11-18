@@ -29,6 +29,11 @@ public class Application extends javafx.application.Application {
     public static HashMap<String, Classroom> classrooms = new HashMap<>();
     public static List<Course> booked = new ArrayList<>();
     public static ObservableList<Course> ListofCourses = new ObservableList<Course>() {
+        /**
+         *
+         * @param e
+         * @return
+         */
         @Override
         public boolean add(Course e) {
             // TODO Auto-generated method stub
@@ -307,7 +312,12 @@ public class Application extends javafx.application.Application {
         ListofCourses.add(addcourse);
     }
 
-
+    /**
+     * Authenticates a user usng the email ID and password entered in the login page
+     * @param emailentered
+     * @param passwordentered
+     * @return a String that consists information about the authentication and the type of user that logged on
+     */
     public static String Authenticate(String emailentered, String passwordentered) {
         //authenticate user
         System.out.println("Entered authentication function");

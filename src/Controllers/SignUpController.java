@@ -1,6 +1,7 @@
 package Controllers;
 
 import com.google.gson.Gson;
+import com.mongodb.*;
 import com.mongodb.client.MongoCursor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,7 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 import main.*;
-import org.bson.Document;
+import org.bson.*;
 
 import java.io.IOException;
 import java.net.URL;
