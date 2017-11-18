@@ -1,5 +1,6 @@
 package Controllers;
 
+import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -14,8 +15,17 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import main.Application;
+import main.Classroom;
 
 public class BookroomController implements Initializable{
+	@FXML
+	public TextField time;
+	@FXML
+	public TextField day;
+	@FXML
+	public TextField room;
+
 	@FXML
 	public VBox HomeAdmin;
 
@@ -50,18 +60,20 @@ public class BookroomController implements Initializable{
 	}
 
 	/**
-	 * Displays bookroom page
+	 * Books the room
 	 * @param event
 	 * @throws IOException
 	 */
 	@FXML
 	public void bookroom(ActionEvent event) throws IOException{
+		Application.classrooms.get()
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Bookroom.FXML"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("My New Stage Title");
         stage.setScene(new Scene(homepage, 300, 275));
         stage.show();
         stage.setFullScreen(true);
+
 	}
 
 	/**
