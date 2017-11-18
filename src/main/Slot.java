@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Created by mahikaw on 14/11/17.
  */
-class Slot{
+public class Slot{
     Date startDate;
     Date endDate;
 

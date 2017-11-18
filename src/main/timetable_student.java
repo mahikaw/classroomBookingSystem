@@ -13,7 +13,7 @@ public class timetable_student {
     public static HashMap<String,Classes> Time_Table= new HashMap<>();
 
 	/**
-	 *Generates student timetable by readin lists of tsudent courses and adding them to the timetable
+	 *Generates student timetable by reading lists of tsudent courses and adding them to the timetable
 	 */
 	public static void generate(){
     	if(Student.listofcourses.containsKey("CSE201")){

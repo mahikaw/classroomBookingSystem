@@ -14,7 +14,11 @@
 <?import javafx.scene.text.Text?>
 
 <GridPane xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.cancelroomController">
-
+   <ImageView fitHeight="1520.0" fitWidth="2100.0" pickOnBounds="true">
+            <image>
+               <Image url="@../Images/artsfon.com-65938.jpg" />
+            </image>
+         </ImageView>
    <VBox fx:id="HomeAdmin" alignment="CENTER" prefHeight="578.0" prefWidth="702.0">
       <children>
          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cancel Room" textAlignment="CENTER">
@@ -45,7 +49,7 @@
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
+      <RowConstraints maxHeight="648.8" minHeight="585.6000122070312" prefHeight="648.8" />
+      <RowConstraints maxHeight="63.19998779296873" minHeight="0.0" prefHeight="0.0" />
    </rowConstraints>
 </GridPane>

@@ -13,7 +13,11 @@
 <?import javafx.scene.text.Text?>
 
 <GridPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StudentHomeController">
-
+   <ImageView fitHeight="1520.0" fitWidth="2100.0" pickOnBounds="true">
+            <image>
+               <Image url="@../Images/light-flowers-line-pattern-triangle-face-volume-texture-geometry-polygonal-polygonal-geometria.jpg" />
+            </image>
+         </ImageView>
    <VBox fx:id="HomeStudent" alignment="CENTER" prefHeight="578.0" prefWidth="702.0">
       <children>
          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME" textAlignment="CENTER">
@@ -31,7 +35,7 @@
       <Button layoutX="300.0" layoutY="61.0" mnemonicParsing="false" onAction="#AvailableRooms" prefHeight="43.0" prefWidth="132.0" text="Available Rooms" />
       <Button layoutX="450.0" layoutY="61.0" onAction="#AddCourse" prefHeight="43.0" prefWidth="132.0" text="Add courses" />
       <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="132.0" text="Logout" textAlignment="CENTER" wrapText="true" />
-      <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#getTimeTable" prefHeight="43.0" prefWidth="132.0" text="Generic Timetable" textAlignment="CENTER"  />
+      <Button layoutX="600.0" layoutY="61.0" mnemonicParsing="false" onAction="#getTimeTable" prefHeight="43.0" prefWidth="132.0" text="Request Made" textAlignment="CENTER"  />
    </children>
 </HBox>
    <ImageView fitHeight="70.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true" translateY="-575.0" GridPane.rowIndex="1">
@@ -42,7 +46,7 @@
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
+      <RowConstraints maxHeight="648.8" minHeight="587.1999877929687" prefHeight="648.8" />
+      <RowConstraints maxHeight="61.60001220703123" minHeight="0.0" prefHeight="0.0" />
    </rowConstraints>
 </GridPane>

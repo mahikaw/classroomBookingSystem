@@ -148,6 +148,10 @@ public class TimeTable {
 //        return new TimeTable();
 //    }
 
+    /**
+     * reads timetable from CSV
+     * @throws IOException
+     */
     public void read() throws IOException {
 
         try {
@@ -278,6 +282,9 @@ public class TimeTable {
 
     }
 
+    /**
+     * Prints timetable read on console
+     */
     public void showTimetable() {
         courseMap.forEach((k, v) -> {
                     System.out.println(k + " " + v.toString() + "\n\n");
