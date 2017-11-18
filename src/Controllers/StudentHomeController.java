@@ -200,7 +200,14 @@ public class StudentHomeController implements Initializable {
 		    while (it.hasNext()) {
 		        Map.Entry pair = (Map.Entry)it.next();
 				if(contains(words,pair.getKey().toString().toLowerCase())){
-		        	data.add((Course) pair.getValue());//}
+					if(pair.getKey().equals("HSS2xx")||pair.getKey().equals("HSS2IDE")||pair.getKey().equals("HSS202")||pair.getKey().equals("HSS204")||pair.getKey().equals("HSS208")||pair.getKey().equals("HSS211")||pair.getKey().equals("HSS2ES")||pair.getKey().equals("HSS2ISI")||pair.getKey().equals("HSS223A")){
+						if(Student.listofcourses.containsKey("HSS2xx")||Student.listofcourses.containsKey("HSS2IDE")||Student.listofcourses.containsKey("HSS202")||Student.listofcourses.containsKey("HSS204")||Student.listofcourses.containsKey("HSS208")||Student.listofcourses.containsKey("HSS211")||Student.listofcourses.containsKey("HSS2ES")||Student.listofcourses.containsKey("HSS2ISI")||Student.listofcourses.containsKey("HSS223A")){
+							System.out.println();
+						}
+					}
+							
+					else		
+						data.add((Course) pair.getValue());//}
 		        }
 		    }
 		Table.setItems(data);
@@ -213,8 +220,23 @@ public class StudentHomeController implements Initializable {
 					
 					//add.setDisable(false);
 					Course rowdata = row.getItem();
+					if(rowdata.getCourse_ID().contains("HSS")){
+						System.out.println("asdasdasdasdasdasdasd-------------------------------------zzzz");
+						int flag =0;
+						Iterator find = Student.listofcourses.entrySet().iterator();
+							Map.Entry f = (Map.Entry)find.next();
+							if(Student.listofcourses.containsKey("HSS2xx")||Student.listofcourses.containsKey("HSS2IDE")||Student.listofcourses.containsKey("HSS202")||Student.listofcourses.containsKey("HSS204")||Student.listofcourses.containsKey("HSS208")||Student.listofcourses.containsKey("HSS211")||Student.listofcourses.containsKey("HSS2ES")||Student.listofcourses.containsKey("HSS2ISI")||Student.listofcourses.containsKey("HSS223A")){
+								flag=1;
+								System.out.println("jhgjhfghdghdhjghfghfdgfjghfghjgfdxxxxxxxxxxxxxxxxxxxx");
+							}
+							else{
+								Student.listofcourses.put(rowdata.getCourse_ID(), rowdata);
+							}
+						
+					}
+					else{
 					Student.listofcourses.put(rowdata.getCourse_ID(), rowdata);
-					selected = rowdata;
+					selected = rowdata;}
 					System.out.println(selected);
 				}
 			});
