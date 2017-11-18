@@ -59,6 +59,11 @@ public class AvailableRoomsController implements Initializable {
     @FXML
     public TableColumn<Request, String> end;
 
+    /**
+     * Displays book room page
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void Bookroom(ActionEvent event) throws IOException {
         Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
@@ -68,6 +73,11 @@ public class AvailableRoomsController implements Initializable {
         stage.show();
     }
 
+    /**
+     * displays login page
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void login(ActionEvent event) throws IOException {
         Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
@@ -78,6 +88,11 @@ public class AvailableRoomsController implements Initializable {
         stage.setFullScreen(true);
     }
 
+    /**
+     * displays bookroom page
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void bookroom(ActionEvent event) throws IOException {
         Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Bookroom.FXML"));
@@ -88,6 +103,11 @@ public class AvailableRoomsController implements Initializable {
         stage.setFullScreen(true);
     }
 
+    /**
+     * diisplays cancel room page
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void cancelroom(ActionEvent event) throws IOException {
         Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/cancelroom.FXML"));
@@ -98,6 +118,11 @@ public class AvailableRoomsController implements Initializable {
         stage.setFullScreen(true);
     }
 
+    /**
+     * displays requests page
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void viewRequests(ActionEvent event) throws IOException {
         Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Requests.FXML"));
@@ -108,6 +133,11 @@ public class AvailableRoomsController implements Initializable {
         stage.setFullScreen(true);
     }
 
+    /**
+     * Displays available rooms page
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void AvailableRooms(ActionEvent event) throws IOException {
         //System.out.println(HomeStudent.getChildren().indexOf(pane));

@@ -27,6 +27,12 @@ public class AvailableRooms_StudentController implements Initializable {
 	public VBox HomeStudent;
 	@FXML
 	public Pane pane;
+
+	/**
+	 * Displays login page of the application
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void login(ActionEvent event) throws IOException {
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
@@ -36,6 +42,12 @@ public class AvailableRooms_StudentController implements Initializable {
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays available rooms page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AvailableRooms.FXML"));
@@ -46,6 +58,12 @@ public class AvailableRooms_StudentController implements Initializable {
         stage.setFullScreen(true);
 		
 	}
+
+	/**
+	 * Displays the requests made y student so far
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void RequestRooms(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/RequestRoom.FXML"));
@@ -55,6 +73,12 @@ public class AvailableRooms_StudentController implements Initializable {
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays student timetable acoording to the courses selected
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void MyTimeTable(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/MyTimetable.FXML"));
@@ -64,6 +88,12 @@ public class AvailableRooms_StudentController implements Initializable {
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays add courses page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void AddCourse(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Addcourse.FXML"));
@@ -73,6 +103,12 @@ public class AvailableRooms_StudentController implements Initializable {
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Shows timetable page
+	 * @param event
+	 * @throws IOException
+	 */
 
 	@FXML
 	public void getTimeTable(ActionEvent event) throws IOException{

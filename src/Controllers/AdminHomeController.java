@@ -36,6 +36,12 @@ public class AdminHomeController implements Initializable{
         stage.show();
 		stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays the bookroom page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void bookroom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Bookroom.FXML"));
@@ -45,6 +51,12 @@ public class AdminHomeController implements Initializable{
         stage.show();
 		stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays the cancel room page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void cancelroom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/cancelroom.FXML"));
@@ -54,6 +66,12 @@ public class AdminHomeController implements Initializable{
         stage.show();
 		stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays the student requests page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void viewRequests(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Requests.FXML"));
@@ -63,6 +81,12 @@ public class AdminHomeController implements Initializable{
         stage.show();
 		stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays the available rooms page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
 		//System.out.println(HomeStudent.getChildren().indexOf(pane));
@@ -74,6 +98,7 @@ public class AdminHomeController implements Initializable{
 		stage.setFullScreen(true);
 		
 	}
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub

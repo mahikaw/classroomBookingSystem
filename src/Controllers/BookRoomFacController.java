@@ -18,6 +18,12 @@ import javafx.stage.Stage;
 public class BookRoomFacController implements Initializable{
 	@FXML
 	public VBox HomeAdmin;
+
+	/**
+	 * Displays book room page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void Bookroom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/FacultyHome.fxml"));
@@ -36,6 +42,12 @@ public class BookRoomFacController implements Initializable{
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays book room page for faculty
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void bookroom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/BookroomFac.FXML"));
@@ -45,6 +57,12 @@ public class BookRoomFacController implements Initializable{
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays cancel room page for faculty
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void cancelroom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/cancelroomFac.FXML"));
@@ -55,6 +73,11 @@ public class BookRoomFacController implements Initializable{
         stage.setFullScreen(true);
 	}
 
+	/**
+	 * Displays available room page for faculty
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
 		//System.out.println(HomeStudent.getChildren().indexOf(pane));

@@ -31,7 +31,11 @@ public class MainController implements Initializable {
 //        list. (FXCollections.observableList(values));
     }
 
-
+    /**
+     * Shows the login page
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void loginPage(ActionEvent event) throws IOException {
         Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.fxml"));

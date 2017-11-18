@@ -28,6 +28,12 @@ public class FacultyHomeController implements Initializable {
 	public VBox HomeAdmin;
 	@FXML
 	public Pane pane;
+
+	/**
+	 * Displays login page of application from faculty home page on clicking logout
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void login(ActionEvent event) throws IOException {
 
@@ -40,6 +46,12 @@ public class FacultyHomeController implements Initializable {
         stage.setFullScreen(true);
         
 	}
+
+	/**
+	 * 	Displays avaialbale rooms page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AvailableRoomsFac.FXML"));
@@ -50,6 +62,12 @@ public class FacultyHomeController implements Initializable {
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * 	Displays book rooms page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void BookRooms(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/BookRoomFac.FXML"));
@@ -60,6 +78,12 @@ public class FacultyHomeController implements Initializable {
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays cancel rooms page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void CancelRoom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/cancelroomFac.FXML"));

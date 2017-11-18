@@ -11,6 +11,10 @@ public class timetable_student {
     public static HashMap<String,Class> Thursday_TimeTable= new HashMap<>();
     public static HashMap<String,Class> Friday_TimeTable= new HashMap<>();
     public static HashMap<String,Classes> Time_Table= new HashMap<>();
+
+	/**
+	 *Generates student timetable by readin lists of tsudent courses and adding them to the timetable
+	 */
 	public static void generate(){
     	if(Student.listofcourses.containsKey("CSE201")){
     		Time_Table.put("CSE201", new Classes("CSE201", "C21", "11:00-12:00"," ","11:00-12:00", "11:00-12:00", " "));

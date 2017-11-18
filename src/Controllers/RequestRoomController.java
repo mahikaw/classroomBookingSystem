@@ -27,6 +27,11 @@ public class RequestRoomController implements Initializable {
     @FXML
     public TextField cap;
 
+    /**
+     * submits student request and adds it to admin's list of received requests
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void submitrequest(ActionEvent event) throws IOException {
 
@@ -100,6 +105,11 @@ public class RequestRoomController implements Initializable {
         stage.setFullScreen(true);
     }
 
+    /**
+     * shows student homepage
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void cancelrequest(ActionEvent event) throws IOException {
         Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/StudentHome.fxml"));

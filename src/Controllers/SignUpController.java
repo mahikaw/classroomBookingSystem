@@ -34,6 +34,12 @@ public class SignUpController implements Initializable {
     @FXML
     private TextArea password;
 
+    /**
+     * takes in emailID andd password entered at the time of sign up and stores them into databse for future reference
+     * @param event
+     * @throws ClassNotFoundException
+     * @throws IOException
+     */
     @FXML
     public void home(ActionEvent event) throws ClassNotFoundException, IOException {
         RootUser newUser = null;
@@ -103,6 +109,11 @@ public class SignUpController implements Initializable {
 //        }
     }
 
+    /**
+     * Re-loads login page on clicking back button on sign up page
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void back(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("../Resources/Login.fxml"));

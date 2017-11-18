@@ -39,6 +39,12 @@ public class TimetableController implements Initializable {
  	public VBox HomeStudent;
  	@FXML
  	public Pane pane;
+
+	/**
+	 * Login page for application
+	 * @param event
+	 * @throws IOException
+	 */
  	@FXML
  	public void login(ActionEvent event) throws IOException {
 				Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
@@ -48,6 +54,12 @@ public class TimetableController implements Initializable {
 		        stage.show();
 		        stage.setFullScreen(true);
 			}
+
+	/**
+	 * available rooms is displayed
+	 * @param event
+	 * @throws IOException
+	 */
  	@FXML
  	public void AvailableRooms(ActionEvent event) throws IOException{
 				Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AvailableRooms_Student.FXML"));
@@ -58,7 +70,13 @@ public class TimetableController implements Initializable {
 		        stage.setFullScreen(true);
 
 					}
- 	@FXML
+
+	/**
+	 * Request room is displayed
+	 * @param event
+	 * @throws IOException
+	 */
+	@FXML
  	public void RequestRooms(ActionEvent event) throws IOException{
 				Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/RequestRoom.FXML"));
 				Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -67,8 +85,14 @@ public class TimetableController implements Initializable {
 		        stage.show();
 		        stage.setFullScreen(true);
 		        	}
- 	@FXML
- 	public void MyTimeTable(ActionEvent event) throws IOException{
+
+	/**
+	 * Timetable is displayed
+	 * @param event
+	 * @throws IOException
+	 */
+	@FXML
+	public void MyTimeTable(ActionEvent event) throws IOException{
 				Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/MyTimetable.FXML"));
 				Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 		        stage.setTitle("Login");
@@ -76,6 +100,12 @@ public class TimetableController implements Initializable {
 		        stage.show();
 		        stage.setFullScreen(true);
 			}
+
+	/**
+	 * Add courses is displayed
+	 * @param event
+	 * @throws IOException
+	 */
  	@FXML
  	public void AddCourse(ActionEvent event) throws IOException{
 				Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Addcourse.FXML"));
@@ -85,6 +115,12 @@ public class TimetableController implements Initializable {
 		        stage.show();
 		        stage.setFullScreen(true);
 			}
+
+	/**
+	 * timetable is displayed
+	 * @param event
+	 * @throws IOException
+	 */
  	@FXML
  	public void getTimeTable(ActionEvent event) throws IOException{
 				Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Timetable.FXML"));
@@ -94,7 +130,12 @@ public class TimetableController implements Initializable {
         stage.show();
         stage.setFullScreen(true);
 	}
-	
+
+	/**
+	 * values for timetable are initialised
+	 * @param location
+	 * @param resources
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub

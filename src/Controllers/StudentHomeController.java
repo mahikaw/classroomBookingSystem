@@ -61,7 +61,13 @@ public class StudentHomeController implements Initializable {
 	@FXML
 	public TableColumn<Course,String> postcol;
 	@FXML
-	public TextField keyword; 
+	public TextField keyword;
+
+	/**
+	 * Displays login page for application
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void login(ActionEvent event) throws IOException {
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
@@ -71,6 +77,12 @@ public class StudentHomeController implements Initializable {
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Shows available rooms page for students
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AvailableRooms_Student.FXML"));
@@ -81,6 +93,12 @@ public class StudentHomeController implements Initializable {
         stage.setFullScreen(true);
 		
 	}
+
+	/**
+	 * Shows requests room page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void RequestRooms(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/RequestRoom.FXML"));
@@ -90,6 +108,12 @@ public class StudentHomeController implements Initializable {
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Shows time table
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void MyTimeTable(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/MyTimetable.FXML"));
@@ -99,6 +123,12 @@ public class StudentHomeController implements Initializable {
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Shows add course page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void AddCourse(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Addcourse.FXML"));
@@ -108,6 +138,7 @@ public class StudentHomeController implements Initializable {
         stage.show();
         stage.setFullScreen(true);
 	}
+
 	public boolean contains(String[] array,String data){
 		for(int i=0;i<array.length;i++){
 			if(data.contains(array[i]))
@@ -115,6 +146,12 @@ public class StudentHomeController implements Initializable {
 		}
 		return false;
 		}
+
+	/**
+	 * search for courses in add courses page according to their post conditions
+ 	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void search(ActionEvent event) throws IOException{
 		final ObservableList<Course> data = FXCollections.observableArrayList();
@@ -141,6 +178,11 @@ public class StudentHomeController implements Initializable {
 		
 		
 	}
+
+	/**
+	 * adds courses to student timetable from search results
+	 * @param event
+	 */
 	@FXML
 	public void add(ActionEvent event){
 		//public Course selected;
@@ -182,6 +224,12 @@ public class StudentHomeController implements Initializable {
 		System.out.println(Student.listofcourses);
 
 	}
+
+	/**
+	 * Displays student time table
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void getTimeTable(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Timetable.FXML"));

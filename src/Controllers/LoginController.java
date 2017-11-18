@@ -21,6 +21,11 @@ public class LoginController implements Initializable {
     @FXML
     TextArea password;
 
+    /**
+     * Displays home page on login after checking the type of user that logs in
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void home(ActionEvent event) throws IOException {
         String emailentered = email.getText();
@@ -53,6 +58,11 @@ public class LoginController implements Initializable {
         stage.setFullScreen(true);
     }
 
+    /**
+     * Shows the sign up page for new user
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void signup(ActionEvent event) throws IOException {
         Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/SignUp.fxml"));

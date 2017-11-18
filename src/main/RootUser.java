@@ -80,6 +80,12 @@ public class RootUser implements Serializable {
         }
     }
 
+    /**
+     * to desreialize the stream into an object
+     * @return
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
     public static List<RootUser> deserialize() throws IOException, ClassNotFoundException {
         ObjectInputStream in = null;
         List<RootUser> users = new ArrayList<>();

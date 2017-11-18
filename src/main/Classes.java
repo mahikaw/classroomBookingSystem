@@ -67,8 +67,9 @@ public class Classes {
         this.course_ID = course_ID;
     }
 
-   
 
+
+    
 	@Override
 	public String toString() {
 		return "Class [course_ID=" + course_ID + ", venues=" + venues + ", monday=" + monday + ", tuesday=" + tuesday

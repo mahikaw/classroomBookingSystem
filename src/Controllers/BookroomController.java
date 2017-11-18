@@ -18,6 +18,12 @@ import javafx.stage.Stage;
 public class BookroomController implements Initializable{
 	@FXML
 	public VBox HomeAdmin;
+
+	/**
+	 * Displays  admin home page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void Bookroom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
@@ -27,6 +33,12 @@ public class BookroomController implements Initializable{
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays login page of application
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void login(ActionEvent event) throws IOException {
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Login.FXML"));
@@ -36,6 +48,12 @@ public class BookroomController implements Initializable{
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays bookroom page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void bookroom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Bookroom.FXML"));
@@ -45,6 +63,12 @@ public class BookroomController implements Initializable{
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays cancel room page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void cancelroom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/cancelroom.FXML"));
@@ -54,6 +78,12 @@ public class BookroomController implements Initializable{
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays request room page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void viewRequests(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Requests.FXML"));
@@ -63,6 +93,12 @@ public class BookroomController implements Initializable{
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Displays available room page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
 		//System.out.println(HomeStudent.getChildren().indexOf(pane));

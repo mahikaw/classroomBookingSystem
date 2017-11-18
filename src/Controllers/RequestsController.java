@@ -55,6 +55,12 @@ public class RequestsController implements Initializable{
         stage.show();
 		stage.setFullScreen(true);
 	}
+
+	/**
+	 * Shows bookroom page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void bookroom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Bookroom.FXML"));
@@ -64,6 +70,12 @@ public class RequestsController implements Initializable{
         stage.show();
 		stage.setFullScreen(true);
 	}
+
+	/**
+	 * Shows cancel room page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void cancelroom(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/cancelroom.FXML"));
@@ -73,6 +85,12 @@ public class RequestsController implements Initializable{
         stage.show();
 		stage.setFullScreen(true);
 	}
+
+	/**
+	 * Shows requests page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void viewRequests(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Requests.FXML"));
@@ -82,6 +100,12 @@ public class RequestsController implements Initializable{
         stage.show();
 		stage.setFullScreen(true);
 	}
+
+	/**
+	 * Shows available rooms page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void AvailableRooms(ActionEvent event) throws IOException{
 		//System.out.println(HomeStudent.getChildren().indexOf(pane));
@@ -93,6 +117,12 @@ public class RequestsController implements Initializable{
 		stage.setFullScreen(true);
 		
 	}
+
+	/**
+	 * Shows cancel rooms page
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void cancel(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
@@ -102,6 +132,12 @@ public class RequestsController implements Initializable{
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Shows admin home with accepted requests
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	public void accept(ActionEvent event) throws IOException{
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/AdminHome.fxml"));
@@ -111,6 +147,11 @@ public class RequestsController implements Initializable{
         stage.show();
         stage.setFullScreen(true);
 	}
+
+	/**
+	 * Loads requests recieved for admin
+	 * @throws IOException
+	 */
 	@FXML
 	public void loadRequests() throws IOException{
 		//list.setVisible(false);
