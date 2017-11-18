@@ -153,6 +153,7 @@ public class MyTimetableController implements Initializable {
 	@FXML
 	public void loadtable(){
 		final ObservableList<Classes> data = FXCollections.observableArrayList();
+		timetable_student.generate();
 		course_ID.setCellValueFactory(new PropertyValueFactory<Classes,String>("course_ID"));
 		venues.setCellValueFactory(new PropertyValueFactory<Classes,String>("venues"));
 		monday.setCellValueFactory(new PropertyValueFactory<Classes,String>("monday"));
@@ -161,8 +162,22 @@ public class MyTimetableController implements Initializable {
 		thursday.setCellValueFactory(new PropertyValueFactory<Classes,String>("thursday"));
 		friday.setCellValueFactory(new PropertyValueFactory<Classes,String>("friday"));
 		Iterator it = timetable_student.Time_Table.entrySet().iterator();
+		
 		while(it.hasNext()){
 			Map.Entry pair = (Map.Entry)it.next();
+			//System.out.println("ZZZZZZZZZZZZZZ"+pair.getValue()+"zZZZZZZZZZZZZZZZZZZZ");
+			data.add((Classes) pair.getValue());
+		}
+		Iterator bit = timetable_student.Time_tut.entrySet().iterator();
+		while(bit.hasNext()){
+			Map.Entry pair = (Map.Entry)bit.next();
+			//System.out.println("ZZZZZZZZZZZZZZ"+pair.getValue()+"zZZZZZZZZZZZZZZZZZZZ");
+			data.add((Classes) pair.getValue());
+		}
+		Iterator cit = timetable_student.Time_lab.entrySet().iterator();
+		while(cit.hasNext()){
+			Map.Entry pair = (Map.Entry)cit.next();
+			//System.out.println("ZZZZZZZZZZZZZZ"+pair.getValue()+"zZZZZZZZZZZZZZZZZZZZ");
 			data.add((Classes) pair.getValue());
 		}
 		table.setItems(data);
