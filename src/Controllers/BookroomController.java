@@ -1,6 +1,7 @@
 package Controllers;
 
 import java.awt.*;
+import java.awt.TextField;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -12,6 +13,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -20,12 +22,11 @@ import main.Classroom;
 
 public class BookroomController implements Initializable{
 	@FXML
-	public TextField time;
+	public javafx.scene.control.TextField time;
 	@FXML
-	public TextField day;
+	public javafx.scene.control.TextField day;
 	@FXML
-	public TextField room;
-
+	public javafx.scene.control.TextField room;
 	@FXML
 	public VBox HomeAdmin;
 
@@ -66,7 +67,7 @@ public class BookroomController implements Initializable{
 	 */
 	@FXML
 	public void bookroom(ActionEvent event) throws IOException{
-		Application.classrooms.get()
+//		Application.classrooms.get()
 		Parent homepage = FXMLLoader.load(getClass().getResource("../Resources/Bookroom.FXML"));
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("My New Stage Title");

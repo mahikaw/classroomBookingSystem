@@ -40,26 +40,25 @@
                </rowConstraints>
             </GridPane>
 
-            <Label text="Purpose:">
+               <Label text="Room Required:">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <TextField fx:id="purpose" alignment="TOP_LEFT" layoutX="144.0" layoutY="116.0" prefHeight="144.0" prefWidth="442.0" />
+            <TextField fx:id="room" alignment="TOP_LEFT" layoutX="144.0" layoutY="116.0" prefHeight="144.0" prefWidth="150.0" />
 
-            <Label text="Room Required:">
+            <Label text="Day">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label text="(optional)" translateY="-20" />
-            <TextField fx:id="room" />
-            <Label text="Student Capacity:">
+            <TextField fx:id="day" />
+            <Label text="Timings:">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <TextField fx:id="cap" />
+            <TextField fx:id="time" />
             <Button mnemonicParsing="false" onAction="#bookroom" prefHeight="63.0" prefWidth="127.0" text="Book">
                <VBox.margin>
                   <Insets left="150.0" top="-10.0" />
